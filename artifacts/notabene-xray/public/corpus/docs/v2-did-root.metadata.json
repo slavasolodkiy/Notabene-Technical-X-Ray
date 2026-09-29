@@ -1,0 +1,18 @@
+{
+  "id": "v2-did-root",
+  "title": "did-root",
+  "source_url": "https://vasps.id/.well-known/did.json",
+  "source_type": "live-identity-artifact",
+  "retrieved_at": "2026-09-24T11:37:13.746Z",
+  "provenance_note": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/v2-did-root.json",
+  "captured_artifact_sha256": "c5b21f2bf127e4d40f9a58ae881ba347774ea0c2400cc2a86499c4a6a485c36b",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

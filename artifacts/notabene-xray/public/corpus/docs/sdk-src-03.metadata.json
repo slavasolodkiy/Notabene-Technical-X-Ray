@@ -1,0 +1,18 @@
+{
+  "id": "SDK-SRC-03",
+  "title": "SafeConnect Components",
+  "source_url": "https://devx.notabene.id/docs/safe-connect-components-v2",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary component inventory and use-case documentation.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/sdk-03-components-overview.md",
+  "captured_artifact_sha256": "a48ef3c84fb104a66931e104186dae48c9da25f992892d02741d654f6c367588",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

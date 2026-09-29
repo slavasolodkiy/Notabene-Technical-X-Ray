@@ -1,0 +1,18 @@
+{
+  "id": "SDK-SRC-01",
+  "title": "Notabene JavaScript SDK GitLab repository and source",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+  "source_type": "repository",
+  "retrieved_at": null,
+  "provenance_note": "Cloned 2026-09-24. Inspected commit 9084ba787e1658da4b20946232347aaf51c38620 on dev; npm stable 2.22.0 points to tag commit de41d83da3b2d2dfcd498fb0be76cfeb69b151b5.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/sdk/repos/javascript-sdk",
+  "captured_artifact_sha256": "7b3b7119b680c5384f48a1a23a3416965c8066a1591f4fae414d62cfaeb62198",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "JUR-16",
+  "title": "MAS Notice PSN02 — Prevention of Money Laundering and Countering the Financing of Terrorism, Digital Payment Token Service",
+  "source_url": "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+  "source_type": "official",
+  "retrieved_at": null,
+  "provenance_note": "Primary regulator notice; archived text includes paragraph 13 and revision history.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-16-mas-psn02.md",
+  "captured_artifact_sha256": "550508405be8d5ecc395436c6586d19072727d2719af5a2fb6d297313b1a4172",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

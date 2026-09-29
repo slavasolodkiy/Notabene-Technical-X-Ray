@@ -1,0 +1,18 @@
+{
+  "id": "flow-S11",
+  "title": "What is Flow & Why it matters",
+  "source_url": "https://devx.notabene.id/docs/what-is-flow-why-it-matters.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary statement that Flow is not a blockchain or wallet and sits above custody.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-11-what-is-flow.md",
+  "captured_artifact_sha256": "2cd944425ad8a220a9bd06b9291ee2b62541483c4b7717201bf9f89ccb675f78",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

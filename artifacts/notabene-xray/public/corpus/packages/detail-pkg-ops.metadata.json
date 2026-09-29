@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-ops",
+  "title": "@notabene/ops",
+  "source_url": "https://registry.npmjs.org/@notabene%2fops",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "1.10.0",
+  "repository": "https://gitlab.com/notabene/lab/ops",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/ops.json",
+  "captured_artifact_sha256": "8773e26164c8d73b94ae3d18c75b8354741d480700cb85a165a7f3d36e701303",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

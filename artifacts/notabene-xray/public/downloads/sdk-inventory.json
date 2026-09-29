@@ -1,0 +1,456 @@
+[
+  {
+    "id": "sdk-package-javascript",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-08"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://registry.npmjs.org/@notabene%2fjavascript-sdk"
+    ],
+    "name": "@notabene/javascript-sdk",
+    "version": "2.22.0",
+    "publishedAt": "2026-09-07T14:13:27.679Z",
+    "language": "TypeScript",
+    "classification": "ACTIVE",
+    "purpose": "Browser wrapper, transport, types and payload transformers for hosted SafeConnect components",
+    "publicFactories": [
+      "createWithdrawalAssist",
+      "createDepositAssist",
+      "createDepositRequest",
+      "createConnectWallet",
+      "createInvoiceReader"
+    ],
+    "renderModes": [
+      "iframe",
+      "modal",
+      "popup",
+      "current-window",
+      "link/redirect",
+      "mobile-webview"
+    ],
+    "hostedUiSourceIncluded": false,
+    "commit": "de41d83da3b2d2dfcd498fb0be76cfeb69b151b5",
+    "tag": "v2.22.0",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fjavascript-sdk",
+    "evidencePath": "research/corpus/v2-archaeology/npm/javascript-sdk.json",
+    "repository": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "notes": "dist-tags.latest; time.2.22.0; versions.2.22.0.repository"
+  },
+  {
+    "id": "sdk-package-nodejs",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-09",
+      "SDK-SRC-08"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/notabene-nodejs",
+      "https://registry.npmjs.org/@notabene%2fnodejs"
+    ],
+    "name": "@notabene/nodejs",
+    "version": "1.19.2",
+    "publishedAt": "2026-09-03T11:27:23.910Z",
+    "language": "TypeScript",
+    "classification": "LEGACY_V1_SHAPED_INFERRED",
+    "purpose": "Backend OAuth API client for transaction, trust-framework, customer-token and PII operations",
+    "commit": "7d310d09c8d365cefe48eb066de4caf8c1246883",
+    "tag": "v1.19.2",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fnodejs",
+    "evidencePath": "research/corpus/v2-archaeology/npm/nodejs.json",
+    "repository": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "notes": "dist-tags.latest; time.1.19.2"
+  },
+  {
+    "id": "sdk-package-pii",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-10",
+      "SDK-SRC-08"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk",
+      "https://registry.npmjs.org/@notabene%2fpii-sdk"
+    ],
+    "name": "@notabene/pii-sdk",
+    "version": "1.17.2",
+    "publishedAt": "2026-09-02T14:39:34.588Z",
+    "language": "TypeScript",
+    "classification": "ACTIVE",
+    "purpose": "PII key generation, authenticated encryption/decryption, escrow lookup, PII storage and IVMS field generation",
+    "commit": "57cc203e4ad1fab634b2a4044ef6271dbb82f330",
+    "tag": "v1.17.2",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fpii-sdk",
+    "evidencePath": "research/corpus/v2-archaeology/npm/pii-sdk.json",
+    "repository": "https://gitlab.com/notabene/open-source/pii-sdk",
+    "notes": "dist-tags.latest; time.1.17.2"
+  },
+  {
+    "id": "sdk-package-cli",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-08",
+      "SDK-SRC-07"
+    ],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2fcli",
+      "https://gitlab.com/notabene/open-source/cli"
+    ],
+    "name": "@notabene/cli",
+    "version": "1.2.1",
+    "publishedAt": "2023-07-27T21:00:13.246Z",
+    "language": "Compiled JavaScript package; source repository inaccessible",
+    "classification": "LEGACY_INFERRED_SOURCE_AVAILABILITY_UNKNOWN",
+    "purpose": "M2M login/token and Ed25519 PII key creation",
+    "repositoryPubliclyAccessible": false,
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fcli",
+    "evidencePath": "research/corpus/v2-archaeology/npm/cli.json",
+    "repository": "https://gitlab.com/notabene/open-source/cli",
+    "notes": "repository field points to a URL absent from current public roster"
+  },
+  {
+    "id": "sdk-component-withdrawal-assist",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-02",
+      "SDK-SRC-05"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/components-overview",
+      "https://devx.notabene.id/docs/embedded-components-v2-api"
+    ],
+    "name": "Withdrawal Assist",
+    "factory": "createWithdrawalAssist",
+    "hostedPath": "withdrawal-assist",
+    "purpose": "Collect withdrawal counterparty, agent, Travel Rule and optional ownership-proof data",
+    "minimumDocumentedInputs": [
+      "asset",
+      "amount/amountDecimal",
+      "destination"
+    ],
+    "outputs": [
+      "value",
+      "ivms101",
+      "proof?",
+      "txCreate?",
+      "txUpdate?"
+    ]
+  },
+  {
+    "id": "sdk-component-deposit-assist",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-02",
+      "SDK-SRC-05"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/components-overview",
+      "https://devx.notabene.id/docs/embedded-components-v2-api"
+    ],
+    "name": "Deposit Assist",
+    "factory": "createDepositAssist",
+    "hostedPath": "deposit-assist",
+    "purpose": "Collect missing Travel Rule and originator data after an on-chain deposit",
+    "minimumDocumentedInputs": [
+      "asset",
+      "amount/amountDecimal",
+      "source"
+    ],
+    "outputs": [
+      "value",
+      "ivms101",
+      "proof?",
+      "txCreate?",
+      "txUpdate?"
+    ]
+  },
+  {
+    "id": "sdk-component-connect-wallet",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-02",
+      "SDK-SRC-04"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/components-overview",
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1"
+    ],
+    "name": "Connect Wallet",
+    "factory": "createConnectWallet",
+    "hostedPath": "connect",
+    "purpose": "Collect and verify a self-hosted wallet address",
+    "requiredInputs": [
+      "asset"
+    ],
+    "optionalInputs": [
+      "address/CAIP-10"
+    ],
+    "outputs": [
+      "proof",
+      "CAIP-10 address"
+    ]
+  },
+  {
+    "id": "sdk-feature-counterparty-assist",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-03",
+      "SDK-SRC-06"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/safe-connect-components-v2",
+      "https://devx.notabene.id/docs/using-the-safeconnect-component-response"
+    ],
+    "name": "Counterparty Assist",
+    "standaloneComponent": false,
+    "parentComponents": [
+      "Withdrawal Assist",
+      "Deposit Assist"
+    ],
+    "purpose": "Share a link so a natural/legal counterparty or the user on another device can provide data/proof",
+    "thirdPartyCompletion": "COMPLETE may include refreshSource for later encrypted-data retrieval"
+  },
+  {
+    "id": "sdk-proof-signature",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-04"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1"
+    ],
+    "name": "Cryptographic signature",
+    "proofStrength": "cryptographic control evidence",
+    "automaticStatus": "verified",
+    "notes": "Chain-specific proof types and metadata vary; wallet-specific hosted screens are not in public wrapper source."
+  },
+  {
+    "id": "sdk-proof-microtransfer",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-02",
+      "SDK-SRC-04"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/components-overview",
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1"
+    ],
+    "name": "Micro-transfer",
+    "configuration": [
+      "destination",
+      "amountSubunits",
+      "requireHash?"
+    ],
+    "automaticStatus": "pending",
+    "customerVerificationRequired": null,
+    "verificationOwner": "UNKNOWN",
+    "notes": "Documented proof remains pending; public evidence does not assign on-chain confirmation to the institution or Notabene. Screenshot review duty must not be transferred to micro-transfer."
+  },
+  {
+    "id": "sdk-proof-screenshot",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-04",
+      "SDK-SRC-06"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1",
+      "https://devx.notabene.id/docs/using-the-safeconnect-component-response"
+    ],
+    "name": "Screenshot",
+    "classification": "fallback",
+    "automaticStatus": null,
+    "notes": "Documentation says fallback options do not provide sufficient proof."
+  },
+  {
+    "id": "sdk-proof-self-declaration",
+    "status": "VERIFIED",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-04",
+      "SDK-SRC-06"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1",
+      "https://devx.notabene.id/docs/using-the-safeconnect-component-response"
+    ],
+    "name": "Self-declaration",
+    "classification": "fallback",
+    "automaticStatus": "verified",
+    "notes": "Component status does not imply cryptographic control; docs call this insufficient proof."
+  },
+  {
+    "id": "sdk-unknown-hosted-screen-source",
+    "status": "UNKNOWN",
+    "sources": [
+      "SDK-SRC-01",
+      "SDK-SRC-02",
+      "SDK-SRC-03"
+    ],
+    "sourceUrls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk",
+      "https://devx.notabene.id/docs/components-overview",
+      "https://devx.notabene.id/docs/safe-connect-components-v2"
+    ],
+    "name": "Hosted SafeConnect screen implementation",
+    "reason": "Public JavaScript repository constructs URLs and embeds remote UX but contains no hosted screen component source; docs describe flows without exposing exhaustive implementation."
+  },
+  {
+    "id": "sdk-package-reactnative",
+    "name": "@notabene/reactnative-sdk",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2freactnative-sdk"
+    ],
+    "status": "VERIFIED",
+    "version": "1.2.0",
+    "publishedAt": "2025-02-12T11:37:23.170Z",
+    "classification": "SUPPORT_AND_SOURCE_STATUS_UNKNOWN",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2freactnative-sdk",
+    "evidencePath": "research/corpus/v2-archaeology/npm/reactnative-sdk.json",
+    "repository": "https://gitlab.com/notabene/open-source/react-native-sdk",
+    "notes": "author; maintainers; repository",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-ops",
+    "name": "@notabene/ops",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2fops"
+    ],
+    "status": "VERIFIED",
+    "version": "1.10.0",
+    "publishedAt": "2025-08-11T17:11:23.286Z",
+    "classification": "PUBLIC_SOURCE_AND_SUPPORT_UNKNOWN",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fops",
+    "evidencePath": "research/corpus/v2-archaeology/npm/ops.json",
+    "repository": "https://gitlab.com/notabene/lab/ops",
+    "notes": "author; maintainers; repository",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-crypto",
+    "name": "@notabene/crypto",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2fcrypto"
+    ],
+    "status": "VERIFIED",
+    "version": "1.1.0",
+    "publishedAt": "2020-10-29T20:10:41.783Z",
+    "classification": "LEGACY_ABANDONED_INFERRED",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fcrypto",
+    "evidencePath": "research/corpus/v2-archaeology/npm/crypto.json",
+    "repository": "https://github.com/Notabene-id/notabene-crypto",
+    "notes": "repository; latest; GitHub archived flag",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-verify-proof",
+    "name": "@notabene/verify-proof",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2fverify-proof"
+    ],
+    "status": "VERIFIED",
+    "version": "1.11.0",
+    "publishedAt": "2025-10-02T11:06:34.769Z",
+    "classification": "ACTIVE_INFERRED_SOURCE_PROVENANCE_UNKNOWN",
+    "attribution": "OFFICIAL_ATTRIBUTABLE",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fverify-proof",
+    "evidencePath": "research/corpus/v2-archaeology/npm/verify-proof.json",
+    "repository": null,
+    "notes": "maintainers; dist-tags; repository missing",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-appkit",
+    "name": "@notabene/appkit",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/@notabene%2fappkit"
+    ],
+    "status": "UNKNOWN",
+    "version": "1.0.8",
+    "publishedAt": "2024-10-07T15:42:44.150Z",
+    "classification": "INFERRED_ONE_OFF_REPUBLISH_PURPOSE_UNRESOLVED",
+    "attribution": "PROVENANCE_ODDITY",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/@notabene%2fappkit",
+    "evidencePath": "research/corpus/v2-archaeology/npm/appkit.json",
+    "repository": "https://github.com/reown-com/appkit",
+    "notes": "scope and maintainers say Notabene; author/repository say Reown",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-openvasp-client",
+    "name": "openvasp-client",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/openvasp-client"
+    ],
+    "status": "VERIFIED",
+    "version": "0.2.0",
+    "publishedAt": "2020-07-10T05:57:15.757Z",
+    "classification": "LEGACY_INFERRED",
+    "attribution": "ATTRIBUTABLE_UNSCOPED_LEGACY",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/openvasp-client",
+    "evidencePath": "research/corpus/v2-archaeology/npm/openvasp-client.json",
+    "repository": "https://github.com/Notabene-id/openvasp-node-client",
+    "notes": "repository; maintainer",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  },
+  {
+    "id": "sdk-package-did-auth-express",
+    "name": "did-auth-express",
+    "sources": [],
+    "sourceUrls": [
+      "https://registry.npmjs.org/did-auth-express"
+    ],
+    "status": "VERIFIED",
+    "version": "0.1.3",
+    "publishedAt": "2021-03-24T02:56:19.384Z",
+    "classification": "LEGACY_INFERRED",
+    "attribution": "ATTRIBUTABLE_UNSCOPED_LEGACY",
+    "deprecated": false,
+    "source_url": "https://registry.npmjs.org/did-auth-express",
+    "evidencePath": "research/corpus/v2-archaeology/npm/did-auth-express.json",
+    "repository": "https://github.com/Notabene-id/did-auth-express",
+    "notes": "repository; maintainer",
+    "purpose": "Registry-published artifact; attribution and support limitations detailed in research/packages.md"
+  }
+]

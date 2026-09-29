@@ -1,0 +1,18 @@
+{
+  "id": "identity-03",
+  "title": "Authentication",
+  "source_url": "https://devx.notabene.id/reference/authentication-2.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Official reference; OAuth client credentials and 86,400-second access token.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-03-authentication-reference.md",
+  "captured_artifact_sha256": "21bcb1ba6386eff8d5aecab5861a1040b0f4597e3f5208ec7d23e337c2cbe9e7",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

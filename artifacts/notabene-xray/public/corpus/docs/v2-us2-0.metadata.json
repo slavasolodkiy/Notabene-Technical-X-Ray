@@ -1,0 +1,18 @@
+{
+  "id": "v2-US2-0",
+  "title": "US2-0",
+  "source_url": "https://pd.notabene.id/ivms101/v2/US2-0.json",
+  "source_type": "vendor-policy-artifact",
+  "retrieved_at": "2026-09-24T11:37:13.673Z",
+  "provenance_note": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/v2-US2-0.json",
+  "captured_artifact_sha256": "3b2f3de94929e8d4f5c05011b130295f12ec15da315f845dde380f82a7abb47f",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

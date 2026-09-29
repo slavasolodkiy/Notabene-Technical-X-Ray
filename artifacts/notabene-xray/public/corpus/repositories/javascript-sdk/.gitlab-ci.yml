@@ -1,0 +1,101 @@
+image: node:latest
+
+variables:
+  NPM_TOKEN: ${CI_JOB_TOKEN}
+
+default:
+  before_script:
+    - npm install -g corepack
+    - corepack enable
+
+stages:
+  - install
+  - lint
+  - test
+  - build
+  - release
+
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  artifacts:
+    paths:
+      - .yarn
+      - .pnp.cjs
+      - .pnp.loader.mjs
+      - dist
+  script:
+    - yarn
+
+lint:
+  stage: lint
+  needs:
+    - install
+  script:
+    - yarn lint
+
+test:
+  stage: test
+  needs:
+    - install
+  script:
+    - yarn test
+
+build:
+  stage: build
+  needs:
+    - install
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - dist
+
+publish-gitlab:
+  stage: release
+  needs:
+    - install
+    - build
+  variables:
+    GIT_DEPTH: 0
+    GITLAB_USER_NAME: 'gitlab-ci'
+    GITLAB_USER_EMAIL: 'gitlab-ci@example.com'
+  before_script:
+    - npm install -g corepack
+    - corepack enable
+    - git fetch --tags
+    - git config --global user.email "$GITLAB_USER_EMAIL"
+    - git config --global user.name "$GITLAB_USER_NAME"
+    - |
+      {
+        echo "@${CI_PROJECT_ROOT_NAMESPACE}:registry=${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/npm/"
+        echo "${CI_API_V4_URL#https?}/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=\${CI_JOB_TOKEN}"
+      } | tee -a .npmrc
+  script:
+    - yarn semantic-release
+  only:
+    - master
+    - dev
+
+publish-npm:
+  stage: release
+  environment:
+    name: npm-publish
+  id_tokens:
+    NPM_ID_TOKEN:
+      aud: 'npm:registry.npmjs.org'
+    SIGSTORE_ID_TOKEN:
+      aud: sigstore
+  before_script:
+    - npm install -g npm@latest # OIDC trusted publishing requires npm >= 11.5.1
+  script:
+    - |
+      TAG=$(node -p "require('./package.json').version.includes('-') ? require('./package.json').version.split('-')[1].split('.')[0] : 'latest'")
+      echo "Publishing with tag: $TAG"
+      npm publish --tag $TAG
+  only:
+    - tags
+  when: manual

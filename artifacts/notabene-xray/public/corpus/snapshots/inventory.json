@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "purpose": "Portable corpus inventory. Counts distinguish raw redistributable artifacts from metadata records.",
+  "raw_artifacts": 1,
+  "metadata_records": 369,
+  "source_records": 370
+}

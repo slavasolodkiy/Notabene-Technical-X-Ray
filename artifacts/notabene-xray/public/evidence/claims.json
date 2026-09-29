@@ -1,0 +1,2830 @@
+[
+  {
+    "id": "claim-K01",
+    "claim": "Full captured specifications contain 105 V2 operations / 85 paths and 126 V1 / 90 paths, total 231. Original 157 was a partial inventory; preserve historical scope rather than asserting no imaginable 52-operation subset exists. All 74 missing V1 rows now included.",
+    "text": "Full captured specifications contain 105 V2 operations / 85 paths and 126 V1 / 90 paths, total 231. Original 157 was a partial inventory; preserve historical scope rather than asserting no imaginable 52-operation subset exists. All 74 missing V1 rows now included.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "REFUTED",
+    "correction_id": "K01",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://doc.notabene.id/"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 1",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/api-10-v1-openapi.json"
+    ],
+    "affected_paths": [
+      "data/endpoints.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K02",
+    "claim": "Exactly 105 path×method operations on 85 paths; all 105 operationIds unique",
+    "text": "Exactly 105 path×method operations on 85 paths; all 105 operationIds unique",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K02",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 2",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "data/endpoints.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K03",
+    "claim": "Preserved data/fields.json contains 3,905 field-path records. Count is verified locally; field coverage remains a scoped extraction, not all fields of the newly completed endpoint inventory.",
+    "text": "Preserved data/fields.json contains 3,905 field-path records. Count is verified locally; field coverage remains a scoped extraction, not all fields of the newly completed endpoint inventory.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K03",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "data/fields.json",
+    "reference": "research/audit-kimi.md §2 row 3",
+    "source_paths": [
+      "data/fields.json"
+    ],
+    "affected_paths": [
+      "data/fields.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K04",
+    "claim": "12 distinct event types in webhook-details.md (11 in summary tables \\+ `tap.requirePresentationPartiallySatisfied` in body); `flow.*` events in pay-in quickstarts sit outside the 12",
+    "text": "12 distinct event types in webhook-details.md (11 in summary tables \\+ `tap.requirePresentationPartiallySatisfied` in body); `flow.*` events in pay-in quickstarts sit outside the 12",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K04",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/webhook-details.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-03-v2-webhook-details.md",
+    "reference": "research/audit-kimi.md §2 row 4",
+    "source_paths": [
+      "research/sources/api-03-v2-webhook-details.md"
+    ],
+    "affected_paths": [
+      "data/webhooks.json",
+      "architecture/transact-state-machine.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K05",
+    "claim": "Eight officially attributable scoped packages, one scoped provenance anomaly (@notabene/appkit) and two attributable unscoped legacy packages are enumerated in captured registry records. No deprecated message in checked scoped versions is not a support guarantee. Discovered/attributed/code-inspected are different counts.",
+    "text": "Eight officially attributable scoped packages, one scoped provenance anomaly (@notabene/appkit) and two attributable unscoped legacy packages are enumerated in captured registry records. No deprecated message in checked scoped versions is not a support guarantee. Discovered/attributed/code-inspected are different counts.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "REFUTED",
+    "correction_id": "K05",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "research/audit-kimi.md §2 row 5",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "affected_paths": [
+      "data/sdk-inventory.json",
+      "evidence/packages.json",
+      "research/packages.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K06",
+    "claim": "Current group roster has six projects: javascript-sdk, ndar, notabene-encryption-examples, notabene-nodejs, pii-sdk, trusthub-client. cli/react-native-sdk/ops repository URLs are not publicly accessible; private versus deleted is UNKNOWN.",
+    "text": "Current group roster has six projects: javascript-sdk, ndar, notabene-encryption-examples, notabene-nodejs, pii-sdk, trusthub-client. cli/react-native-sdk/ops repository URLs are not publicly accessible; private versus deleted is UNKNOWN.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K06",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100",
+    "source_urls": [
+      "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "research/audit-kimi.md §2 row 6",
+    "source_paths": [
+      "evidence/repositories.json"
+    ],
+    "affected_paths": [
+      "evidence/repositories.json",
+      "research/repositories.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K07",
+    "claim": "V1 `amount` is a base-unit **string** (\"satoshi, wei, etc\"), example `\"10000000000000000\"`; V2 is a decimal string with pattern `^\\d+(\\.\\d+)?$`",
+    "text": "V1 `amount` is a base-unit **string** (\"satoshi, wei, etc\"), example `\"10000000000000000\"`; V2 is a decimal string with pattern `^\\d+(\\.\\d+)?$`",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K07",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://doc.notabene.id/",
+    "source_urls": [
+      "https://doc.notabene.id/",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-10-v1-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 7",
+    "source_paths": [
+      "research/sources/api-10-v1-openapi.json"
+    ],
+    "affected_paths": [
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md",
+      "data/fields.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K08",
+    "claim": "`originatorPersons`→`originatorPerson` (plural→singular); additionally `nameIdentifierType`→`naturalPersonNameIdentifierType`",
+    "text": "`originatorPersons`→`originatorPerson` (plural→singular); additionally `nameIdentifierType`→`naturalPersonNameIdentifierType`",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K08",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/embedded-components-v2-api.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/embedded-components-v2-api.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-05-components-v2.md",
+    "reference": "research/audit-kimi.md §2 row 8",
+    "source_paths": [
+      "research/sources/sdk-05-components-v2.md"
+    ],
+    "affected_paths": [
+      "architecture/data-model.md",
+      "data/fields.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K09",
+    "claim": "Sole PII-tagged op is `POST /entities/{entityDID}/transfers/{transferId}/policies/{policyId}/presentation`; no `/tx` equivalent exists",
+    "text": "Sole PII-tagged op is `POST /entities/{entityDID}/transfers/{transferId}/policies/{policyId}/presentation`; no `/tx` equivalent exists",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K09",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 9",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "data/endpoints.json",
+      "architecture/data-model.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K10",
+    "claim": "Required field is named `ref`, not \"reference\"; payout `amount` is `type: string` with **no** decimal pattern; duplicate `ref` returns 409 with `existingRef`",
+    "text": "Required field is named `ref`, not \"reference\"; payout `amount` is `type: string` with **no** decimal pattern; duplicate `ref` returns 409 with `existingRef`",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K10",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 10",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "architecture/flow.md",
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K11",
+    "claim": "Quickstart: \"Send only the asset field. Do not include a settlementAddress\"; spec: `required: [\"settlementAddress\"]`, `asset` optional",
+    "text": "Quickstart: \"Send only the asset field. Do not include a settlementAddress\"; spec: `required: [\"settlementAddress\"]`, `asset` optional",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K11",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/flow-03-pra.md",
+    "reference": "research/audit-kimi.md §2 row 11",
+    "source_paths": [
+      "research/sources/flow-03-pra.md",
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "architecture/flow.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K12",
+    "claim": "`expires_in: 86400` client\\_credentials grant; customerToken \"valid for 5 minutes\", scope `customer`; delegate token documented as JWT \\+ `delegateDid` with no TTL/claims/permission matrix",
+    "text": "`expires_in: 86400` client\\_credentials grant; customerToken \"valid for 5 minutes\", scope `customer`; delegate token documented as JWT \\+ `delegateDid` with no TTL/claims/permission matrix",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K12",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/reference/authentication-2.md",
+    "source_urls": [
+      "https://devx.notabene.id/reference/authentication-2.md",
+      "https://devx.notabene.id/docs/customertoken.md",
+      "https://devx.notabene.id/reference/createdelegatetoken.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-03-authentication-reference.md",
+    "reference": "research/audit-kimi.md §2 row 12",
+    "source_paths": [
+      "research/sources/identity-03-authentication-reference.md",
+      "research/sources/identity-04-customer-token.md",
+      "research/sources/identity-15-delegate-token.md"
+    ],
+    "affected_paths": [
+      "architecture/authentication.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K13",
+    "claim": "Managed mode: platform encrypts with entity keys, stores, re-encrypts for counterparties; E2E: \"won't be stored on your entity or the Notabene platform\"; escrow mode is explicitly \"pseudo end-to-end\" with a UI decrypt button",
+    "text": "Managed mode: platform encrypts with entity keys, stores, re-encrypts for counterparties; E2E: \"won't be stored on your entity or the Notabene platform\"; escrow mode is explicitly \"pseudo end-to-end\" with a UI decrypt button",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K13",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/encryption-by-notabene.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/encryption-by-notabene.md",
+      "https://devx.notabene.id/docs/self-encryption.md",
+      "https://devx.notabene.id/docs/key-management.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-07-self-encryption.md",
+    "reference": "research/audit-kimi.md §2 row 13",
+    "source_paths": [
+      "research/sources/identity-07-self-encryption.md",
+      "research/sources/flow-21-encryption-managed.md",
+      "research/sources/identity-18-key-management.md"
+    ],
+    "affected_paths": [
+      "architecture/trust-model.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K14",
+    "claim": "go-didcomm exposes 5 profiles; authcrypt (ECDH-1PU) is \"Repudiable… no inner signature\"; `ProfileSignedAnoncrypt` (sign-then-encrypt) is the non-repudiable default",
+    "text": "go-didcomm exposes 5 profiles; authcrypt (ECDH-1PU) is \"Repudiable… no inner signature\"; `ProfileSignedAnoncrypt` (sign-then-encrypt) is the non-repudiable default",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K14",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/Notabene-id/go-didcomm",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-17-go-didcomm.md",
+    "reference": "research/audit-kimi.md §2 row 14",
+    "source_paths": [
+      "research/sources/identity-17-go-didcomm.md"
+    ],
+    "affected_paths": [
+      "architecture/trust-model.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K15",
+    "claim": "Two fetched DIDDocs expose Ed25519/X25519 keys and the Norway document a P-256 JsonWebKey2020 #notabene-pii key. Both advertise QA hosts; the root URL identifies did:web:vasps.id:at. Documentation spelling differs; production profile and standards-valid root resolution are not established.",
+    "text": "Two fetched DIDDocs expose Ed25519/X25519 keys and the Norway document a P-256 JsonWebKey2020 #notabene-pii key. Both advertise QA hosts; the root URL identifies did:web:vasps.id:at. Documentation spelling differs; production profile and standards-valid root resolution are not established.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K15",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/diddocs-explained.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/diddocs-explained.md",
+      "https://vasps.id/no/did.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-root.json",
+    "reference": "research/audit-kimi.md §2 row 15",
+    "source_paths": [
+      "research/sources/v2-did-root.json",
+      "research/sources/v2-did-no.json"
+    ],
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "architecture/system-map.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K16",
+    "claim": "Flow customer records are entity-owned natural_person/legal_person records. No per-customer resolvable DIDDoc was evidenced; this is scoped absence, not proof customers can never use DIDs.",
+    "text": "Flow customer records are entity-owned natural_person/legal_person records. No per-customer resolvable DIDDoc was evidenced; this is scoped absence, not proof customers can never use DIDs.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K16",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/reference/getflowcustomer.md",
+    "source_urls": [
+      "https://devx.notabene.id/reference/getflowcustomer.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-16-flow-customer.md",
+    "reference": "research/audit-kimi.md §2 row 16",
+    "source_paths": [
+      "research/sources/identity-16-flow-customer.md"
+    ],
+    "affected_paths": [
+      "architecture/actor-map.md",
+      "data/entities.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K17",
+    "claim": "Package contains only wrapper/transport/transformer/types; iframe/modal/popup/redirect/link modes; zero screen-UI source",
+    "text": "Package contains only wrapper/transport/transformer/types; iframe/modal/popup/redirect/link modes; zero screen-UI source",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K17",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-01-gitlab-javascript-sdk.md",
+    "reference": "research/audit-kimi.md §2 row 17",
+    "source_paths": [
+      "research/sources/sdk-01-gitlab-javascript-sdk.md"
+    ],
+    "affected_paths": [
+      "architecture/onboarding.md",
+      "data/sdk-inventory.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K18",
+    "claim": "Node SDK public calls remain V1-shaped; maintenance-only/LEGACY is an inferred activity classification, not official EOL. V1 helper removal in JS SDK does not retire V1 API.",
+    "text": "Node SDK public calls remain V1-shaped; maintenance-only/LEGACY is an inferred activity classification, not official EOL. V1 helper removal in JS SDK does not retire V1 API.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K18",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/notabene-nodejs"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-10-gitlab-nodejs.md",
+    "reference": "research/audit-kimi.md §2 row 18",
+    "source_paths": [
+      "research/sources/sdk-10-gitlab-nodejs.md"
+    ],
+    "affected_paths": [
+      "research/repositories.md",
+      "architecture/integrations.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K19",
+    "claim": "GitHub API license field and LICENSE file \\= CC0 1.0; README badge block \\= CC BY-SA 4.0; tap-ts is CC0 in both (no conflict)",
+    "text": "GitHub API license field and LICENSE file \\= CC0 1.0; README badge block \\= CC BY-SA 4.0; tap-ts is CC0 in both (no conflict)",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K19",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-protocol-01.md",
+    "reference": "research/audit-kimi.md §2 row 19",
+    "source_paths": [
+      "research/sources/gap-protocol-01.md",
+      "research/sources/gap-protocol-03-repository-metadata.json"
+    ],
+    "affected_paths": [
+      "architecture/tap.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K20",
+    "claim": "Documented micro-transfer proof remains status pending. On-chain confirmation owner is UNKNOWN; only screenshot review is explicitly assigned to a compliance officer.",
+    "text": "Documented micro-transfer proof remains status pending. On-chain confirmation owner is UNKNOWN; only screenshot review is explicitly assigned to a compliance officer.",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "audit_disposition": "UNKNOWN",
+    "correction_id": "K20",
+    "evidence_scope": "Duty unassigned in captured documentation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/self-hosted-wallet-verification-1.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-proofs.md",
+    "reference": "research/audit-kimi.md §2 row 20",
+    "source_paths": [
+      "research/sources/v2-proofs.md"
+    ],
+    "affected_paths": [
+      "architecture/onboarding.md",
+      "data/sdk-inventory.json",
+      "QUESTIONS_FOR_NOTABENE.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K21",
+    "claim": "No distinct TAP Parser found in enumerated public organizations and registry searches. This is scoped negative evidence, not proof no private/historical parser exists. Ask which of tap-ts, tap-rs, tap-go or TAIPs schemas/test-vectors is normative.",
+    "text": "No distinct TAP Parser found in enumerated public organizations and registry searches. This is scoped negative evidence, not proof no private/historical parser exists. Ask which of tap-ts, tap-rs, tap-go or TAIPs schemas/test-vectors is normative.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K21",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/repositories.md",
+    "reference": "research/audit-kimi.md §2 row 21",
+    "source_paths": [
+      "research/repositories.md"
+    ],
+    "affected_paths": [
+      "architecture/tap.md",
+      "research/repositories.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K22",
+    "claim": "Reg 64C(4) \"equal to or exceeds … £800\" incl. linked transfers, substituted 30.6.2026 by SI 2026/621; vendor matches the superseded \"1,000 euros\" text",
+    "text": "Reg 64C(4) \"equal to or exceeds … £800\" incl. linked transfers, substituted 30.6.2026 by SI 2026/621; vendor matches the superseded \"1,000 euros\" text",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K22",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "source_urls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-jurisdiction-01.md",
+    "reference": "research/audit-kimi.md §2 row 22",
+    "source_paths": [
+      "research/sources/gap-jurisdiction-01.md",
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K23",
+    "claim": "64C(2)+(3): para (6) information provided on beneficiary request within three working days; 64C(4) applies only \"Where paragraph (3) does not apply\"",
+    "text": "64C(2)+(3): para (6) information provided on beneficiary request within three working days; 64C(4) applies only \"Where paragraph (3) does not apply\"",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K23",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "source_urls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-jurisdiction-01.md",
+    "reference": "research/audit-kimi.md §2 row 23",
+    "source_paths": [
+      "research/sources/gap-jurisdiction-01.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K24",
+    "claim": "Recital (30): \"same requirements regardless of their amount\"; Art 14(1)(d) is compound (address AND document number AND customer ID) OR (date AND place of birth); FR-0 accepts exactly one of four",
+    "text": "Recital (30): \"same requirements regardless of their amount\"; Art 14(1)(d) is compound (address AND document number AND customer ID) OR (date AND place of birth); FR-0 accepts exactly one of four",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K24",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "source_urls": [
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "reference": "research/audit-kimi.md §2 row 24",
+    "source_paths": [
+      "research/sources/JUR-02-eu-regulation-2023-1113.md",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K25",
+    "claim": "31 CFR 1010.410(f) \"in the amount of $3,000 or more\"; US-3000 omits amount, execution date, and both FI identifiers",
+    "text": "31 CFR 1010.410(f) \"in the amount of $3,000 or more\"; US-3000 omits amount, execution date, and both FI identifiers",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K25",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+    "source_urls": [
+      "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+      "https://pd.notabene.id/ivms101/v2/US-3000.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-15-us-ecfr-1010-410.md",
+    "reference": "research/audit-kimi.md §2 row 25",
+    "source_paths": [
+      "research/sources/JUR-15-us-ecfr-1010-410.md",
+      "research/sources/JUR-08-notabene-us-3000-pd.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K26",
+    "claim": "PSN02 ¶13.4 \"below or equal to S$1,500\"vs¶13.6\"exceedsS$1,500\"; SG-1500's `originatorDateAndPlaceOfBirth` descriptor has `\"legal\": []`",
+    "text": "PSN02 ¶13.4 \"below or equal to S$1,500\"vs¶13.6\"exceedsS$1,500\"; SG-1500's `originatorDateAndPlaceOfBirth` descriptor has `\"legal\": []`",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K26",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+    "source_urls": [
+      "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+      "https://pd.notabene.id/ivms101/v2/SG-1500.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-16-mas-psn02.md",
+    "reference": "research/audit-kimi.md §2 row 26",
+    "source_paths": [
+      "research/sources/JUR-16-mas-psn02.md",
+      "research/sources/JUR-10-notabene-sg-1500-pd.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K27",
+    "claim": "Mechanics verified across 13 fetched definition files; `\"limit_disclosure\": \"required\"` on every descriptor",
+    "text": "Mechanics verified across 13 fetched definition files; `\"limit_disclosure\": \"required\"` on every descriptor",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K27",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-FA-1000.json",
+    "reference": "research/audit-kimi.md §2 row 27",
+    "source_paths": [
+      "research/sources/v2-FA-1000.json",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K28",
+    "claim": "JP-0 threshold zero and address OR customer-ID alternative are VERIFIED published artifacts. Vendor narrative and audit secondary corroboration support alignment as INFERRED; definitive current legal scope remains UNKNOWN because primary Japanese law was not fetched.",
+    "text": "JP-0 threshold zero and address OR customer-ID alternative are VERIFIED published artifacts. Vendor narrative and audit secondary corroboration support alignment as INFERRED; definitive current legal scope remains UNKNOWN because primary Japanese law was not fetched.",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K28",
+    "evidence_scope": "Artifact VERIFIED; broader legal/runtime conclusion UNKNOWN",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/JP-0.json",
+      "https://notabene.id/world/japan"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-JP-0.json",
+    "reference": "research/audit-kimi.md §2 row 28",
+    "source_paths": [
+      "research/sources/v2-JP-0.json",
+      "research/sources/v2-japan-vendor.html"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K29",
+    "claim": "FA pseudo-jurisdiction at USD 1,000 and FA-1000 baseline plus four-way pick:1 are VERIFIED artifacts. Vendor fallback statement is documented. Universal deployed fallback, comparator, precedence and legal absence-of-local-law determination remain UNKNOWN.",
+    "text": "FA pseudo-jurisdiction at USD 1,000 and FA-1000 baseline plus four-way pick:1 are VERIFIED artifacts. Vendor fallback statement is documented. Universal deployed fallback, comparator, precedence and legal absence-of-local-law determination remain UNKNOWN.",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "K29",
+    "evidence_scope": "Artifact VERIFIED; broader legal/runtime conclusion UNKNOWN",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+      "https://devx.notabene.id/docs/pii-requirements.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-FA-1000.json",
+    "reference": "research/audit-kimi.md §2 row 29",
+    "source_paths": [
+      "research/sources/v2-FA-1000.json",
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K30",
+    "claim": "16 transfer and seven agent statuses are in the spec. Four status meanings/transitions remain unresolved in captured prose, with images not OCR-verified. Agent policy RequireAuthorization example violates REQUIRE_AUTHORIZATION enum; no inferred terminal states or production behavior.",
+    "text": "16 transfer and seven agent statuses are in the spec. Four status meanings/transitions remain unresolved in captured prose, with images not OCR-verified. Agent policy RequireAuthorization example violates REQUIRE_AUTHORIZATION enum; no inferred terminal states or production behavior.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K30",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 30",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "architecture/data-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K31",
+    "claim": "Original archive claim failed as delivered according to audit. v2 manifest must distinguish raw portable files from metadata-only records, preserve URLs/checksums/licensing decisions and never imply every raw page is redistributed. Final served-artifact verification belongs to integration checks.",
+    "text": "Original archive claim failed as delivered according to audit. v2 manifest must distinguish raw portable files from metadata-only records, preserve URLs/checksums/licensing decisions and never imply every raw page is redistributed. Final served-artifact verification belongs to integration checks.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "REFUTED",
+    "correction_id": "K31",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "REPORT_AUDIT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "research/audit-kimi.md §2 row 31",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "evidence/source-manifest.json"
+    ],
+    "affected_paths": [
+      "evidence/source-manifest.json",
+      "corpus/",
+      "research/verification.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K32",
+    "claim": "Distinct system runtime/trust-boundary and actor authority maps now authored. Existing product/ER documents retained. Route mapping, source archive, verification download and UI acceptance must be checked against final built assets.",
+    "text": "Distinct system runtime/trust-boundary and actor authority maps now authored. Existing product/ER documents retained. Route mapping, source archive, verification download and UI acceptance must be checked against final built assets.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "K32",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "REPORT_AUDIT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "research/audit-kimi.md §2 row 32",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "architecture/system-map.md",
+      "architecture/actor-map.md"
+    ],
+    "affected_paths": [
+      "architecture/system-map.md",
+      "architecture/actor-map.md",
+      "research/verification.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-K33",
+    "claim": "Method now reports exact captured operation counts and scoped field count consistently; removed obsolete omissions language. Historical/audit descriptions remain explicitly historical.",
+    "text": "Method now reports exact captured operation counts and scoped field count consistently; removed obsolete omissions language. Historical/audit descriptions remain explicitly historical.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "REFUTED",
+    "correction_id": "K33",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://replit.com/@identityglobal/Notabene-Technical-X-Ray",
+    "source_urls": [
+      "https://replit.com/@identityglobal/Notabene-Technical-X-Ray"
+    ],
+    "source_type": "REPORT_AUDIT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/TECHNICAL_REPORT.draft.md",
+    "reference": "research/audit-kimi.md §2 row 33",
+    "source_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-D1",
+    "claim": "Method consistently states 231 full operations and scoped 3,905 fields. Historical omissions language removed.",
+    "text": "Method consistently states 231 full operations and scoped 3,905 fields. Historical omissions language removed.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "D1",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "D1",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-D2",
+    "claim": "Draft uses source IDs; adjacent identical citations removed/avoided. Generated final report must be checked after merge.",
+    "text": "Draft uses source IDs; adjacent identical citations removed/avoided. Generated final report must be checked after merge.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "D2",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/TECHNICAL_REPORT.draft.md",
+    "reference": "D2",
+    "source_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-D3",
+    "claim": "Registry and source artifacts are primary for code/publication facts, not primary law. Source_type plus claim-specific evidence scope separates these roles; numeric tier alone must not imply legal authority.",
+    "text": "Registry and source artifacts are primary for code/publication facts, not primary law. Source_type plus claim-specific evidence scope separates these roles; numeric tier alone must not imply legal authority.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "D3",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "D3",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md",
+      "evidence/source-manifest.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-D4",
+    "claim": "Historical check: 18/20 HTTP 200, one 202, one anti-bot; seven parsed diagrams and twelve inspected after DOMPurify limitation. These do not validate v2; final build/browser evidence must record fresh results separately.",
+    "text": "Historical check: 18/20 HTTP 200, one 202, one anti-bot; seven parsed diagrams and twelve inspected after DOMPurify limitation. These do not validate v2; final build/browser evidence must record fresh results separately.",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "audit_disposition": "CONFIRMED",
+    "correction_id": "D4",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/verification.md",
+    "reference": "D4",
+    "source_paths": [
+      "research/verification.md"
+    ],
+    "affected_paths": [
+      "research/unresolved.md",
+      "research/verification.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A01",
+    "claim": "REPLACED and UNREACHABLE are enumerated but transition-undocumented in captured status prose. Do not infer terminality.",
+    "text": "REPLACED and UNREACHABLE are enumerated but transition-undocumented in captured status prose. Do not infer terminality.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A01",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A01",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A02",
+    "claim": "RequireAuthorization example conflicts with REQUIRE_AUTHORIZATION enum; deployed acceptance unknown.",
+    "text": "RequireAuthorization example conflicts with REQUIRE_AUTHORIZATION enum; deployed acceptance unknown.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A02",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A02",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "architecture/data-model.md",
+      "architecture/transact-state-machine.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A03",
+    "claim": "76 entries / 72 keys; XX_old remains inForce at EUR 1,000 and points to Hong Kong, alongside 27 zero-threshold EU member entries.",
+    "text": "76 entries / 72 keys; XX_old remains inForce at EUR 1,000 and points to Hong Kong, alongside 27 zero-threshold EU member entries.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A03",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A03",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A04",
+    "claim": "BR ×3, LI_old ×2, IS_old ×2; count entries separately from distinct keys.",
+    "text": "BR ×3, LI_old ×2, IS_old ×2; count entries separately from distinct keys.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A04",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A04",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A05",
+    "claim": "US1-3000, US2-0, US0-0 are published with different field sets; authoritative product variant and below-threshold selector unknown.",
+    "text": "US1-3000, US2-0, US0-0 are published with different field sets; authoritative product variant and below-threshold selector unknown.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A05",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/US1-3000.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A05",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json",
+      "research/sources/v2-US1-3000.json",
+      "research/sources/v2-US2-0.json",
+      "research/sources/v2-US0-0.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A06",
+    "claim": "ID/GI near-1,000 strings and absent comparator fields are verified. Workaround intent is inference; do not round or derive comparator from filename.",
+    "text": "ID/GI near-1,000 strings and absent comparator fields are verified. Workaround intent is inference; do not round or derive comparator from filename.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A06",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A06",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A07",
+    "claim": "Live P-256 JsonWebKey2020 #notabene-pii differs from EcdsaSecp256r1VerificationKey2019 #pii docs. Selection and migration contract unknown.",
+    "text": "Live P-256 JsonWebKey2020 #notabene-pii differs from EcdsaSecp256r1VerificationKey2019 #pii docs. Selection and migration contract unknown.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A07",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://vasps.id/no/did.json",
+    "source_urls": [
+      "https://vasps.id/no/did.json",
+      "https://devx.notabene.id/docs/key-management-in-diddocs.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-no.json",
+    "reference": "A07",
+    "source_paths": [
+      "research/sources/v2-did-no.json",
+      "research/sources/identity-02-diddoc-keys.md"
+    ],
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "architecture/actor-map.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A08",
+    "claim": "Both captured service hosts are QA. Root URL returns did:web:vasps.id:at, not proof of root-DID resolution validity. No DIDComm service calls made.",
+    "text": "Both captured service hosts are QA. Root URL returns did:web:vasps.id:at, not proof of root-DID resolution validity. No DIDComm service calls made.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A08",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://vasps.id/.well-known/did.json",
+    "source_urls": [
+      "https://vasps.id/.well-known/did.json",
+      "https://vasps.id/no/did.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-root.json",
+    "reference": "A08",
+    "source_paths": [
+      "research/sources/v2-did-root.json",
+      "research/sources/v2-did-no.json"
+    ],
+    "affected_paths": [
+      "architecture/system-map.md",
+      "architecture/trust-model.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A09",
+    "claim": "12 main-guide events plus six quickstart-only Flow names; no top-level OpenAPI webhook schemas and no production delivery verified.",
+    "text": "12 main-guide events plus six quickstart-only Flow names; no top-level OpenAPI webhook schemas and no production delivery verified.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A09",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/webhook-details.md",
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-03-v2-webhook-details.md",
+    "reference": "A09",
+    "source_paths": [
+      "research/sources/api-03-v2-webhook-details.md",
+      "research/sources/flow-02-pia.md",
+      "research/sources/flow-03-pra.md",
+      "research/sources/flow-04-ip.md"
+    ],
+    "affected_paths": [
+      "data/webhooks.json",
+      "architecture/flow.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A10",
+    "claim": "Singular/plural callback examples conflict; API uses plural except baseline-security. Treat received callbacks as opaque and validate destination, not reconstructed path templates.",
+    "text": "Singular/plural callback examples conflict; API uses plural except baseline-security. Treat received callbacks as opaque and validate destination, not reconstructed path templates.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A10",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/webhook-details.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A10",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/api-03-v2-webhook-details.md"
+    ],
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "architecture/data-model.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A11",
+    "claim": "Pay-in additionally requires supportedAssets/fallbackSettlementAddresses. Payout authorization requires authorizationUrl with optional expires documented default one hour.",
+    "text": "Pay-in additionally requires supportedAssets/fallbackSettlementAddresses. Payout authorization requires authorizationUrl with optional expires documented default one hour.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A11",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A11",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "architecture/flow.md",
+      "architecture/data-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A12",
+    "claim": "126 full V1 operations include 56 integration paths; address-book/rules/integrations/webhook-registration lack like-for-like public V2 contracts. Related Relationships/discover are not proven substitutes.",
+    "text": "126 full V1 operations include 56 integration paths; address-book/rules/integrations/webhook-registration lack like-for-like public V2 contracts. Related Relationships/discover are not proven substitutes.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A12",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://doc.notabene.id/",
+    "source_urls": [
+      "https://doc.notabene.id/",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-10-v1-openapi.json",
+    "reference": "A12",
+    "source_paths": [
+      "research/sources/api-10-v1-openapi.json",
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "data/endpoints.json",
+      "architecture/integrations.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A13",
+    "claim": "Inventory covers Relationships 8, Members 7, Flow Internal 5, Network 4, Transfer Checks 2, delegateToken, public-keys, discovery, audit-log and transfer helpers. Tags double-count PII; total remains 105.",
+    "text": "Inventory covers Relationships 8, Members 7, Flow Internal 5, Network 4, Transfer Checks 2, delegateToken, public-keys, discovery, audit-log and transfer helpers. Tags double-count PII; total remains 105.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A13",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A13",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "data/endpoints.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A14",
+    "claim": "Actor Map supplies worked role/authority walk and report links it; customer reference, DID, representation and custody authority separated.",
+    "text": "Actor Map supplies worked role/authority walk and report links it; customer reference, DID, representation and custody authority separated.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A14",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+    "source_urls": [
+      "https://devx.notabene.id/docs/transfer-payload-structure.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-05-v2-payload.md",
+    "reference": "A14",
+    "source_paths": [
+      "research/sources/api-05-v2-payload.md"
+    ],
+    "affected_paths": [
+      "architecture/actor-map.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A15",
+    "claim": "TAP policy COMPLETED and check COMPLETE concern distinct status domains. Guide images were not OCR-verified; absence finding is scoped to captured prose.",
+    "text": "TAP policy COMPLETED and check COMPLETE concern distinct status domains. Guide images were not OCR-verified; absence finding is scoped to captured prose.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A15",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A15",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "affected_paths": [
+      "architecture/transact-state-machine.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A16",
+    "claim": "V2 transformer delegateToken parameter narrows code path only; TTL, claims, audience, scopes, CORS, revocation and safe placement unknown.",
+    "text": "V2 transformer delegateToken parameter narrows code path only; TTL, claims, audience, scopes, CORS, revocation and safe placement unknown.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A16",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-01-gitlab-javascript-sdk.md",
+    "reference": "A16",
+    "source_paths": [
+      "research/sources/sdk-01-gitlab-javascript-sdk.md"
+    ],
+    "affected_paths": [
+      "architecture/authentication.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A17",
+    "claim": "Managed, customer E2E, escrow/HYBRID and legacy did:key-to-Web-DID generations are distinct. Library default and source capability do not establish deployed profiles.",
+    "text": "Managed, customer E2E, escrow/HYBRID and legacy did:key-to-Web-DID generations are distinct. Library default and source capability do not establish deployed profiles.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A17",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/Notabene-id/go-didcomm",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm",
+      "https://devx.notabene.id/docs/key-management.md"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-17-go-didcomm.md",
+    "reference": "A17",
+    "source_paths": [
+      "research/sources/identity-17-go-didcomm.md",
+      "research/sources/identity-18-key-management.md"
+    ],
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A18",
+    "claim": "Notabene-id has nine public repos, six archived; go-didcomm is a GitHub primary. Unrelated notabene account and unverifiable organizations are not attribution evidence.",
+    "text": "Notabene-id has nine public repos, six archived; go-didcomm is a GitHub primary. Unrelated notabene account and unverifiable organizations are not attribution evidence.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A18",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://api.github.com/orgs/Notabene-id/repos?per_page=100",
+    "source_urls": [
+      "https://api.github.com/orgs/Notabene-id/repos?per_page=100"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "A18",
+    "source_paths": [
+      "evidence/repositories.json"
+    ],
+    "affected_paths": [
+      "research/repositories.md",
+      "evidence/repositories.json"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A19",
+    "claim": "cli/reactnative/ops URLs unavailable publicly; private vs deleted unresolved. verify-proof lacks repo metadata. appkit scope/publisher and Reown content conflict is a provenance question, not misconduct.",
+    "text": "cli/reactnative/ops URLs unavailable publicly; private vs deleted unresolved. verify-proof lacks repo metadata. appkit scope/publisher and Reown content conflict is a provenance question, not misconduct.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A19",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "A19",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "affected_paths": [
+      "research/packages.md",
+      "data/sdk-inventory.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A20",
+    "claim": "Registry flags, commit activity, default-branch change and deployment/support are distinct. Node LEGACY is inferred maintenance classification; no official API EOL date established.",
+    "text": "Registry flags, commit activity, default-branch change and deployment/support are distinct. Node LEGACY is inferred maintenance classification; no official API EOL date established.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A20",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/notabene-nodejs"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "A20",
+    "source_paths": [
+      "evidence/repositories.json",
+      "evidence/commits.json"
+    ],
+    "affected_paths": [
+      "research/repositories.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A21",
+    "claim": "Schema VERIFIED means present in public specification, not operationally verified. Fields remain documented extraction with conditional semantics; unknowns live in claims and contract gaps, not fabricated invalid endpoint rows.",
+    "text": "Schema VERIFIED means present in public specification, not operationally verified. Fields remain documented extraction with conditional semantics; unknowns live in claims and contract gaps, not fabricated invalid endpoint rows.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A21",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A21",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "affected_paths": [
+      "data/fields.json",
+      "evidence/claims.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A22",
+    "claim": "Final acceptance must check structured downloads, archive/verification URLs, state/data source lists, six proof selections, per-section badges, readable inline code, non-placeholder meta description and static/subpath behavior. Distinct maps and source lists authored; final UI validation owned by integration.",
+    "text": "Final acceptance must check structured downloads, archive/verification URLs, state/data source lists, six proof selections, per-section badges, readable inline code, non-placeholder meta description and static/subpath behavior. Distinct maps and source lists authored; final UI validation owned by integration.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A22",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": null,
+    "source_urls": [],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "A22",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "research/verification.md"
+    ],
+    "affected_paths": [
+      "research/unresolved.md",
+      "architecture/data-model.md",
+      "architecture/transact-state-machine.md",
+      "architecture/system-map.md",
+      "architecture/actor-map.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A23",
+    "claim": "Japan legal completeness remains UNKNOWN without primary text; FA artifact existence does not prove universal selector. Vendor configuration must not substitute for legal watch.",
+    "text": "Japan legal completeness remains UNKNOWN without primary text; FA artifact existence does not prove universal selector. Vendor configuration must not substitute for legal watch.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A23",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://notabene.id/world/japan",
+    "source_urls": [
+      "https://notabene.id/world/japan",
+      "https://pd.notabene.id/ivms101/v2/FA-1000.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-JP-0.json",
+    "reference": "A23",
+    "source_paths": [
+      "research/sources/v2-JP-0.json",
+      "research/sources/v2-FA-1000.json"
+    ],
+    "affected_paths": [
+      "data/jurisdiction-matrix.json",
+      "research/unresolved.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A24",
+    "claim": "Captured committed date for xpub removal and initial TAIP-19 is 2025-11-28; TAIP-20 cited diff establishes memo evolution, not initial creation. Full hashes supersede audit abbreviations.",
+    "text": "Captured committed date for xpub removal and initial TAIP-19 is 2025-11-28; TAIP-20 cited diff establishes memo evolution, not initial creation. Full hashes supersede audit abbreviations.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A24",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d",
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/commits.json",
+    "reference": "A24",
+    "source_paths": [
+      "evidence/commits.json"
+    ],
+    "affected_paths": [
+      "research/chronology.md",
+      "research/code-archaeology.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A25",
+    "claim": "Public crypto changes are verified; 14x performance remains unbenchmarked UNKNOWN, recovery intent INFERRED, production deployment UNKNOWN.",
+    "text": "Public crypto changes are verified; 14x performance remains unbenchmarked UNKNOWN, recovery intent INFERRED, production deployment UNKNOWN.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A25",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/commits.json",
+    "reference": "A25",
+    "source_paths": [
+      "evidence/commits.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A26",
+    "claim": "Negative findings scoped to current public searches. Normative conformance artifact, private history and TAP governance/license remain questions; do not rely on organization verification flag alone as cryptographic ownership proof.",
+    "text": "Negative findings scoped to current public searches. Normative conformance artifact, private history and TAP governance/license remain questions; do not rely on organization verification flag alone as cryptographic ownership proof.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A26",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/repositories.md",
+    "reference": "A26",
+    "source_paths": [
+      "research/repositories.md"
+    ],
+    "affected_paths": [
+      "architecture/tap.md",
+      "research/repositories.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A27",
+    "claim": "Vendor accepts a broader set of payloads: legally sufficient payloads may satisfy vendor structure, but vendor-pass does not imply legal compliance. Audit sentence calling vendor-pass a proper subset of legally compliant reverses this relation and is not adopted.",
+    "text": "Vendor accepts a broader set of payloads: legally sufficient payloads may satisfy vendor structure, but vendor-pass does not imply legal compliance. Audit sentence calling vendor-pass a proper subset of legally compliant reverses this relation and is not adopted.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A27",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "source_urls": [
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "reference": "A27",
+    "source_paths": [
+      "research/sources/JUR-02-eu-regulation-2023-1113.md",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A28",
+    "claim": "No current market rate or actual selector call was made. GB legal/vendor trigger mismatch is evidenced; any monetary worked example must use explicit synthetic valuation, not assert plausible 2026 FX as fact.",
+    "text": "No current market rate or actual selector call was made. GB legal/vendor trigger mismatch is evidenced; any monetary worked example must use explicit synthetic valuation, not assert plausible 2026 FX as fact.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A28",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A28",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json",
+      "research/sources/gap-jurisdiction-01.md"
+    ],
+    "affected_paths": [
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-secure-channel-918a87ff",
+    "claim": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README. INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "text": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README. INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-secure-channel-918a87ff",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README.",
+    "architectural_interpretation": "INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/918a87ffea1b39aa867ae755c6622c80ac937f27"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json",
+    "reference": "src/notabene.ts; src/types.ts; README.md; public/index.html",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-v1-removal-5b0a15d",
+    "claim": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions. INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "text": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions. INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-v1-removal-5b0a15d",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions.",
+    "architectural_interpretation": "INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-5b0a15d-diff.json",
+    "reference": "src/responseTransformer/",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-5b0a15d-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-account-number-2ceb201",
+    "claim": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs. INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "text": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs. INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-account-number-2ceb201",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs.",
+    "architectural_interpretation": "INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-2ceb201-diff.json",
+    "reference": "src/responseTransformer/mappers.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-2ceb201-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-ivms-eed7a64",
+    "claim": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation. INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "text": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation. INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-ivms-eed7a64",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation.",
+    "architectural_interpretation": "INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/eed7a64202a8cc6a88baa531e5335625b08848ae"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-eed7a64-diff.json",
+    "reference": "src/ivms/v2Types.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-eed7a64-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-proof-xpub-e32555e",
+    "claim": "The public diff removes the xpub property from src/types.ts. INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "text": "The public diff removes the xpub property from src/types.ts. INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-proof-xpub-e32555e",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public diff removes the xpub property from src/types.ts.",
+    "architectural_interpretation": "INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json",
+    "reference": "src/types.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-counterparty-webhook-f448d87",
+    "claim": "The public diff adds webhookUrl typing and passes it into connection metadata. INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "text": "The public diff adds webhookUrl typing and passes it into connection metadata. INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-counterparty-webhook-f448d87",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public diff adds webhookUrl typing and passes it into connection metadata.",
+    "architectural_interpretation": "INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/f448d8794b30dea1f0515e241f82d64d7429ee38"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json",
+    "reference": "src/types.ts; src/utils/connections.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-counterparty-decrypt-b573f47",
+    "claim": "The public diff exports the helper and adds tests/API documentation. INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "text": "The public diff exports the helper and adds tests/API documentation. INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-counterparty-decrypt-b573f47",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public diff exports the helper and adds tests/API documentation.",
+    "architectural_interpretation": "INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/b573f473db84a88e42c496d4aec92d9a72f7e0e1"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-b573f47-diff.json",
+    "reference": "src/utils/connections.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-b573f47-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-js-counterparty-correlation-1603b8c",
+    "claim": "The public diff adds connectionId to RefreshSource and generated API documentation. INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "text": "The public diff adds connectionId to RefreshSource and generated API documentation. INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-js-counterparty-correlation-1603b8c",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public diff adds connectionId to RefreshSource and generated API documentation.",
+    "architectural_interpretation": "INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/1603b8c4a26f795d17e21c53cef8ace9b3adab83"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json",
+    "reference": "src/types.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-pii-ecdh1pu-42a4efc",
+    "claim": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost. INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "text": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost. INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-pii-ecdh1pu-42a4efc",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost.",
+    "architectural_interpretation": "INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "repository": "notabene/open-source/pii-sdk",
+    "commit": "42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json",
+    "reference": "src/cryptography/providers/sodium-provider.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-pii-hybrid-3ea4e3a",
+    "claim": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients. INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "text": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients. INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-pii-hybrid-3ea4e3a",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients.",
+    "architectural_interpretation": "INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/3ea4e3a30efe11331744665dad7cd11c8c435192"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "repository": "notabene/open-source/pii-sdk",
+    "commit": "3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-3ea4e3a-diff.json",
+    "reference": "src/index.ts",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-3ea4e3a-diff.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-taip17-lock-f8207e3e",
+    "claim": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change. INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "text": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change. INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-taip17-lock-f8207e3e",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change.",
+    "architectural_interpretation": "INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/f8207e3e4004d7ab8780120e9cfc4ed6b18325c4"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json",
+    "reference": "TAIP-17.md and schemas",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-taip18-rfq-e1a351b1",
+    "claim": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change. INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "text": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change. INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-taip18-rfq-e1a351b1",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change.",
+    "architectural_interpretation": "INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/e1a351b1be4b0289eedcad5857b787d9ab1efbdf"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json",
+    "reference": "TAIP-18.md and schemas",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-taip19-iso20022-65b1cf2d",
+    "claim": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25. INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "text": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25. INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-taip19-iso20022-65b1cf2d",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25.",
+    "architectural_interpretation": "INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d391dca911bfd5dfde872b08ffbc14ef9"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-65b1cf2d.json",
+    "reference": "TAIP-19.md",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-65b1cf2d.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-taip20-memo-ed644e3d",
+    "claim": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20. INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "text": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20. INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-taip20-memo-ed644e3d",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20.",
+    "architectural_interpretation": "INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/ed644e3d808f075145333d6349a5543072cb1506",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/ed644e3d808f075145333d6349a5543072cb1506"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "ed644e3d808f075145333d6349a5543072cb1506",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "ed644e3d808f075145333d6349a5543072cb1506",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json",
+    "reference": "TAIP-20.md",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-tap-ts-extraction-d9ef6185",
+    "claim": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository. INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "text": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository. INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-tap-ts-extraction-d9ef6185",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository.",
+    "architectural_interpretation": "INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/d9ef61850f999c058a47b311245bec3436cb103f",
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/d9ef61850f999c058a47b311245bec3436cb103f"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "d9ef61850f999c058a47b311245bec3436cb103f",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "d9ef61850f999c058a47b311245bec3436cb103f",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json",
+    "reference": "typescript package and repository links",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-go-didcomm-ecdh1pu-383a8172",
+    "claim": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU. INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "text": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU. INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-go-didcomm-ecdh1pu-383a8172",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU.",
+    "architectural_interpretation": "INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/383a8172a40a5c895d3ac34cc92b8ee667f0f2b1"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json",
+    "reference": "Go source and tests",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-go-didcomm-xchacha-b08fac2a",
+    "claim": "The public GitHub commit adds XChaCha20 encryption support and tests. INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "text": "The public GitHub commit adds XChaCha20 encryption support and tests. INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-go-didcomm-xchacha-b08fac2a",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit adds XChaCha20 encryption support and tests.",
+    "architectural_interpretation": "INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/b08fac2ad0124995aebb44a74b9f2db4e069270e"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json",
+    "reference": "Go source and tests",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-go-didcomm-x25519-7f02e744",
+    "claim": "The public GitHub commit changes recipient key selection and multi-recipient handling. INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "text": "The public GitHub commit changes recipient key selection and multi-recipient handling. INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-go-didcomm-x25519-7f02e744",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit changes recipient key selection and multi-recipient handling.",
+    "architectural_interpretation": "INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/7f02e7448b7c49662448d169b35798c0514b75cd",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/7f02e7448b7c49662448d169b35798c0514b75cd"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "7f02e7448b7c49662448d169b35798c0514b75cd",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "7f02e7448b7c49662448d169b35798c0514b75cd",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json",
+    "reference": "Go DID/key resolution source",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-CODE-commit-go-didcomm-canonical-diddoc-d6dbc6f2",
+    "claim": "The public GitHub commit changes DIDDoc emission and tests. INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "text": "The public GitHub commit changes DIDDoc emission and tests. INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "CODE-commit-go-didcomm-canonical-diddoc-d6dbc6f2",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": "The public GitHub commit changes DIDDoc emission and tests.",
+    "architectural_interpretation": "INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "interpretation_status": "INFERRED",
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/d6dbc6f2837d7a7b805b9a4277d41ae60a51d780"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json",
+    "reference": "Go DIDDoc source and tests",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json"
+    ],
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  },
+  {
+    "id": "claim-A29",
+    "claim": "Relationships schema contains twelve cryptographic signature types plus screenshot, self-declaration and microtransfer branches (15 type values in total); all four branches still include optional xpub. SDK xpub removal is source-specific, not proof the API rejects xpub.",
+    "text": "Relationships schema contains twelve cryptographic signature types plus screenshot, self-declaration and microtransfer branches (15 type values in total); all four branches still include optional xpub. SDK xpub removal is source-specific, not proof the API rejects xpub.",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "audit_disposition": "CORRECTED",
+    "correction_id": "A29",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "verified_fact": null,
+    "architectural_interpretation": null,
+    "interpretation_status": null,
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413"
+    ],
+    "source_type": "PUBLIC_ARTIFACT",
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A29",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "evidence/commits.json"
+    ],
+    "affected_paths": [
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md",
+      "research/v1-v2-delta.md"
+    ],
+    "limitations": "Published evidence does not establish production deployment. Missing metadata is null, not fabricated."
+  }
+]

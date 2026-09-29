@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  ​
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notabene Widget Example</title>
+    <script type="module">
+      import Notabene from '/src/notabene.ts';
+      const nb = new Notabene({
+        // nodeUrl: 'https://api-qa.eu.notabene.dev',
+        nodeUrl: 'https://api-demo.notabene.dev',
+        // uxUrl: 'https://connect.notabene.dev',
+        uxUrl: 'http://localhost:8000',
+        authToken: '',
+        locale: 'en',
+      });
+      const options = {
+        proofs: {
+          microTransfer: {
+            destination: '0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5',
+            amountDecimal: 0.0045,
+          },
+          fallbacks: ['screenshot', 'self-declaration'],
+        },
+        // allowedAgentTypes: ['VASP', 'WALLET'],
+        // allowedCounterpartyTypes: ['legal', 'natural', 'self'],
+        // fields: {
+        //   naturalPerson: {
+        //     name: true, // Default true
+        //     website: { optional: true },
+        //     email: true,
+        //     phone: true,
+        //     geographicAddress: true,
+        //     nationalIdentification: true,
+        //     dateOfBirth: true,
+        //     placeOfBirth: true,
+        //     countryOfResidence: true,
+        //   },
+        //   legalPerson: {
+        //     name: true, // Default true
+        //     lei: true, // Default true
+        //     website: { optional: true }, // Default true
+        //     email: true,
+        //     phone: true,
+        //     geographicAddress: false,
+        //     nationalIdentification: false,
+        //     countryOfRegistration: true,
+        //   },
+        // },
+      };
+
+      const component = nb.createWithdrawalAssist(
+        {
+          // asset: 'ETH',
+          customer: {
+            name: 'John Doe',
+            type: 'natural',
+          },
+          destination: 'ethereum:0xDf660058fb06ceBa8eCd995961fb445fe609e8a3',
+          amountDecimal: 14.1,
+          // destination:
+          // 'bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=20.3&label=Luke-Jr',
+        },
+        options,
+      );
+      component.mount('#withdrawal-assist');
+      component.on('error', console.error);
+      component.on('complete', (result) => {
+        console.log('result', result);
+        document.getElementById('result').innerText = JSON.stringify(
+          result,
+          null,
+          2,
+        );
+      });
+      document
+        .getElementById('withdrawal-modal')
+        .addEventListener('click', () => {
+          component
+            .openModal()
+            .then((result) => {
+              document.getElementById('result').innerText = JSON.stringify(
+                result,
+                null,
+                2,
+              );
+            })
+            .catch(console.error);
+        });
+
+      const connectWallet = nb.createConnectWallet({
+        asset: 'ETH',
+      });
+      document
+        .getElementById('connect-modal')
+        .addEventListener('click', (event) => {
+          event.preventDefault();
+          console.log('Opening WalletConnect Modal');
+          connectWallet
+            .openModal()
+            .then((result) => {
+              document.getElementById('result').innerText = JSON.stringify(
+                result,
+                null,
+                2,
+              );
+            })
+            .catch(console.error);
+        });
+
+      const connectWalletPopup = nb.createConnectWallet({
+        asset: 'BTC',
+      });
+
+      document.getElementById('connect-popup').addEventListener('click', () => {
+        console.log('connect poup clicked');
+        event.preventDefault();
+        connectWalletPopup
+          .popup()
+          .then((result) => {
+            console.log('POPUP RESULTS', result);
+            document.getElementById('result').innerText = JSON.stringify(
+              result,
+              null,
+              2,
+            );
+          })
+          .catch(console.error);
+      });
+
+      const fullscreen = nb.createWithdrawalAssist(
+        {
+          destination: 'ethereum:0xDf660058fb06ceBa8eCd995961fb445fe609e8a3',
+          amountDecimal: 13.1,
+        },
+        {},
+        {
+          redirectUri: document.location.href,
+        },
+      );
+      document
+        .getElementById('open-fullscreen')
+        .addEventListener('click', () => {
+          document.location.hash = undefined;
+          fullscreen.open();
+        });
+      if (document.location.hash) {
+        const response = nb.decodeFragmentToObject(document.location.hash);
+        console.log(response);
+        document.getElementById('result').innerText = JSON.stringify(
+          JSON.parse(response['message']),
+          null,
+          2,
+        );
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 1em;
+        max-width: 800px;
+      }
+      #container {
+        max-width: 100vw;
+      }
+      pre {
+        border: 1px solid #ccc;
+        padding: 1em;
+        font-family: monospace;
+      }
+      dialog {
+        max-width: 800px !important;
+        width: 800px;
+      }
+      dialog::backdrop {
+        background: rgb(255, 255, 255, 0, 8);
+      }
+    </style>
+  </head>
+  ​
+  <body>
+    <h1>Notabene Javascript SDK</h1>
+    <section>
+      <h2>Withdrawal Assist</h2>
+      <section>
+        <h3>Embedded</h3>
+        <div id="withdrawal-assist"></div>
+      </section>
+
+      <section>
+        <h3>Modal</h3>
+        <button id="withdrawal-modal">Withdrawal Assist Modal</button>
+        <button id="connect-modal">Connect Wallet Modal</button>
+      </section>
+
+      <section>
+        <h3>Popup</h3>
+        <button id="withdrawal-popup">Withdrawal Assist Popup</button>
+        <button id="connect-popup">Connect Wallet Popup</button>
+      </section>
+
+      <section>
+        <h3>Full Screen</h3>
+        <button id="open-fullscreen">Open fullscreen</button>
+      </section>
+      <section>
+        <h3>result</h3>
+        <pre id="result"></pre>
+      </section>
+    </section>
+  </body>
+  ​
+</html>

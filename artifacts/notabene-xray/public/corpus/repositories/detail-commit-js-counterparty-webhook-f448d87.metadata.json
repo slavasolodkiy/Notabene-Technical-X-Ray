@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-js-counterparty-webhook-f448d87",
+  "title": "Added optional webhookUrl to CounterpartyAssistConfig and ConnectionMetadata.",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/f448d8794b30dea1f0515e241f82d64d7429ee38",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "notabene/open-source/javascript-sdk",
+  "commit": "f448d8794b30dea1f0515e241f82d64d7429ee38",
+  "captured_workspace_path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json",
+  "captured_artifact_sha256": "620d5618a698b1af648f1818fda96fc013d62e9e755357cc5d8ac54266f3257d",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

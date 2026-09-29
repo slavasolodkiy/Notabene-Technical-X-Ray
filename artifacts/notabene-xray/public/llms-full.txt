@@ -1,0 +1,39 @@
+# Notabene Technical X-Ray v2 — offline AI context
+
+## Scope and evidence discipline
+
+This package is a dated, public-evidence technical model. It is not production access, legal advice, a security audit, or proof that a documented behavior is enabled for every tenant. Start with `evidence/source-manifest.json`. Each manifest record names the original URL and local artifact. `available: true` means redistributable raw content is present; `metadata_available: true` with `available: false` means the local JSON is a provenance/checksum pointer only. Never quote a metadata pointer as though it contained the source body.
+
+Fact confidence uses VERIFIED, INFERRED and UNKNOWN. Correction disposition uses CONFIRMED, CORRECTED, REFUTED and UNKNOWN and must remain separate. Contradictions are typed: DOCS != OPENAPI; OPENAPI != LIVE ARTIFACT; VENDOR RULE != CURRENT LAW; V1 != V2.
+
+## Architecture
+
+The conceptual chain in `ai/architecture.json` is Customer/Institution → SafeConnect → Institution Backend → Notabene Transact/Flow → TAP + DIDComm → Counterparty Institution → Custodian/Wallet/Settlement Rail. DID/keys, PII, jurisdiction definitions, directory, webhooks, analytics, custody providers, relationships and policies are secondary modules. This chain describes interfaces and responsibility transitions, not an observed deployment topology.
+
+Institutions retain customer relationships, credentials, compliance decisions and settlement authority. SafeConnect is a documented integration surface; the institution backend remains a separate trust domain. Transact exposes transfer and policy workflows. Flow exposes payment-oriented orchestration. TAP/DIDComm supplies open-protocol concepts for counterparties and messages. Custody, wallet private keys, ledger consensus, and external settlement execution are outside the established Notabene product boundary. Consult `ai/product-boundaries.json` before making product claims.
+
+## Identity, authority and trust
+
+`ai/ontology.json` separates institutions, natural/legal persons, VASPs, agents, PIA/PRA/IP roles, wallets, regulators, transfers, DIDs and presentation definitions. API write access must not be treated as legal authority. DID/DIDComm message authentication and encryption do not independently establish regulatory status. Public DIDDoc examples cannot establish live rotation, caching or tenant behavior. Trust questions are enumerated in `ai/trust-boundaries.json`.
+
+PII has documented managed and customer-managed encryption paths. Do not merge them. Encryption claims describe public documentation and source artifacts; this project made no production encryption call. Field-level context lives in `evidence/fields.json`.
+
+## APIs and lifecycle
+
+`evidence/endpoints.json` is the normalized captured inventory. Count operations by snapshot and generation, not by historical headline. V1 and V2 differ and should be compared as such. Endpoint presence in OpenAPI does not prove tenant availability. `evidence/webhooks.json` records documented event names and triggers; tutorials are not necessarily exhaustive event contracts. Keep transfer record status, each institution's local decision and external settlement status distinct.
+
+## Jurisdictions
+
+`evidence/jurisdictions.json` models law and vendor presentation artifacts as separate layers. Passing a vendor definition does not establish legal compliance. Threshold currency, direction, comparator, counterparty scope and effective date matter. The Japan record lacks fetched primary Japanese law and cannot be promoted to definitive legal verification. A published FA-1000 artifact establishes artifact existence, not a universal production fallback selector.
+
+## Open protocol and product
+
+TAP, DID/DIDComm and IVMS101-related artifacts should be separated from Notabene's product implementation. Public search failing to locate a TAP Parser is scoped negative evidence, not proof no parser exists. Open source requires an explicit license: the offline JavaScript SDK at `corpus/repositories/javascript-sdk/` includes MIT `LICENSE.md`; public docs and downloadable packages do not automatically carry the same redistribution conclusion.
+
+## Research entry points
+
+Use `research/TECHNICAL_REPORT.md` for the narrative synthesis and `research/QUESTIONS_FOR_NOTABENE.md` plus `ai/open-questions.json` for unresolved diligence. Use `ai/research-jobs.md` for twelve reproducible investigations covering ontology, APIs, state, DID/DIDComm, PII, SafeConnect, jurisdiction logic, TAP, Flow, migration, security and product moat. Every job requires local artifact citations and explicit unknowns.
+
+## Portable corpus
+
+`corpus/README.md` explains licensing choices. `corpus/repositories/javascript-sdk/` is usable offline raw source. Corpus docs/openapi/schemas/legal/packages records are metadata unless the source manifest says otherwise. `corpus/snapshots/inventory.json` reports honest raw-versus-metadata counts. `evidence/portable-validation.json` records link/hash validation. A downloadable ZIP is generated at `artifacts/notabene-xray/public/downloads/notabene-offline-research.zip`.

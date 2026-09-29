@@ -1,0 +1,213 @@
+[
+  {
+    "id": "JUR-01",
+    "title": "PII requirements",
+    "url": "https://devx.notabene.id/docs/pii-requirements.md",
+    "publishedDate": "2025-12-23",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-01-notabene-pii-requirements.md",
+    "status": "VERIFIED",
+    "notes": "Primary Notabene implementation documentation; identifies public index, definitions, fallback statement and validator response."
+  },
+  {
+    "id": "JUR-02",
+    "title": "Regulation (EU) 2023/1113",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "publishedDate": "2023-05-31",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "status": "VERIFIED",
+    "notes": "Primary EU law; Articles 14-17 and application date."
+  },
+  {
+    "id": "JUR-03",
+    "title": "Cryptoassets information",
+    "url": "https://www.fca.org.uk/firms/cryptoassets-information",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-03-fca-travel-rule.md",
+    "status": "VERIFIED",
+    "notes": "FCA landing page; scoped fetch did not itself contain detailed requirements."
+  },
+  {
+    "id": "JUR-04",
+    "title": "Notabene IVMS101 v2 jurisdiction thresholds",
+    "url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-04-notabene-jurisdiction-thresholds.md",
+    "status": "VERIFIED",
+    "notes": "Public implementation index; retrieved 2026-09-24. No publication/version date in payload."
+  },
+  {
+    "id": "JUR-05",
+    "title": "Notabene GB-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/GB-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-05-notabene-gb-0-pd.md",
+    "status": "VERIFIED",
+    "notes": "Public raw JSON archived in evidence file."
+  },
+  {
+    "id": "JUR-06",
+    "title": "Notabene GB-1000 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-06-notabene-gb-1000-pd.md",
+    "status": "VERIFIED",
+    "notes": "Public raw JSON; includes one-of originator alternatives."
+  },
+  {
+    "id": "JUR-07",
+    "title": "Notabene FR-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/FR-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-07-notabene-fr-0-pd.md",
+    "status": "VERIFIED",
+    "notes": "France used as representative EU member because index points FR to Notabene EU page."
+  },
+  {
+    "id": "JUR-08",
+    "title": "Notabene US-3000 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/US-3000.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-08-notabene-us-3000-pd.md",
+    "status": "VERIFIED",
+    "notes": "Public raw JSON; no public US-0 entry appeared in index."
+  },
+  {
+    "id": "JUR-09",
+    "title": "Notabene SG-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/SG-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-09-notabene-sg-0-pd.md",
+    "status": "VERIFIED",
+    "notes": "Singapore baseline definition."
+  },
+  {
+    "id": "JUR-10",
+    "title": "Notabene SG-1500 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-10-notabene-sg-1500-pd.md",
+    "status": "VERIFIED",
+    "notes": "Enhanced definition; index does not state equality semantics."
+  },
+  {
+    "id": "JUR-11",
+    "title": "Notabene JP-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-11-notabene-jp-0-pd.md",
+    "status": "VERIFIED",
+    "notes": "Japan implementation definition; not treated as proof of complete Japanese law."
+  },
+  {
+    "id": "JUR-12",
+    "title": "Notabene FA-1000 FATF fallback presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-12-notabene-fatf-1000-pd.md",
+    "status": "VERIFIED",
+    "notes": "Vendor fallback artifact; FA is an implementation pseudo-code, not a jurisdiction."
+  },
+  {
+    "id": "JUR-13",
+    "title": "UK Money Laundering Regulations 2017 point-in-time consolidated text",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/2023-09-01/data.xht",
+    "publishedDate": "2023-09-01",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-13-uk-mlr-crypto-transfer.md",
+    "status": "VERIFIED",
+    "notes": "Fetch truncated before Part 7A; retained as scope-limit evidence and superseded for claims by JUR-19."
+  },
+  {
+    "id": "JUR-14",
+    "title": "FCA sets out expectations for UK cryptoasset businesses complying with the Travel Rule",
+    "url": "https://www.fca.org.uk/news/statements/fca-sets-out-expectations-uk-cryptoasset-businesses-complying-travel-rule",
+    "publishedDate": "2023-08-17",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-14-fca-expectations.md",
+    "status": "VERIFIED",
+    "notes": "Primary regulator operational statement; compliance start 2023-09-01."
+  },
+  {
+    "id": "JUR-15",
+    "title": "31 CFR 1010.410 — Records to be made and retained by financial institutions",
+    "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-15-us-ecfr-1010-410.md",
+    "status": "VERIFIED",
+    "notes": "Authoritative but unofficial continuously updated eCFR; displayed current through 2026-09-22."
+  },
+  {
+    "id": "JUR-16",
+    "title": "MAS Notice PSN02 — Prevention of Money Laundering and Countering the Financing of Terrorism, Digital Payment Token Service",
+    "url": "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+    "publishedDate": "2024-04-02",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-16-mas-psn02.md",
+    "status": "VERIFIED",
+    "notes": "Primary regulator notice; archived text includes paragraph 13 and revision history."
+  },
+  {
+    "id": "JUR-17",
+    "title": "FSA Weekly Review No. 540",
+    "url": "https://www.fsa.go.jp/en/newsletter/weekly2023/540.html",
+    "publishedDate": "2023-06-08",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-17-japan-fsa-2023.md",
+    "status": "VERIFIED",
+    "notes": "Primary Japan FSA English source; broad scope/effective date, insufficient for exhaustive field mapping."
+  },
+  {
+    "id": "JUR-18",
+    "title": "FATF targeted update on virtual assets and VASPs 2024",
+    "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/targeted-update-virtual-assets-vasps-2024.html",
+    "publishedDate": "2024-07-09",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-18-fatf-update.md",
+    "status": "VERIFIED",
+    "notes": "Primary FATF update, but scoped fetch did not establish exact threshold/field text; not used for those claims."
+  },
+  {
+    "id": "JUR-19",
+    "title": "UK Money Laundering Regulations 2017, regulation 64C",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C/2023-09-01/data.xml",
+    "publishedDate": "2023-09-01",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-19-uk-regulation-64c-retrieved-2026-09-29.xml",
+    "fetchedAt": "2026-09-29T15:54:01Z",
+    "status": "VERIFIED",
+    "notes": "Primary point-in-time operative text, paragraphs 1-9. Replacement retrieval on 2026-09-29 from the same public XML URL: the original research/sources/JUR-19-uk-regulation-64c.md capture was missing. Original bytes, capture date and checksum are unknown; this XML is not represented as the original capture."
+  },
+  {
+    "id": "GAP-JUR-01",
+    "title": "UK Money Laundering Regulations 2017, current regulation 64C",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "publishedDate": "2026-06-30",
+    "tier": 1,
+    "evidencePath": "research/sources/gap-jurisdiction-01.md",
+    "status": "VERIFIED",
+    "notes": "Current consolidated primary text; GBP 800 threshold effective 2026-06-30 and currentness statement through 2026-09-23."
+  },
+  {
+    "id": "GAP-JUR-02",
+    "title": "MAS Notice PSN02 current value-transfer provisions",
+    "url": "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/gap-jurisdiction-02.md",
+    "status": "VERIFIED",
+    "notes": "Primary PSN02 text used to verify equality and legal-person date/incorporation/registration branch."
+  }
+]

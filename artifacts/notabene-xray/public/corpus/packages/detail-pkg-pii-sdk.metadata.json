@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-pii-sdk",
+  "title": "@notabene/pii-sdk",
+  "source_url": "https://registry.npmjs.org/@notabene%2fpii-sdk",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "1.17.2",
+  "repository": "https://gitlab.com/notabene/open-source/pii-sdk",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/pii-sdk.json",
+  "captured_artifact_sha256": "c425b7a509131a6d391fc231df4a6b1624dce22b7523702ff7932f7310601e51",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

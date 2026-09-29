@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-js-secure-channel-918a87ff",
+  "title": "Changed the embedded iframe API so the iframe initiates the secure message channel.",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/918a87ffea1b39aa867ae755c6622c80ac937f27",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "notabene/open-source/javascript-sdk",
+  "commit": "918a87ffea1b39aa867ae755c6622c80ac937f27",
+  "captured_workspace_path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json",
+  "captured_artifact_sha256": "fe9c025ac2568b68dba3bad7bed2b8f07f16afb6182c93ec692ab4b6949ea147",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

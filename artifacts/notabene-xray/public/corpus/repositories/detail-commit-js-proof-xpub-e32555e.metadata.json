@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-js-proof-xpub-e32555e",
+  "title": "Removed xpub from public proof types.",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "notabene/open-source/javascript-sdk",
+  "commit": "e32555ea9ffe42274db4d8badf8696fc38b38413",
+  "captured_workspace_path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json",
+  "captured_artifact_sha256": "31854993d15e1800bf5610d444aa694c3aac42ca1bc391dbf859951da3c91b55",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

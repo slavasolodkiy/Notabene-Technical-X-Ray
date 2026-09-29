@@ -1,0 +1,18 @@
+{
+  "id": "flow-S20",
+  "title": "Choose Your Integration Path",
+  "source_url": "https://devx.notabene.id/docs/choose-your-integration-path.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary role-selection page naming typical PIA, PRA and IP implementers.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-12-integration-path.md",
+  "captured_artifact_sha256": "5da24306088785c37f8e61ae79f927e8d71f4b98731c233ce512dba1e0e1dcca",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

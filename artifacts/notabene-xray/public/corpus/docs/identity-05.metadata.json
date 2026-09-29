@@ -1,0 +1,18 @@
+{
+  "id": "identity-05",
+  "title": "Webhook events details",
+  "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Official event catalogue and payload examples.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-05-webhook-details.md",
+  "captured_artifact_sha256": "2183d112bcf25e6102f8b550f2e82f0a035f177fd04ad8b8d3a025d658904db4",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

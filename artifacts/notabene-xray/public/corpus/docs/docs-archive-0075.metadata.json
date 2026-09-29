@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0075",
+  "title": "docs / pii-requirements",
+  "source_url": "https://devx.notabene.id/docs/pii-requirements.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:19:56.795Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/docs--pii-requirements.md",
+  "captured_artifact_sha256": "c878613bf27ba2212e32cb4cb0aae86ed5bdef26eb0c34120221b13b2d0fba5d",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0040",
+  "title": "docs / demo",
+  "source_url": "https://devx.notabene.id/docs/demo.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:19:58.350Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/docs--demo.md",
+  "captured_artifact_sha256": "3fbdd4e4306599179da4e598ca4c34ea1f7809bbc1d726fb313e9c8ee77efad6",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

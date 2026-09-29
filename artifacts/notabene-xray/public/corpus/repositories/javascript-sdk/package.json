@@ -1,0 +1,110 @@
+{
+  "name": "@notabene/javascript-sdk",
+  "type": "module",
+  "description": "JavaScript SDK for Notabene",
+  "homepage": "https://gitlab.com/notabene/open-source/javascript-sdk",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/notabene/open-source/javascript-sdk"
+  },
+  "author": "Notabene <developers@notabene.id>",
+  "license": "MIT",
+  "packageManager": "yarn@4.5.1",
+  "version": "2.22.0-next.2",
+  "source": "src/notabene.ts",
+  "main": "dist/cjs/notabene.cjs",
+  "module": "dist/esm/notabene.js",
+  "types": "dist/notabene.d.ts",
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/esm/notabene.d.ts",
+        "require": "./dist/cjs/notabene.d.ts"
+      },
+      "import": "./dist/esm/notabene.js",
+      "require": "./dist/cjs/notabene.cjs"
+    },
+    "./src/types": {
+      "types": {
+        "import": "./dist/esm/notabene.d.ts",
+        "require": "./dist/cjs/notabene.d.ts"
+      },
+      "import": "./dist/esm/notabene.js",
+      "require": "./dist/cjs/notabene.cjs"
+    },
+    "./src/ivms/types": "./src/ivms/index.ts"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "src",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "docs": "typedoc --options typedoc.json",
+    "prepare": "husky",
+    "dev": "vite",
+    "preview": "vite preview",
+    "build:dev": "yarn build && yarn dev",
+    "build:clean": "rimraf dist ts-out coverage temp",
+    "build": "vite build && yarn typecheck && api-extractor run --local && node scripts/copy-types.mjs && yarn docs",
+    "build:no-docs": "vite build && yarn typecheck && api-extractor run --local && node scripts/copy-types.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "yarn lint --fix --cache --no-warn-ignored",
+    "format": "prettier --write --cache .",
+    "format:check": "prettier --check .",
+    "test": "vitest",
+    "typecheck": "tsc --skipLibCheck",
+    "coverage": "vitest run --coverage --coverage.extension=.ts",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.13.0",
+    "@fast-check/vitest": "^0.1.4",
+    "@microsoft/api-extractor": "^7.48.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^13.2.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@taprsvp/types": "^1.14.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "fast-check": "^3.23.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "jose": "^6.1.0",
+    "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.0",
+    "typedoc": "^0.27.5",
+    "typedoc-plugin-markdown": "^4.2.10",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.12.2",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.8"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn format:check",
+      "yarn lint:fix",
+      "yarn typecheck --noEmit",
+      "yarn test --run"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}

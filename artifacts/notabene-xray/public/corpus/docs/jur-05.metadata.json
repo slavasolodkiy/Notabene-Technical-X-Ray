@@ -1,0 +1,18 @@
+{
+  "id": "JUR-05",
+  "title": "Notabene GB-0 presentation definition",
+  "source_url": "https://pd.notabene.id/ivms101/v2/GB-0.json",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Public raw JSON archived in evidence file.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-05-notabene-gb-0-pd.md",
+  "captured_artifact_sha256": "66aeef837adaccd6e5a31844ec1edba80712d0d3c9f5522f957cadf03d6f300e",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

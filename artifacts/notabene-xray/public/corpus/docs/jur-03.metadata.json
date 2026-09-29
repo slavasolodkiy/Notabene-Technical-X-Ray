@@ -1,0 +1,18 @@
+{
+  "id": "JUR-03",
+  "title": "Cryptoassets information",
+  "source_url": "https://www.fca.org.uk/firms/cryptoassets-information",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "FCA landing page; scoped fetch did not itself contain detailed requirements.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-03-fca-travel-rule.md",
+  "captured_artifact_sha256": "fe0b2b58fe62b91f7232803a5d34b2920fe645ecb84c89fad814a908f20e4af7",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

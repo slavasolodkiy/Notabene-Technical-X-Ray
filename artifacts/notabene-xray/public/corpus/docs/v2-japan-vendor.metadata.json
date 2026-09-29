@@ -1,0 +1,18 @@
+{
+  "id": "v2-japan-vendor",
+  "title": "Japan vendor jurisdiction narrative",
+  "source_url": "https://notabene.id/world/japan",
+  "source_type": "vendor-legal-summary",
+  "retrieved_at": "2026-09-24T11:52:51.629Z",
+  "provenance_note": "Verifies vendor narrative only; primary Japanese law not fetched. Raw redistribution permission not established.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/v2-japan-vendor.html",
+  "captured_artifact_sha256": "cf2077fb7ed021c3ed16a0a99fec353df2d8a5ffe933369a8bb49ca0a02e8221",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

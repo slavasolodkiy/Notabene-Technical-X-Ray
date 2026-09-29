@@ -1,0 +1,10 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPoints": ["src/notabene.ts", "src/types.ts", "src/ivms/types.ts"],
+  "out": "docs",
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": false,
+  "theme": "default",
+  "plugin": ["typedoc-plugin-markdown"]
+}

@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "inside_publicly_documented": [
+    "Transact transfer records and lifecycle APIs",
+    "Flow pay-in/pay-out orchestration APIs",
+    "SafeConnect integration components",
+    "network/directory discovery",
+    "jurisdiction presentation artifacts",
+    "webhooks"
+  ],
+  "adjacent_or_integrated": [
+    "custodians",
+    "blockchain analytics",
+    "wallets",
+    "DID infrastructure",
+    "stablecoin/fiat providers"
+  ],
+  "explicitly_not_established": [
+    "Notabene custody of customer assets",
+    "Notabene execution of blockchain settlement",
+    "automatic legal compliance",
+    "a universal FA-1000 production fallback selector",
+    "complete parity between docs, OpenAPI and live tenants"
+  ],
+  "sources": [
+    "corpus/docs/flow-s23.metadata.json",
+    "corpus/docs/flow-s16.metadata.json",
+    "corpus/docs/docs-archive-0047.metadata.json"
+  ]
+}

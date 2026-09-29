@@ -1,0 +1,18 @@
+{
+  "id": "identity-12",
+  "title": "TAP Authorization Flow",
+  "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/authorization.md",
+  "source_type": "repository",
+  "retrieved_at": null,
+  "provenance_note": "Official protocol authorization versus settlement boundary.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-12-tap-authorization.md",
+  "captured_artifact_sha256": "82178723ee720c714f53937f318853fce0d0117c8429a78f25efbdf52191241c",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

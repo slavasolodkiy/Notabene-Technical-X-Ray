@@ -1,0 +1,18 @@
+{
+  "id": "flow-S16",
+  "title": "Transfer payload structure",
+  "source_url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary multi-agent, custody and settlement-address relationship model.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-20-transfer-model.md",
+  "captured_artifact_sha256": "5b663758c5166455e0799304fb1296892c2f4588db6fadf74ca33a35a654d97b",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

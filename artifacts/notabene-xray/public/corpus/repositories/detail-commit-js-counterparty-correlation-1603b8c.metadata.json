@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-js-counterparty-correlation-1603b8c",
+  "title": "Exposed connection id on RefreshSource for webhook correlation.",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "notabene/open-source/javascript-sdk",
+  "commit": "1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+  "captured_workspace_path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json",
+  "captured_artifact_sha256": "63dbd39cc0fdf92c81e81adcf610f1e61a40243082bd58c41413a4623720e8a7",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

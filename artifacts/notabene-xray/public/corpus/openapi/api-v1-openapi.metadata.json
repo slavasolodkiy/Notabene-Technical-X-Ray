@@ -1,0 +1,18 @@
+{
+  "id": "api-v1-openapi",
+  "title": "Notabene SafeTransact V1 OpenAPI",
+  "source_url": "https://doc.notabene.id/",
+  "source_type": "openapi",
+  "retrieved_at": null,
+  "provenance_note": "Mechanically extracted from the unauthenticated public Redoc __redoc_state.spec.data on 2026-09-24; no API calls or credentials used.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/api-10-v1-openapi.json",
+  "captured_artifact_sha256": "1a57273c81747f8897ee29d9ba5e87be4968b94b4dc3989ee97142bc3ccd96d2",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

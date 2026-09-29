@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "evidence_model": {
+    "fact_labels": [
+      "VERIFIED",
+      "INFERRED",
+      "UNKNOWN"
+    ],
+    "contradiction_types": [
+      "DOCS != OPENAPI",
+      "OPENAPI != LIVE ARTIFACT",
+      "VENDOR RULE != CURRENT LAW",
+      "V1 != V2"
+    ],
+    "rule": "A metadata record proves capture provenance, not possession of redistributable raw content."
+  },
+  "classes": [
+    {
+      "id": "Institution",
+      "kind": "actor",
+      "authority": "Owns customer relationship, compliance decisions, credentials and settlement instruction."
+    },
+    {
+      "id": "Person",
+      "kind": "party",
+      "subtypes": [
+        "NaturalPerson",
+        "LegalPerson"
+      ],
+      "standard": "IVMS101"
+    },
+    {
+      "id": "VASP",
+      "kind": "regulated-party",
+      "relation": "may act as originating or beneficiary institution"
+    },
+    {
+      "id": "Agent",
+      "kind": "protocol-role",
+      "subtypes": [
+        "PIA",
+        "PRA",
+        "IP"
+      ],
+      "caveat": "Agent is not synonymous with customer or VASP."
+    },
+    {
+      "id": "Notabene",
+      "kind": "service-provider",
+      "controls": [
+        "Transact orchestration",
+        "Flow services",
+        "directory-facing APIs"
+      ]
+    },
+    {
+      "id": "Transfer",
+      "kind": "record",
+      "relation": "has parties, agents, policy views and settlement references"
+    },
+    {
+      "id": "DID",
+      "kind": "identifier",
+      "relation": "resolves to DIDDocument containing verification/service material"
+    },
+    {
+      "id": "PresentationDefinition",
+      "kind": "policy-artifact",
+      "caveat": "Vendor artifact is not itself current law."
+    },
+    {
+      "id": "Wallet",
+      "kind": "external-system",
+      "caveat": "Custody and blockchain execution remain outside Notabene."
+    },
+    {
+      "id": "Regulator",
+      "kind": "authority",
+      "caveat": "Notabene does not replace legal interpretation."
+    }
+  ],
+  "relations": [
+    [
+      "Institution",
+      "controls",
+      "InstitutionBackend"
+    ],
+    [
+      "InstitutionBackend",
+      "calls",
+      "Notabene"
+    ],
+    [
+      "Notabene",
+      "coordinates",
+      "Transfer"
+    ],
+    [
+      "Transfer",
+      "describes",
+      "Person"
+    ],
+    [
+      "Agent",
+      "actsFor",
+      "Person"
+    ],
+    [
+      "VASP",
+      "identifiedBy",
+      "DID"
+    ],
+    [
+      "Transfer",
+      "mayReference",
+      "Wallet"
+    ],
+    [
+      "PresentationDefinition",
+      "requestsFieldsFrom",
+      "Person"
+    ]
+  ],
+  "sources": [
+    "corpus/docs/identity-08.metadata.json",
+    "corpus/docs/api-transfer-payload.metadata.json",
+    "corpus/repositories/identity-20.metadata.json"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0110",
+  "title": "docs / webhook-details",
+  "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:19:57.610Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/docs--webhook-details.md",
+  "captured_artifact_sha256": "4d95f522429f498094c0e26cf31f931599cbf26474880a67e7e3f20e5497e269",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

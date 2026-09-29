@@ -1,0 +1,18 @@
+{
+  "id": "api-self-encryption",
+  "title": "Encryption managed by the Customer",
+  "source_url": "https://devx.notabene.id/docs/self-encryption",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Describes end-to-end encrypted forwarding and says this data is not stored on the entity or Notabene platform.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/docs--self-encryption.md",
+  "captured_artifact_sha256": "9d68783c79c2b953bade7b66e57154ccd2fdf0e630c9842d6bb9322c6698a765",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

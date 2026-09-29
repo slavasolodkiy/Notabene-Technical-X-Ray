@@ -1,0 +1,18 @@
+{
+  "id": "v2-statuses",
+  "title": "statuses",
+  "source_url": "https://devx.notabene.id/docs/statuses-explained.md",
+  "source_type": "vendor-documentation",
+  "retrieved_at": "2026-09-24T11:37:14.080Z",
+  "provenance_note": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/v2-statuses.md",
+  "captured_artifact_sha256": "ef10249980558d31774cc4701c912143cfbc09b8a4e1ff4e58728fe47c5653b3",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,656 @@
+[
+  {
+    "id": "api-webhook-001",
+    "status": "VERIFIED",
+    "event": "notification.transferCreated",
+    "category": "notification",
+    "meaning": "A transfer was created by or sent to the subscribed entity.",
+    "payloadFields": [
+      "for",
+      "id"
+    ],
+    "documentedTrigger": "Transfer creation",
+    "sources": [
+      "api-webhook-details",
+      "api-webhook-flow"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details",
+      "https://devx.notabene.id/docs/webhook-flow"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details",
+        "api-webhook-flow"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-001",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-002",
+    "status": "VERIFIED",
+    "event": "notification.transferStatusChanged",
+    "category": "notification",
+    "meaning": "The subscribed entity's view of the transfer changed status.",
+    "payloadFields": [
+      "for",
+      "fromStatus",
+      "id",
+      "toStatus",
+      "settlementId (settlement/revert examples)"
+    ],
+    "documentedTrigger": "Local authorize, reject, settle, or revert-request action",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-002",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-003",
+    "status": "VERIFIED",
+    "event": "notification.transferAgentStatusChanged",
+    "category": "notification",
+    "meaning": "A counterparty agent changed its decision or settlement status.",
+    "payloadFields": [
+      "agentID",
+      "for",
+      "fromStatus",
+      "id",
+      "toStatus"
+    ],
+    "documentedTrigger": "Counterparty authorize, reject, flag, or settle action",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-003",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-004",
+    "status": "VERIFIED",
+    "event": "notification.transferAgentAdded",
+    "category": "notification",
+    "meaning": "An agent was discovered or manually added to a transfer.",
+    "payloadFields": [
+      "agent",
+      "agent.@id",
+      "agent.for",
+      "agent.role",
+      "agentID",
+      "for",
+      "id"
+    ],
+    "documentedTrigger": "Agent discovery or add-agent action",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-004",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-005",
+    "status": "VERIFIED",
+    "event": "notification.transferAgentReplaced",
+    "category": "notification",
+    "meaning": "An existing transfer agent was replaced, including during redirection.",
+    "payloadFields": [
+      "for",
+      "fromAgentID",
+      "id",
+      "toAgent",
+      "toAgentID"
+    ],
+    "documentedTrigger": "Agent replacement",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-005",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-006",
+    "status": "VERIFIED",
+    "event": "tap.requireAuthorizationRequested",
+    "category": "TAP",
+    "meaning": "An agent requires an authorization decision before proceeding.",
+    "payloadFields": [
+      "authorizeCallbackUrl",
+      "beneficiaryAgentID",
+      "for",
+      "id",
+      "originatorAgentID",
+      "purpose",
+      "rejectCallbackUrl"
+    ],
+    "documentedTrigger": "Require-authorization policy request",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-006",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-007",
+    "status": "VERIFIED",
+    "event": "tap.requireAuthorizationSatisfied",
+    "category": "TAP",
+    "meaning": "The required counterparty authorization policy was satisfied.",
+    "payloadFields": [
+      "agentID",
+      "for",
+      "id"
+    ],
+    "documentedTrigger": "Required agent authorizes",
+    "sources": [
+      "api-webhook-details",
+      "api-webhook-flow"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details",
+      "https://devx.notabene.id/docs/webhook-flow"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details",
+        "api-webhook-flow"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-007",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-008",
+    "status": "VERIFIED",
+    "event": "tap.requirePresentationRequested",
+    "category": "TAP",
+    "meaning": "PII is requested under a presentation policy.",
+    "payloadFields": [
+      "beneficiaryAgentID",
+      "beneficiaryPresentationDefinition",
+      "callbackUrl",
+      "encryptionKey (customer-managed encryption only)",
+      "for",
+      "id",
+      "originatorAgentID",
+      "originatorPresentationDefinition",
+      "policyId"
+    ],
+    "documentedTrigger": "Local or counterparty presentation requirement",
+    "sources": [
+      "api-webhook-details",
+      "api-pii-requirements"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details",
+      "https://devx.notabene.id/docs/pii-requirements"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details",
+        "api-pii-requirements"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-008",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-009",
+    "status": "VERIFIED",
+    "event": "tap.requirePresentationSatisfied",
+    "category": "TAP",
+    "meaning": "Requested PII has satisfied the presentation policy.",
+    "payloadFields": [
+      "agentID",
+      "for",
+      "id"
+    ],
+    "documentedTrigger": "Required PII supplied",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-009",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-010",
+    "status": "VERIFIED",
+    "event": "tap.requirePresentationPartiallySatisfied",
+    "category": "TAP",
+    "meaning": "PII was supplied but did not fully satisfy the counterparty presentation definition.",
+    "payloadFields": [
+      "for",
+      "id",
+      "policyId"
+    ],
+    "documentedTrigger": "Incomplete PII presentation",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-010",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-011",
+    "status": "VERIFIED",
+    "event": "tap.requireRelationshipConfirmationRequested",
+    "category": "TAP",
+    "meaning": "A beneficiary-side agent must confirm control of a blockchain address.",
+    "payloadFields": [
+      "beneficiaryAgentID",
+      "confirmCallbackUrl",
+      "for",
+      "from",
+      "id",
+      "originatorAgentID",
+      "purpose"
+    ],
+    "documentedTrigger": "Settlement-address confirmation policy",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-011",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-012",
+    "status": "VERIFIED",
+    "event": "tap.requireRelationshipConfirmationSatisfied",
+    "category": "TAP",
+    "meaning": "The required blockchain-address relationship was confirmed.",
+    "payloadFields": [
+      "agentID",
+      "for",
+      "from",
+      "id",
+      "relationshipId",
+      "status",
+      "to"
+    ],
+    "documentedTrigger": "Relationship confirmation",
+    "sources": [
+      "api-webhook-details"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/webhook-details"
+    ],
+    "evidenceScope": "MAIN_WEBHOOK_GUIDE",
+    "productionDeliveryStatus": "UNKNOWN",
+    "evidence": {
+      "source_ids": [
+        "api-webhook-details"
+      ],
+      "source_url": "https://devx.notabene.id/docs/webhook-details",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/api-webhook-details.metadata.json",
+      "reference": "webhooks:api-webhook-012",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payin-opened",
+    "status": "VERIFIED",
+    "event": "flow.payin.opened",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S03"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/quickstart-pia-create-pay-ins.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S03"
+      ],
+      "source_url": "https://devx.notabene.id/docs/quickstart-pia-create-pay-ins.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s03.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payin-opened",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payin-created",
+    "status": "VERIFIED",
+    "event": "flow.payin.created",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S04"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S04"
+      ],
+      "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s04.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payin-created",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payout-created",
+    "status": "VERIFIED",
+    "event": "flow.payout.created",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S04"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S04"
+      ],
+      "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s04.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payout-created",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payin-authorizationRequired",
+    "status": "VERIFIED",
+    "event": "flow.payin.authorizationRequired",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S04"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S04"
+      ],
+      "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s04.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payin-authorizationRequired",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payin-agentAdded",
+    "status": "VERIFIED",
+    "event": "flow.payin.agentAdded",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S05"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/infrastructure-provider-ip.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S05"
+      ],
+      "source_url": "https://devx.notabene.id/docs/infrastructure-provider-ip.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s05.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payin-agentAdded",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "api-webhook-flow-flow-payin-settlementAddressSelected",
+    "status": "VERIFIED",
+    "event": "flow.payin.settlementAddressSelected",
+    "category": "flow",
+    "meaning": "Event name mentioned in Flow quickstart prose; complete payload contract is not established.",
+    "payloadFields": [],
+    "documentedTrigger": "Quickstart narrative only; not a machine-readable contract",
+    "evidenceScope": "QUICKSTART_ONLY",
+    "productionDeliveryStatus": "UNKNOWN",
+    "payloadSchemaStatus": "UNKNOWN",
+    "sources": [
+      "flow-S04"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_type": "vendor-documentation",
+    "evidence": {
+      "source_ids": [
+        "flow-S04"
+      ],
+      "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/flow-s04.metadata.json",
+      "reference": "webhooks:api-webhook-flow-flow-payin-settlementAddressSelected",
+      "status": "VERIFIED"
+    }
+  }
+]

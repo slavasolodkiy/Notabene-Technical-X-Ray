@@ -1,0 +1,92 @@
+[
+  {
+    "id": "gap-protocol-01",
+    "title": "Transaction Authorization Improvement Proposals repository",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/gap-protocol-01.md",
+    "notes": "VERIFIED first-party public protocol repository; specification contents, implementation links, contribution model, commit count, and conflicting README/license display."
+  },
+  {
+    "id": "gap-protocol-02",
+    "title": "Encryption managed by Notabene",
+    "url": "https://devx.notabene.id/docs/encryption-by-notabene",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/gap-protocol-02.md",
+    "notes": "VERIFIED first-party managed-encryption workflow: Notabene encrypts, stores, validates, re-encrypts, and forwards submitted PII."
+  },
+  {
+    "id": "gap-protocol-03",
+    "title": "TAIPs and tap-ts public repository metadata and git history inspection",
+    "url": "https://api.github.com/repos/TransactionAuthorizationProtocol/TAIPs",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/gap-protocol-03-repository-metadata.json",
+    "notes": "VERIFIED unauthenticated GitHub metadata plus public git history; records organization ownership, dates, contributors, commits, and tap-ts extraction history. Repository code was not executed."
+  },
+  {
+    "id": "identity-01",
+    "title": "DIDdocs explained",
+    "url": "https://devx.notabene.id/docs/diddocs-explained.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-01-diddocs.md",
+    "notes": "VERIFIED first-party Web-DID key-purpose and Node routing/decryption documentation."
+  },
+  {
+    "id": "identity-02",
+    "title": "Key Management in DIDdocs",
+    "url": "https://devx.notabene.id/docs/key-management-in-diddocs.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-02-diddoc-keys.md",
+    "notes": "VERIFIED first-party distinction between platform message-level encryption/signing and customer PII encryption using a dedicated key."
+  },
+  {
+    "id": "identity-06",
+    "title": "PII SDK",
+    "url": "https://devx.notabene.id/docs/pii-only-sdk.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-06-pii-sdk.md",
+    "notes": "VERIFIED first-party legacy hosted, end-to-end, and hybrid encryption mode values and client-side decryption flow."
+  },
+  {
+    "id": "identity-07",
+    "title": "Encryption managed by the Customer",
+    "url": "https://devx.notabene.id/docs/self-encryption.md",
+    "publishedDate": "2026-01-14",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-07-self-encryption.md",
+    "notes": "VERIFIED first-party customer-encrypted direct-forwarding and documented no-storage boundary."
+  },
+  {
+    "id": "identity-13",
+    "title": "tap-ts TypeScript TAP types",
+    "url": "https://github.com/TransactionAuthorizationProtocol/tap-ts/blob/main/src/tap.ts",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/identity-13-tap-typescript.md",
+    "notes": "VERIFIED exact public repository file and commit for TAP types and validation surface."
+  },
+  {
+    "id": "identity-17",
+    "title": "Notabene go-didcomm",
+    "url": "https://github.com/Notabene-id/go-didcomm",
+    "publishedDate": "2026-07-28",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-17-go-didcomm.md",
+    "notes": "VERIFIED public implementation distinguishes signed, sign-then-encrypt, authcrypt, and anoncrypt profiles."
+  },
+  {
+    "id": "identity-18",
+    "title": "Key management",
+    "url": "https://devx.notabene.id/docs/key-management.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-18-key-management.md",
+    "notes": "VERIFIED first-party legacy key and escrow fallback documentation; explicitly calls escrow-key flow pseudo end-to-end."
+  }
+]

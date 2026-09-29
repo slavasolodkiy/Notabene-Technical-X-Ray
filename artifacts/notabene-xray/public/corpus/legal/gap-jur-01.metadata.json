@@ -1,0 +1,18 @@
+{
+  "id": "GAP-JUR-01",
+  "title": "UK Money Laundering Regulations 2017, regulation 64C — latest revised text",
+  "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+  "source_type": "official",
+  "retrieved_at": null,
+  "provenance_note": "Primary current legislation. Latest text is up to date through 2026-09-23 and shows the 2026 substitution of £800 for EUR 1,000, with an equal-to-or-exceeds comparator.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/gap-jurisdiction-01.md",
+  "captured_artifact_sha256": "e0fab8fbf14a32378b48b70a9477994a86c6706ac9eaef72dae0e2026f701d72",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

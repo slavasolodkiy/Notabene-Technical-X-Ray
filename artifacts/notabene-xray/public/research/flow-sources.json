@@ -1,0 +1,242 @@
+[
+  {
+    "id": "flow-S01",
+    "title": "Notabene developer documentation index",
+    "url": "https://devx.notabene.id/llms.txt",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/devx-llms.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24; primary index enumerating Flow, Transact V1/V2, SafeConnect, integrations and API references."
+  },
+  {
+    "id": "flow-S02",
+    "title": "Notabene Flow — Developer Introduction",
+    "url": "https://devx.notabene.id/docs/introduction.md",
+    "publishedDate": "2026-03-30",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-01-introduction.md",
+    "status": "VERIFIED",
+    "notes": "Primary architecture and responsibility statement; updatedAt recorded by source."
+  },
+  {
+    "id": "flow-S03",
+    "title": "PIA (Create Pay-ins)",
+    "url": "https://devx.notabene.id/docs/quickstart-pia-create-pay-ins.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-02-pia.md",
+    "status": "VERIFIED",
+    "notes": "Primary PIA payload, endpoints and webhook lifecycle."
+  },
+  {
+    "id": "flow-S04",
+    "title": "PRA (Respond to Pay-ins)",
+    "url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-03-pra.md",
+    "status": "VERIFIED",
+    "notes": "Primary PRA authorization, asset selection, settlement and reporting sequence."
+  },
+  {
+    "id": "flow-S05",
+    "title": "IP (Infrastructure Provider)",
+    "url": "https://devx.notabene.id/docs/infrastructure-provider-ip.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-04-ip.md",
+    "status": "VERIFIED",
+    "notes": "Primary custody/wallet/liquidity provider boundary."
+  },
+  {
+    "id": "flow-S06",
+    "title": "Flow end-to-end examples",
+    "url": "https://devx.notabene.id/docs/end-to-end-examples.md",
+    "publishedDate": "2026-04-29",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-06-e2e.md",
+    "status": "VERIFIED",
+    "notes": "Primary narrative examples for pull, push and recurring payments; some broad scale statements are marketing assertions."
+  },
+  {
+    "id": "flow-S07",
+    "title": "Fireblocks Integration Overview",
+    "url": "https://devx.notabene.id/docs/using-notabene-and-fireblocks.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-07-fireblocks-overview.md",
+    "status": "VERIFIED",
+    "notes": "Explicitly says the Fireblocks integration is currently V1 and allocates implementation duties."
+  },
+  {
+    "id": "flow-S08",
+    "title": "Integrating Notabene Into Your Fireblocks Policies",
+    "url": "https://devx.notabene.id/docs/integrating-notabene-into-your-fireblocks-decisions.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-08-fireblocks-policies.md",
+    "status": "VERIFIED",
+    "notes": "Primary status-gating and pre/post-screening policy detail."
+  },
+  {
+    "id": "flow-S09",
+    "title": "Using Notabene, Fireblocks and Blockchain Analytics",
+    "url": "https://devx.notabene.id/docs/fireblocks-and-blockchain-analytics.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-09-fireblocks-analytics.md",
+    "status": "VERIFIED",
+    "notes": "Primary provider routing boundary; provider availability is dated to source update."
+  },
+  {
+    "id": "flow-S10",
+    "title": "TRUSThub connector (beta)",
+    "url": "https://devx.notabene.id/docs/trusthub.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-10-trusthub.md",
+    "status": "VERIFIED",
+    "notes": "Primary description of an email-ingestion connector for V1 incomplete messages."
+  },
+  {
+    "id": "flow-S11",
+    "title": "What is Flow & Why it matters",
+    "url": "https://devx.notabene.id/docs/what-is-flow-why-it-matters.md",
+    "publishedDate": "2026-03-25",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-11-what-is-flow.md",
+    "status": "VERIFIED",
+    "notes": "Primary statement that Flow is not a blockchain or wallet and sits above custody."
+  },
+  {
+    "id": "flow-S12",
+    "title": "Notabene Flow activates hundreds of customers",
+    "url": "https://www.prnewswire.com/apac/news-releases/notabene-flow-activates-hundreds-of-customers-enabling-stablecoin-b2b-payments-across-the-globe-302791736.html",
+    "publishedDate": "2026-06-04",
+    "tier": 2,
+    "evidencePath": "research/sources/flow-14-news-june-2026.md",
+    "status": "VERIFIED",
+    "notes": "Syndicated company press release. Treat reach and volume figures as company claims, not independently verified metrics."
+  },
+  {
+    "id": "flow-S13",
+    "title": "Notabene Announces Strategic Investment from Ripple",
+    "url": "https://notabene.id/post/notabene-announces-strategic-investment-from-ripple",
+    "publishedDate": "2026-07-23",
+    "tier": 2,
+    "evidencePath": "research/sources/flow-15-news-ripple-2026.md",
+    "status": "VERIFIED",
+    "notes": "First-party press release; future collaboration language does not establish completed technical integration."
+  },
+  {
+    "id": "flow-S14",
+    "title": "Common use cases",
+    "url": "https://devx.notabene.id/docs/common-usecases.md",
+    "publishedDate": "2026-01-22",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-16-common-usecases.md",
+    "status": "VERIFIED",
+    "notes": "Names Fireblocks, DFNS and Ripple Custody but contains no DFNS/Ripple payload or responsibility detail."
+  },
+  {
+    "id": "flow-S15",
+    "title": "SafeConnect Components",
+    "url": "https://devx.notabene.id/docs/safe-connect-components-v2.md",
+    "publishedDate": "2025-12-04",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-17-safeconnect.md",
+    "status": "VERIFIED",
+    "notes": "Primary embedded UX scope and V1/V2 compatibility statement."
+  },
+  {
+    "id": "flow-S16",
+    "title": "Transfer payload structure",
+    "url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+    "publishedDate": "2025-12-22",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-20-transfer-model.md",
+    "status": "VERIFIED",
+    "notes": "Primary multi-agent, custody and settlement-address relationship model."
+  },
+  {
+    "id": "flow-S17",
+    "title": "Encryption managed by Notabene",
+    "url": "https://devx.notabene.id/docs/encryption-by-notabene.md",
+    "publishedDate": "2026-01-14",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-21-encryption-managed.md",
+    "status": "VERIFIED",
+    "notes": "Primary managed-encryption and processing boundary."
+  },
+  {
+    "id": "flow-S18",
+    "title": "Encryption managed by the Customer",
+    "url": "https://devx.notabene.id/docs/self-encryption.md",
+    "publishedDate": "2026-01-14",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-22-self-encryption.md",
+    "status": "VERIFIED",
+    "notes": "Primary end-to-end encrypted forwarding and non-storage statement."
+  },
+  {
+    "id": "flow-S19",
+    "title": "Embedded Components + V2 API",
+    "url": "https://devx.notabene.id/docs/embedded-components-v2-api.md",
+    "publishedDate": "2026-09-10",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-23-safeconnect-v2.md",
+    "status": "VERIFIED",
+    "notes": "Most recently updated technical source in this corpus; documents schema renames and component-to-V2 calls."
+  },
+  {
+    "id": "flow-S20",
+    "title": "Choose Your Integration Path",
+    "url": "https://devx.notabene.id/docs/choose-your-integration-path.md",
+    "publishedDate": "2026-05-13",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-12-integration-path.md",
+    "status": "VERIFIED",
+    "notes": "Primary role-selection page naming typical PIA, PRA and IP implementers."
+  },
+  {
+    "id": "flow-S21",
+    "title": "App - Transact V2 changelog",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2.md",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/flow-13-transact-v2-changelog.md",
+    "status": "VERIFIED",
+    "notes": "Sparse changelog page linking Transact V2 application features; no release date was present."
+  },
+  {
+    "id": "flow-S22",
+    "title": "Common use cases: Blockchain Analytics",
+    "url": "https://devx.notabene.id/docs/blockchainanalytics.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-18-analytics.md",
+    "status": "VERIFIED",
+    "notes": "Diagram-heavy provider page; retained as corroboration but textual responsibility detail is limited."
+  },
+  {
+    "id": "flow-S23",
+    "title": "What is Notabene Transact",
+    "url": "https://devx.notabene.id/docs/welcome.md",
+    "publishedDate": "2026-02-09",
+    "tier": 1,
+    "evidencePath": "research/sources/flow-19-platform-intro.md",
+    "status": "VERIFIED",
+    "notes": "Primary Transact and Travel Rule overview."
+  },
+  {
+    "id": "flow-S24",
+    "title": "Notabene API OpenAPI specification",
+    "url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-09-v2-openapi.json",
+    "status": "VERIFIED",
+    "notes": "Public raw OpenAPI, title Notabene API, version 1.0.0; 105 operations including entity- and customer-scoped Flow payout operations. No publication timestamp in the spec."
+  }
+]

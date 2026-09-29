@@ -1,0 +1,18 @@
+{
+  "id": "JUR-08",
+  "title": "Notabene US-3000 presentation definition",
+  "source_url": "https://pd.notabene.id/ivms101/v2/US-3000.json",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Public raw JSON; no public US-0 entry appeared in index.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-08-notabene-us-3000-pd.md",
+  "captured_artifact_sha256": "40bb76cbe528c166820d6d8c5ab42572d964475967009c65ea3d8a57a239880c",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "main_chain": [
+    "Customer / Institution",
+    "SafeConnect",
+    "Institution Backend",
+    "Notabene Transact / Flow",
+    "TAP + DIDComm",
+    "Counterparty Institution",
+    "Custodian / Wallet / Settlement Rail"
+  ],
+  "secondary_modules": [
+    "DID / keys",
+    "PII",
+    "jurisdiction engine",
+    "network directory",
+    "webhooks",
+    "analytics",
+    "custody providers",
+    "relationships",
+    "policies"
+  ],
+  "boundaries": [
+    {
+      "from": "Customer / Institution",
+      "to": "SafeConnect",
+      "data": "instruction and user-entered details",
+      "control": "institution"
+    },
+    {
+      "from": "SafeConnect",
+      "to": "Institution Backend",
+      "data": "component result/token",
+      "control": "institution integration"
+    },
+    {
+      "from": "Institution Backend",
+      "to": "Notabene Transact / Flow",
+      "data": "authenticated API payload",
+      "control": "shared contract"
+    },
+    {
+      "from": "Notabene Transact / Flow",
+      "to": "TAP + DIDComm",
+      "data": "protocol message and/or encrypted PII",
+      "control": "mode-dependent"
+    },
+    {
+      "from": "Counterparty Institution",
+      "to": "Custodian / Wallet / Settlement Rail",
+      "data": "external settlement command/evidence",
+      "control": "institutions and external providers",
+      "notabene_responsibility": false
+    }
+  ],
+  "caveat": "This is a conceptual public-evidence architecture, not an observed deployment topology.",
+  "sources": [
+    "corpus/docs/flow-s15.metadata.json",
+    "corpus/repositories/identity-09.metadata.json",
+    "corpus/docs/flow-s16.metadata.json"
+  ]
+}

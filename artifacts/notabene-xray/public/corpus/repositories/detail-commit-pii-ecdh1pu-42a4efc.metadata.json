@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-pii-ecdh1pu-42a4efc",
+  "title": "Added a libsodium-backed crypto provider and ECDH-1PU implementation.",
+  "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "notabene/open-source/pii-sdk",
+  "commit": "42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+  "captured_workspace_path": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json",
+  "captured_artifact_sha256": "e7972b38757b79c1bdc2539bb6d91e701b6b033bdca8219a6ffc81ad9556e9e5",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

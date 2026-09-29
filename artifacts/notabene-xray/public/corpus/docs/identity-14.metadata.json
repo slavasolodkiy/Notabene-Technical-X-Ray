@@ -1,0 +1,18 @@
+{
+  "id": "identity-14",
+  "title": "Webhooks",
+  "source_url": "https://devx.notabene.id/docs/webhook-enhancements.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Official Svix signing-secret, retry and endpoint guidance.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-14-webhook-auth.md",
+  "captured_artifact_sha256": "96fdd4841b3d0e9f7681384f86448101193ac5cc9ebc9b1e117c04d51815f721",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,567 @@
+{
+  "date": "2026-09-29T16:21:08.816Z",
+  "url": "http://127.0.0.1:40829/notabene/",
+  "results": [
+    {
+      "name": "Evidence section inventory",
+      "ok": true,
+      "detail": "18 sections"
+    },
+    {
+      "name": "API inventory",
+      "ok": true,
+      "detail": "231 records"
+    },
+    {
+      "name": "Field inventory",
+      "ok": true,
+      "detail": "3905 records"
+    },
+    {
+      "name": "Section route system-map",
+      "ok": true,
+      "detail": "title=\"System map\""
+    },
+    {
+      "name": "Mermaid system-map",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route product-map",
+      "ok": true,
+      "detail": "title=\"Product map\""
+    },
+    {
+      "name": "Mermaid product-map",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route actor-map",
+      "ok": true,
+      "detail": "title=\"Actor map\""
+    },
+    {
+      "name": "Mermaid actor-map",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route entity-model",
+      "ok": true,
+      "detail": "title=\"Entity model\""
+    },
+    {
+      "name": "Mermaid entity-model",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route authentication",
+      "ok": true,
+      "detail": "title=\"Authentication\""
+    },
+    {
+      "name": "Mermaid authentication",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route data-model",
+      "ok": true,
+      "detail": "title=\"Data model\""
+    },
+    {
+      "name": "Mermaid data-model",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route onboarding",
+      "ok": true,
+      "detail": "title=\"Onboarding\""
+    },
+    {
+      "name": "Mermaid onboarding",
+      "ok": true,
+      "detail": "5/5 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route transact-state-machine",
+      "ok": true,
+      "detail": "title=\"Transact state machine\""
+    },
+    {
+      "name": "Mermaid transact-state-machine",
+      "ok": true,
+      "detail": "3/3 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route jurisdictions",
+      "ok": true,
+      "detail": "title=\"Jurisdictions\""
+    },
+    {
+      "name": "Section route sdks",
+      "ok": true,
+      "detail": "title=\"SDKs and repositories\""
+    },
+    {
+      "name": "Section route flow",
+      "ok": true,
+      "detail": "title=\"Flow\""
+    },
+    {
+      "name": "Mermaid flow",
+      "ok": true,
+      "detail": "3/3 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route tap",
+      "ok": true,
+      "detail": "title=\"TAP\""
+    },
+    {
+      "name": "Mermaid tap",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route trust-model",
+      "ok": true,
+      "detail": "title=\"Trust model\""
+    },
+    {
+      "name": "Mermaid trust-model",
+      "ok": true,
+      "detail": "1/1 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route integrations",
+      "ok": true,
+      "detail": "title=\"Integrations\""
+    },
+    {
+      "name": "Mermaid integrations",
+      "ok": true,
+      "detail": "2/2 SVG; 0 syntax errors"
+    },
+    {
+      "name": "Section route unknowns",
+      "ok": true,
+      "detail": "title=\"Open questions\""
+    },
+    {
+      "name": "Section route code-archaeology",
+      "ok": true,
+      "detail": "title=\"Code Archaeology\""
+    },
+    {
+      "name": "Section route corrections",
+      "ok": true,
+      "detail": "title=\"Audit corrections\""
+    },
+    {
+      "name": "Section route verification",
+      "ok": true,
+      "detail": "title=\"Verification\""
+    },
+    {
+      "name": "Dedicated system map SVG",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "System/product/actor maps distinct",
+      "ok": true,
+      "detail": {
+        "system-map": 5955,
+        "product-map": 5889,
+        "actor-map": 5760
+      }
+    },
+    {
+      "name": "API browser full list",
+      "ok": true,
+      "detail": "231/231"
+    },
+    {
+      "name": "API search narrows records",
+      "ok": true,
+      "detail": "11 matches"
+    },
+    {
+      "name": "API endpoint selection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "API no-result search",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "API status filter",
+      "ok": true,
+      "detail": "0 unknown"
+    },
+    {
+      "name": "Dictionary full fields list",
+      "ok": true,
+      "detail": "3905/3905"
+    },
+    {
+      "name": "Dictionary search narrows records",
+      "ok": true,
+      "detail": "1 matches"
+    },
+    {
+      "name": "Dictionary record selection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Dictionary status filter",
+      "ok": true,
+      "detail": "0 unknown"
+    },
+    {
+      "name": "Dictionary entities tab",
+      "ok": true,
+      "detail": "15 entities"
+    },
+    {
+      "name": "Section evidence filter",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint X-Ray toggle",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint keyboard select",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint Escape clears selection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint zoom button",
+      "ok": true,
+      "detail": "transform: translate(0px, 0px) scale(1.2) rotateX(60deg) rotateZ(-45deg); transform-style: preserve-3d;"
+    },
+    {
+      "name": "Blueprint keyboard zoom",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint keyboard pan",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint reset view",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator control inventory",
+      "ok": true,
+      "detail": "4 selects, person radios, numeric value, counterparty checkbox"
+    },
+    {
+      "name": "Simulator invalid amount rejected",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator 14 steps",
+      "ok": true,
+      "detail": "14 steps"
+    },
+    {
+      "name": "Simulator step 1 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 2 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 3 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 4 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 5 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 6 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 7 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 8 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 9 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 10 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 11 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 12 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 13 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator step 14 eight facets",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator legal/proof/counterparty branch represented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator alternate person/proof branch",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator wallet=hosted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator wallet=self-hosted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=signature",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=satoshi",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=screenshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=self-declaration",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=reusable",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator proof=third-party",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator jurisdiction=EU",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator jurisdiction=GB",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator jurisdiction=US",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator jurisdiction=SG",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator jurisdiction=JP",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator policy=authorize",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator policy=flag",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator policy=reject",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator person=natural",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator person=legal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator counterpartyFound=false",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator counterpartyFound=true",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulator reset",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Sources stats 231/3905",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Sources search",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Local source/download file responses",
+      "ok": true,
+      "detail": "316 checked; []"
+    },
+    {
+      "name": "Mobile overflow /",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile overflow /simulator",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /simulator",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile overflow /api-explorer",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /api-explorer",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile overflow /data-dictionary",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /data-dictionary",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile overflow /sources",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /sources",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile overflow /section/system-map",
+      "ok": true,
+      "detail": "{\"viewport\":390,\"document\":390,\"body\":390,\"main\":390}"
+    },
+    {
+      "name": "Mobile menu /section/system-map",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced-motion emulation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Blueprint reduced-motion transform transition",
+      "ok": true,
+      "detail": "1e-05s"
+    },
+    {
+      "name": "Browser console/page/network errors",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "browserErrors": [],
+  "pathFailures": []
+}

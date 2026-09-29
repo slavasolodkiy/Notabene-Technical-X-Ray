@@ -1,0 +1,132 @@
+[
+  {
+    "id": "api-v2-openapi",
+    "title": "Notabene API OpenAPI 3.1 specification",
+    "url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-09-v2-openapi.json",
+    "status": "VERIFIED",
+    "notes": "Public raw specification discovered in the V2 reference page HTML and retrieved 2026-09-24. OpenAPI info.version is 1.0.0; 85 path items, 105 HTTP operations, and 52 component schemas at retrieval."
+  },
+  {
+    "id": "api-v1-openapi",
+    "title": "Notabene SafeTransact V1 OpenAPI",
+    "url": "https://doc.notabene.id/",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-10-v1-openapi.json",
+    "status": "VERIFIED",
+    "notes": "Mechanically extracted from the unauthenticated public Redoc __redoc_state.spec.data on 2026-09-24; no API calls or credentials used."
+  },
+  {
+    "id": "api-getting-started",
+    "title": "Getting Started — API reference and OpenAPI specification",
+    "url": "https://devx.notabene.id/reference/getting-started-with-your-api",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-01-getting-started.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24. Links V2 Postman examples and directs V1 users to doc.notabene.id."
+  },
+  {
+    "id": "api-statuses",
+    "title": "Statuses explained",
+    "url": "https://devx.notabene.id/docs/statuses-explained",
+    "publishedDate": "2026-01-27T10:54:19.000Z",
+    "tier": 1,
+    "evidencePath": "research/corpus/docs/docs--statuses-explained.md",
+    "status": "VERIFIED",
+    "notes": "Primary status table and relationship/policy status definitions. Does not explain two status values present in OpenAPI."
+  },
+  {
+    "id": "api-webhook-details",
+    "title": "Webhook events details",
+    "url": "https://devx.notabene.id/docs/webhook-details",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-03-v2-webhook-details.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24. Contains event names, payload examples, and demonstrated transitions."
+  },
+  {
+    "id": "api-webhook-flow",
+    "title": "Webhooks",
+    "url": "https://devx.notabene.id/docs/webhook-flow",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-04-v2-webhook-flow.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24. Documents Svix signatures, headers, subscription, and retries."
+  },
+  {
+    "id": "api-transfer-payload",
+    "title": "Transfer payload structure",
+    "url": "https://devx.notabene.id/docs/transfer-payload-structure",
+    "publishedDate": "2025-12-22T09:22:54.000Z",
+    "tier": 1,
+    "evidencePath": "research/sources/api-05-v2-payload.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24. Primary guide for agent chains, roles, identifiers, and partial-information examples."
+  },
+  {
+    "id": "api-pii-requirements",
+    "title": "PII requirements",
+    "url": "https://devx.notabene.id/docs/pii-requirements",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/api-06-pii-requirements.md",
+    "status": "VERIFIED",
+    "notes": "Fetched 2026-09-24. Establishes public presentation definitions, thresholds, alternatives, and validation output."
+  },
+  {
+    "id": "api-pii-encryption",
+    "title": "Encryption managed by Notabene",
+    "url": "https://devx.notabene.id/docs/encryption-by-notabene",
+    "publishedDate": "2026-01-14T18:30:05.000Z",
+    "tier": 1,
+    "evidencePath": "research/corpus/docs/docs--encryption-by-notabene.md",
+    "status": "VERIFIED",
+    "notes": "Describes managed encryption, local storage, re-encryption, reuse, validation, and blocking conditions. Its singular path example conflicts with current OpenAPI."
+  },
+  {
+    "id": "api-self-encryption",
+    "title": "Encryption managed by the Customer",
+    "url": "https://devx.notabene.id/docs/self-encryption",
+    "publishedDate": "2026-01-14T18:29:40.000Z",
+    "tier": 1,
+    "evidencePath": "research/corpus/docs/docs--self-encryption.md",
+    "status": "VERIFIED",
+    "notes": "Describes end-to-end encrypted forwarding and says this data is not stored on the entity or Notabene platform."
+  },
+  {
+    "id": "api-append-reference",
+    "title": "Append PII data to a transfer",
+    "url": "https://devx.notabene.id/reference/appendtransfer",
+    "publishedDate": "2026-05-21T07:56:17.000Z",
+    "tier": 1,
+    "evidencePath": "research/corpus/docs/reference--appendtransfer.md",
+    "status": "VERIFIED",
+    "notes": "Individual OpenAPI block corroborating append request requirements and encryption-before-storage."
+  },
+  {
+    "id": "api-present-reference",
+    "title": "Present PII data to counterparties",
+    "url": "https://devx.notabene.id/reference/presenttransferpii",
+    "publishedDate": "2026-05-15T13:17:00.000Z",
+    "tier": 1,
+    "evidencePath": "research/corpus/docs/reference--presenttransferpii.md",
+    "status": "VERIFIED",
+    "notes": "Individual OpenAPI block for the current policy-scoped PII presentation operation."
+  },
+  {
+    "id": "api-search-evidence",
+    "title": "API discovery search evidence",
+    "url": "https://devx.notabene.id/",
+    "publishedDate": "2026-09-24",
+    "tier": 2,
+    "evidencePath": "research/sources/api-00-search-evidence.md",
+    "status": "VERIFIED",
+    "notes": "Search-only snippets from five distinct research angles; used for discovery, not as sole claim support."
+  }
+]

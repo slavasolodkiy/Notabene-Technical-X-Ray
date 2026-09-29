@@ -1,0 +1,18 @@
+{
+  "id": "flow-S18",
+  "title": "Encryption managed by the Customer",
+  "source_url": "https://devx.notabene.id/docs/self-encryption.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary end-to-end encrypted forwarding and non-storage statement.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-22-self-encryption.md",
+  "captured_artifact_sha256": "7a50d8f50be7540878232f27eb68c06a8951412365465f8cb8581bbe0754736c",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "GAP-JUR-01",
+    "title": "UK Money Laundering Regulations 2017, regulation 64C — latest revised text",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "publishedDate": "2026-06-30",
+    "tier": 1,
+    "evidencePath": "research/sources/gap-jurisdiction-01.md",
+    "notes": "Primary current legislation. Latest text is up to date through 2026-09-23 and shows the 2026 substitution of £800 for EUR 1,000, with an equal-to-or-exceeds comparator."
+  },
+  {
+    "id": "GAP-JUR-02",
+    "title": "MAS Notice PSN02 — Prevention of Money Laundering and Countering the Financing of Terrorism, Digital Payment Token Service",
+    "url": "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+    "publishedDate": "2025-06-30",
+    "tier": 1,
+    "evidencePath": "research/sources/gap-jurisdiction-02.md",
+    "notes": "Primary current MAS notice, last revised 2025-06-30. Paragraphs 13.4 and 13.6 establish <= S$1,500 and > S$1,500 branches and the enhanced one-of alternatives."
+  },
+  {
+    "id": "JUR-02",
+    "title": "Regulation (EU) 2023/1113",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "publishedDate": "2023-05-31",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "notes": "Primary EU law. Article 14 supplies the compound identity logic; the self-hosted ownership/control threshold is strictly exceeding EUR 1,000."
+  },
+  {
+    "id": "JUR-04",
+    "title": "Notabene IVMS101 v2 jurisdiction thresholds",
+    "url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-04-notabene-jurisdiction-thresholds.md",
+    "notes": "Primary public vendor index. It identifies files and nominal thresholds but does not state comparator semantics."
+  },
+  {
+    "id": "JUR-06",
+    "title": "Notabene GB-1000 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-06-notabene-gb-1000-pd.md",
+    "notes": "Primary raw vendor JSON used to verify all/pick/count logic and person-type paths."
+  },
+  {
+    "id": "JUR-07",
+    "title": "Notabene FR-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/FR-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-07-notabene-fr-0-pd.md",
+    "notes": "Primary raw vendor JSON used to identify the four-way vendor OR that differs from Article 14(1)(d)."
+  },
+  {
+    "id": "JUR-10",
+    "title": "Notabene SG-1500 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-10-notabene-sg-1500-pd.md",
+    "notes": "Primary raw vendor JSON. Confirms baseline all plus one-of and an empty legal-person path for date-and-place-of-birth."
+  },
+  {
+    "id": "JUR-11",
+    "title": "Notabene JP-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-11-notabene-jp-0-pd.md",
+    "notes": "Primary raw vendor JSON; evidence of vendor implementation only, not complete Japanese law."
+  },
+  {
+    "id": "JUR-17",
+    "title": "FSA Weekly Review No. 540",
+    "url": "https://www.fsa.go.jp/en/newsletter/weekly2023/540.html",
+    "publishedDate": "2023-06-08",
+    "tier": 1,
+    "evidencePath": "research/sources/JUR-17-japan-fsa-2023.md",
+    "notes": "Primary Japanese regulator evidence for the 2023 effective date and broad scope; insufficient for a current exhaustive field mapping."
+  }
+]

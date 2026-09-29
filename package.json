@@ -1,0 +1,24 @@
+{
+  "name": "notabene-technical-xray",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "artifacts/notabene-xray"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @workspace/notabene-xray",
+    "evidence": "node scripts/build-portable.mjs",
+    "build": "npm run evidence && npm run build --workspace @workspace/notabene-xray -- --outDir ../../dist",
+    "preview": "npm run serve --workspace @workspace/notabene-xray -- --outDir ../../dist",
+    "export": "node scripts/export-portable.mjs",
+    "typecheck:app": "tsc -p artifacts/notabene-xray/tsconfig.json --noEmit",
+    "scan:secrets": "node scripts/scan-secrets.mjs ."
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}

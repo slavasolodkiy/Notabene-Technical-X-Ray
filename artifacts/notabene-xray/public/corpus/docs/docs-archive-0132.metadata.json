@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0132",
+  "title": "recipes / v2-e2e-encrypt-pii-using-shared-key",
+  "source_url": "https://devx.notabene.id/recipes/v2-e2e-encrypt-pii-using-shared-key.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:20:09.092Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/recipes--v2-e2e-encrypt-pii-using-shared-key.md",
+  "captured_artifact_sha256": "0cfa96ef56e20cecf7a58d0222f4c026f6fe84894fb3366270b8fcd11bf7d6e2",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

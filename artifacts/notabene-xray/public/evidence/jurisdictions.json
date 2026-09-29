@@ -1,0 +1,670 @@
+[
+  {
+    "id": "JUR-RULE-GB-OUTBOUND",
+    "status": "VERIFIED",
+    "jurisdiction": "United Kingdom",
+    "countryCode": "GB",
+    "direction": "OUTBOUND_ORIGINATOR_VASP",
+    "counterpartyScope": "INTER_CRYPTOASSET_BUSINESS_CROSS_BORDER_OR_NOT_ALL_EXECUTING_BUSINESSES_UK",
+    "legalThreshold": {
+      "currency": "GBP",
+      "amount": "800",
+      "operator": ">=",
+      "aggregation": "INCLUDE_APPARENTLY_LINKED_TRANSFERS",
+      "effectiveFrom": "2026-06-30",
+      "instrument": "SI 2026/621, regulation 32 (regulation 64C annotation F2)"
+    },
+    "notabeneDefinitions": {
+      "below": "https://pd.notabene.id/ivms101/v2/GB-0.json",
+      "triggered": "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+      "indexCurrency": "EUR",
+      "indexThreshold": "1000",
+      "selectionForCurrentGbp800LegalTrigger": "UNKNOWN",
+      "comparator": "UNKNOWN",
+      "fxSourceAndValuationTime": "UNKNOWN",
+      "warning": "Current legal GBP 800 branch and vendor EUR 1000 artifacts are independent; do not infer vendor selection from law."
+    },
+    "vendorBaselineFields": [
+      "originator.person.name",
+      "originator.accountNumber",
+      "beneficiary.person.name",
+      "beneficiary.accountNumber"
+    ],
+    "legalRequiredCore": {
+      "operator": "ALL_OF",
+      "fields": [
+        "originator.name",
+        "beneficiary.name",
+        "originator.accountNumberOrUniqueTransactionIdentifier",
+        "beneficiary.accountNumberOrUniqueTransactionIdentifier"
+      ]
+    },
+    "legalTriggeredAdditional": {
+      "naturalPerson": {
+        "operator": "ONE_OF",
+        "count": 1,
+        "alternatives": [
+          [
+            "originator.naturalPerson.customerIdentification"
+          ],
+          [
+            "originator.naturalPerson.geographicAddress"
+          ],
+          [
+            "originator.naturalPerson.documentNumber",
+            "constraint:BIRTH_CERTIFICATE_OR_PASSPORT_OR_NATIONAL_ID_CARD"
+          ],
+          [
+            "originator.naturalPerson.dateOfBirth",
+            "originator.naturalPerson.placeOfBirth"
+          ]
+        ]
+      },
+      "legalPerson": {
+        "operator": "ONE_OF",
+        "count": 1,
+        "alternatives": [
+          [
+            "originator.legalPerson.customerIdentification"
+          ],
+          [
+            "originator.legalPerson.registeredOrPrincipalBusinessAddress"
+          ]
+        ]
+      }
+    },
+    "vendorTriggeredAdditional": {
+      "operator": "ONE_OF",
+      "count": 1,
+      "alternatives": [
+        [
+          "originator.person.nationalIdentification"
+        ],
+        [
+          "originator.person.geographicAddress"
+        ],
+        [
+          "originator.naturalPerson.dateOfBirth",
+          "originator.naturalPerson.placeOfBirth"
+        ],
+        [
+          "originator.person.customerIdentification"
+        ]
+      ],
+      "mismatch": "Vendor definition permits legal-person national identification and does not constrain natural-person national ID to the three statutory document types."
+    },
+    "lawNotes": "Current law changed from EUR 1000 to GBP 800 on 2026-06-30. If all executing cryptoasset businesses carry on business in the UK, paragraph 6 information is supplied on beneficiary-business request rather than automatically by threshold. Law permits account number or, if absent, unique transaction identifier.",
+    "simulatorDisclaimer": "Scenario aid only; do not infer compliance or normalize unique identifiers without an explicit mapping.",
+    "sources": [
+      "GAP-JUR-01",
+      "JUR-04",
+      "JUR-05",
+      "JUR-06",
+      "JUR-19"
+    ],
+    "sourceUrls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/GB-0.json",
+      "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C/2023-09-01/data.xml"
+    ],
+    "evidence": {
+      "source_ids": [
+        "GAP-JUR-01",
+        "JUR-04",
+        "JUR-05",
+        "JUR-06",
+        "JUR-19"
+      ],
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "source_type": "official",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/legal/gap-jur-01.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-GB-OUTBOUND",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "JUR-RULE-EU-FR-OUTBOUND",
+    "status": "VERIFIED",
+    "jurisdiction": "European Union — France representative",
+    "countryCode": "FR",
+    "direction": "OUTBOUND_ORIGINATOR_CASP",
+    "counterpartyScope": "CRYPTO_ASSET_TRANSFER_IN_SCOPE_OF_REGULATION_2023_1113",
+    "legalThreshold": {
+      "currency": "EUR",
+      "amount": "0",
+      "operator": "ALL",
+      "aggregation": "NOT_APPLICABLE_TO_GENERAL_INFORMATION_DUTY"
+    },
+    "selfHostedControlAssessmentThreshold": {
+      "currency": "EUR",
+      "amount": "1000",
+      "operator": ">",
+      "appliesWhen": "TRANSFER_TO_OR_FROM_SELF_HOSTED_ADDRESS"
+    },
+    "notabeneDefinitions": {
+      "triggered": "https://pd.notabene.id/ivms101/v2/FR-0.json",
+      "indexCurrency": "EUR"
+    },
+    "vendorBaselineFields": [
+      "originator.person.name",
+      "originator.accountNumber",
+      "beneficiary.person.name",
+      "beneficiary.accountNumber"
+    ],
+    "legalRequiredCore": {
+      "operator": "ALL_OF",
+      "fields": [
+        "originator.name",
+        "originator.applicableDistributedLedgerAddressOrAccountOrUniqueTransactionIdentifier",
+        "originator.article14_1_d_identityBranch",
+        "beneficiary.name",
+        "beneficiary.applicableDistributedLedgerAddressOrAccountOrUniqueTransactionIdentifier"
+      ],
+      "conditionalFields": [
+        "originator.LEI_or_equivalent_when_provided_and_field_exists",
+        "beneficiary.LEI_or_equivalent_when_provided_and_field_exists"
+      ]
+    },
+    "legalAdditional": {
+      "operator": "ONE_OF",
+      "count": 1,
+      "alternatives": [
+        [
+          "originator.person.geographicAddressIncludingCountry",
+          "originator.person.officialPersonalDocumentNumber",
+          "originator.person.customerIdentification"
+        ],
+        [
+          "originator.naturalPerson.dateOfBirth",
+          "originator.naturalPerson.placeOfBirth"
+        ]
+      ]
+    },
+    "vendorAdditional": {
+      "operator": "ONE_OF",
+      "count": 1,
+      "alternatives": [
+        [
+          "originator.naturalPerson.dateOfBirth",
+          "originator.naturalPerson.placeOfBirth"
+        ],
+        [
+          "originator.person.customerIdentification"
+        ],
+        [
+          "originator.person.geographicAddress"
+        ],
+        [
+          "originator.person.nationalIdentification"
+        ]
+      ],
+      "mismatch": "FR-0 four-way pick is broader than Article 14(1)(d); a single address, document number, or customer ID is legally insufficient for the first branch."
+    },
+    "legalFieldsOutsideOrNotVisibleInDefinition": [
+      "originator.distributedLedgerAddress_when_applicable",
+      "beneficiary.distributedLedgerAddress_when_applicable",
+      "originator.LEI_or_equivalent_when_provided_and_field_exists",
+      "beneficiary.LEI_or_equivalent_when_provided_and_field_exists"
+    ],
+    "lawNotes": "EUR 1000 is not a general EU Travel Rule threshold. It is an exceeds boundary for self-hosted ownership/control assessment.",
+    "simulatorDisclaimer": "Evaluate Article 14 and FR-0 independently. Passing FR-0 does not establish that Article 14(1)(d) is satisfied.",
+    "sources": [
+      "JUR-01",
+      "JUR-02",
+      "JUR-04",
+      "JUR-07"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/pii-requirements.md",
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json"
+    ],
+    "evidence": {
+      "source_ids": [
+        "JUR-01",
+        "JUR-02",
+        "JUR-04",
+        "JUR-07"
+      ],
+      "source_url": "https://devx.notabene.id/docs/pii-requirements.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/jur-01.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-EU-FR-OUTBOUND",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "JUR-RULE-US-OUTBOUND",
+    "status": "VERIFIED",
+    "jurisdiction": "United States",
+    "countryCode": "US",
+    "direction": "OUTBOUND_TRANSMITTORS_FINANCIAL_INSTITUTION",
+    "counterpartyScope": "TRANSMITTAL_OF_FUNDS_SUBJECT_TO_31_CFR_1010_410_E_F",
+    "legalThreshold": {
+      "currency": "USD",
+      "amount": "3000",
+      "operator": ">=",
+      "aggregation": "UNKNOWN_IN_THIS_MATRIX"
+    },
+    "notabeneDefinitions": {
+      "below": null,
+      "triggered": "https://pd.notabene.id/ivms101/v2/US-3000.json",
+      "belowThresholdBehavior": "UNKNOWN",
+      "additionalVariants": [
+        "US1-3000",
+        "US2-0",
+        "US0-0"
+      ],
+      "authoritativeVariant": "UNKNOWN"
+    },
+    "triggeredFields": {
+      "operator": "ALL_OF",
+      "fields": [
+        "originator.person.name",
+        "originator.person.geographicAddress",
+        "originator.accountNumber",
+        "beneficiary.person.name",
+        "beneficiary.accountNumber"
+      ]
+    },
+    "legalFieldsOutsideOrNotVisibleInDefinition": [
+      "amount",
+      "executionDate",
+      "paymentInstructions",
+      "recipientFinancialInstitution",
+      "recipientAddress_if_received",
+      "transmittorFinancialInstitutionNameAddressOrIdentifier"
+    ],
+    "lawNotes": "The CFR rule is broader than the five IVMS field groups in US-3000.",
+    "simulatorDisclaimer": "Below-threshold behavior is UNKNOWN; do not return no requirements merely because US-0 is absent.",
+    "sources": [
+      "JUR-04",
+      "JUR-08",
+      "JUR-15",
+      "v2-US1-3000",
+      "v2-US2-0",
+      "v2-US0-0"
+    ],
+    "sourceUrls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/US-3000.json",
+      "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410"
+    ],
+    "evidence": {
+      "source_ids": [
+        "JUR-04",
+        "JUR-08",
+        "JUR-15",
+        "v2-US1-3000",
+        "v2-US2-0",
+        "v2-US0-0"
+      ],
+      "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/jur-04.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-US-OUTBOUND",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "JUR-RULE-SG-OUTBOUND",
+    "status": "VERIFIED",
+    "jurisdiction": "Singapore",
+    "countryCode": "SG",
+    "direction": "OUTBOUND_ORDERING_INSTITUTION",
+    "counterpartyScope": "DIGITAL_PAYMENT_TOKEN_VALUE_TRANSFER_UNDER_PSN02",
+    "legalThreshold": {
+      "currency": "SGD",
+      "amount": "1500",
+      "operator": ">",
+      "lowerBranchOperator": "<=",
+      "aggregation": "UNKNOWN_IN_COLLECTED_PARAGRAPHS"
+    },
+    "notabeneDefinitions": {
+      "belowOrEqualByLaw": "https://pd.notabene.id/ivms101/v2/SG-0.json",
+      "aboveByLaw": "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+      "vendorIndexEqualitySemantics": "UNKNOWN",
+      "boundaryConflictWarning": "Do not select SG-1500 at equality solely from its filename."
+    },
+    "baselineFields": [
+      "originator.person.name",
+      "originator.accountNumber_or_uniqueTransactionReference",
+      "beneficiary.person.name",
+      "beneficiary.accountNumber_or_uniqueTransactionReference"
+    ],
+    "aboveThresholdAdditional": {
+      "operator": "ONE_OF",
+      "count": 1,
+      "alternatives": [
+        [
+          "originator.person.geographicAddress"
+        ],
+        [
+          "originator.person.nationalIdentification"
+        ],
+        [
+          "originator.person.dateAndPlaceOfBirth_or_incorporation_or_registration"
+        ]
+      ]
+    },
+    "legalPersonMismatch": "PSN02 permits date and place of incorporation or registration as appropriate. SG-1500 has an empty legal-person path array for the date-and-place descriptor.",
+    "lawNotes": "PSN02 says below or equal for paragraph 13.4 and exceeding for paragraph 13.6.",
+    "simulatorDisclaimer": "Use decimal > 1500 for the enhanced legal branch; retain vendor-selector status as UNKNOWN.",
+    "sources": [
+      "GAP-JUR-02",
+      "JUR-04",
+      "JUR-09",
+      "JUR-10",
+      "JUR-16"
+    ],
+    "sourceUrls": [
+      "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/SG-0.json",
+      "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+      "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf"
+    ],
+    "evidence": {
+      "source_ids": [
+        "GAP-JUR-02",
+        "JUR-04",
+        "JUR-09",
+        "JUR-10",
+        "JUR-16"
+      ],
+      "source_url": "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+      "source_type": "official",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/legal/gap-jur-02.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-SG-OUTBOUND",
+      "status": "VERIFIED"
+    }
+  },
+  {
+    "id": "JUR-RULE-JP-OUTBOUND",
+    "status": "UNKNOWN",
+    "jurisdiction": "Japan",
+    "countryCode": "JP",
+    "direction": "OUTBOUND_ORIGINATOR_VASP",
+    "counterpartyScope": "NOTABENE_IMPLEMENTATION_VIEW; CURRENT_PRECISE_LEGAL_SCOPE_UNKNOWN",
+    "legalThreshold": {
+      "currency": "JPY",
+      "amount": null,
+      "operator": "UNKNOWN",
+      "aggregation": "UNKNOWN"
+    },
+    "notabeneDefinitions": {
+      "triggered": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+      "indexThreshold": "0",
+      "indexCurrency": "JPY"
+    },
+    "implementationFields": {
+      "operator": "BASELINE_AND_ONE_OF",
+      "baseline": [
+        "originator.person.name",
+        "originator.accountNumber",
+        "beneficiary.person.name",
+        "beneficiary.accountNumber"
+      ],
+      "alternatives": [
+        [
+          "originator.person.geographicAddress"
+        ],
+        [
+          "originator.person.customerIdentification"
+        ]
+      ]
+    },
+    "unknownReason": "Collected FSA English evidence establishes a 2023-06-01 effective date and broad scope but not an exhaustive 2026 field/equality/covered-jurisdiction rule. Absence is not proof.",
+    "simulatorDisclaimer": "Label output Notabene implementation view; do not present it as complete Japanese law.",
+    "sources": [
+      "JUR-04",
+      "JUR-11",
+      "JUR-17",
+      "v2-JP-0",
+      "v2-japan-vendor"
+    ],
+    "sourceUrls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/JP-0.json",
+      "https://www.fsa.go.jp/en/newsletter/weekly2023/540.html",
+      "https://notabene.id/world/japan"
+    ],
+    "artifactStatus": "VERIFIED",
+    "legalStatus": "UNKNOWN",
+    "secondaryLegalAssessment": {
+      "status": "INFERRED",
+      "claim": "Vendor narrative and audit secondary corroboration support no de minimis and address OR customer ID; primary Japanese law not fetched, so exact scope is not closed.",
+      "source_url": "https://notabene.id/world/japan"
+    },
+    "evidence": {
+      "source_ids": [
+        "JUR-04",
+        "JUR-11",
+        "JUR-17",
+        "v2-JP-0",
+        "v2-japan-vendor"
+      ],
+      "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/jur-04.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-JP-OUTBOUND",
+      "status": "UNKNOWN"
+    }
+  },
+  {
+    "id": "JUR-RULE-FATF-FALLBACK",
+    "status": "UNKNOWN",
+    "jurisdiction": "FATF fallback — not a jurisdiction",
+    "countryCode": "FA",
+    "direction": "UNKNOWN",
+    "counterpartyScope": "NOTABENE_SAYS_USED_WHERE_NO_SPECIFIC_LEGISLATION",
+    "legalThreshold": {
+      "currency": "USD",
+      "amount": "1000",
+      "operator": "UNKNOWN_FROM_COLLECTED_PRIMARY_FATF_TEXT",
+      "aggregation": "UNKNOWN"
+    },
+    "notabeneDefinitions": {
+      "triggered": "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+      "below": null,
+      "selectionAndPrecedence": "UNKNOWN",
+      "indexCurrency": "USD",
+      "indexThreshold": "1000"
+    },
+    "unknownReason": "Published FA pseudo-jurisdiction and FA-1000 artifact are VERIFIED. Universal runtime fallback, comparator, precedence, below-threshold behavior and determination that local law is absent remain UNKNOWN.",
+    "simulatorDisclaimer": "Require explicit customer opt-in/configuration and display UNKNOWN comparator; never silently substitute this for legal advice.",
+    "sources": [
+      "JUR-01",
+      "JUR-04",
+      "JUR-12",
+      "JUR-18",
+      "v2-FA-1000",
+      "v2-jurisdiction-index"
+    ],
+    "sourceUrls": [
+      "https://devx.notabene.id/docs/pii-requirements.md",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+      "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/targeted-update-virtual-assets-vasps-2024.html"
+    ],
+    "artifactStatus": "VERIFIED",
+    "productionSelectorStatus": "UNKNOWN",
+    "publishedRequirement": {
+      "operator": "BASELINE_AND_ONE_OF",
+      "baseline": [
+        "originator.name",
+        "originator.accountNumber",
+        "beneficiary.name",
+        "beneficiary.accountNumber"
+      ],
+      "alternatives": [
+        "originator.dateAndPlaceOfBirth",
+        "originator.nationalIdentification",
+        "originator.geographicAddress",
+        "originator.customerIdentification"
+      ]
+    },
+    "evidence": {
+      "source_ids": [
+        "JUR-01",
+        "JUR-04",
+        "JUR-12",
+        "JUR-18",
+        "v2-FA-1000",
+        "v2-jurisdiction-index"
+      ],
+      "source_url": "https://devx.notabene.id/docs/pii-requirements.md",
+      "source_type": "documentation",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/docs/jur-01.metadata.json",
+      "reference": "jurisdictions:JUR-RULE-FATF-FALLBACK",
+      "status": "UNKNOWN"
+    }
+  },
+  {
+    "id": "JUR-SCENARIO-1ETH-2026-09-24",
+    "status": "INFERRED",
+    "scenarioType": "ILLUSTRATIVE_BRANCH_COMPARISON",
+    "asset": "ETH",
+    "amount": "1",
+    "valuationTimestamp": "2026-09-24T12:00:00Z",
+    "rateSource": "USER_SUPPLIED_SCENARIO_CONSTANTS_NOT_MARKET_DATA",
+    "assumedFiatValues": [
+      {
+        "currency": "USD",
+        "value": "4000"
+      },
+      {
+        "currency": "EUR",
+        "value": "3400"
+      },
+      {
+        "currency": "GBP",
+        "value": "2950"
+      },
+      {
+        "currency": "SGD",
+        "value": "5100"
+      },
+      {
+        "currency": "JPY",
+        "value": "590000"
+      }
+    ],
+    "direction": "OUTBOUND_FROM_NAMED_JURISDICTION_TO_FOREIGN_VASP",
+    "originator": "NATURAL_PERSON_WITH_ACCOUNT",
+    "beneficiary": "NATURAL_PERSON_WITH_ACCOUNT",
+    "linkedOrBatch": false,
+    "branchResults": [
+      {
+        "countryCode": "GB",
+        "legalResult": "TRIGGERED_AT_GBP_800",
+        "legalComparator": ">=",
+        "vendorDefinitionSelection": "UNKNOWN",
+        "availableVendorArtifact": "GB-1000_EUR_1000"
+      },
+      {
+        "countryCode": "FR",
+        "legalResult": "TRIGGERED_ALL_AMOUNTS_WITH_COMPOUND_ARTICLE_14_EXPRESSION",
+        "vendorDefinition": "FR-0",
+        "vendorResult": "SEPARATE_BROADER_EXPRESSION"
+      },
+      {
+        "countryCode": "US",
+        "legalResult": "TRIGGERED_AT_USD_3000",
+        "legalComparator": ">=",
+        "vendorDefinitionSelection": "UNKNOWN",
+        "availableVendorArtifact": "US-3000"
+      },
+      {
+        "countryCode": "SG",
+        "legalResult": "ENHANCED_BRANCH_TRIGGERED_ABOVE_SGD_1500",
+        "legalComparator": ">",
+        "vendorDefinitionSelection": "UNKNOWN",
+        "availableVendorArtifact": "SG-1500",
+        "vendorLegalPersonMismatch": true
+      },
+      {
+        "countryCode": "JP",
+        "legalResult": "UNKNOWN",
+        "vendorDefinitionSelection": "UNKNOWN",
+        "availableVendorArtifact": "JP-0",
+        "vendorArtifactThresholdInIndex": "0"
+      }
+    ],
+    "disclaimer": "Assumed rates are intentionally illustrative and are not evidence of market price or a compliance conclusion.",
+    "sources": [
+      "GAP-JUR-01",
+      "GAP-JUR-02",
+      "JUR-02",
+      "JUR-06",
+      "JUR-07",
+      "JUR-08",
+      "JUR-10",
+      "JUR-11",
+      "JUR-15",
+      "JUR-16"
+    ],
+    "sourceUrls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json",
+      "https://pd.notabene.id/ivms101/v2/US-3000.json",
+      "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+      "https://pd.notabene.id/ivms101/v2/JP-0.json",
+      "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+      "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf"
+    ],
+    "evidence": {
+      "source_ids": [
+        "GAP-JUR-01",
+        "GAP-JUR-02",
+        "JUR-02",
+        "JUR-06",
+        "JUR-07",
+        "JUR-08",
+        "JUR-10",
+        "JUR-11",
+        "JUR-15",
+        "JUR-16"
+      ],
+      "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "source_type": "official",
+      "retrieved_at": null,
+      "artifact_version": null,
+      "repository": null,
+      "commit": null,
+      "path": "corpus/legal/gap-jur-01.metadata.json",
+      "reference": "jurisdictions:JUR-SCENARIO-1ETH-2026-09-24",
+      "status": "INFERRED"
+    }
+  }
+]

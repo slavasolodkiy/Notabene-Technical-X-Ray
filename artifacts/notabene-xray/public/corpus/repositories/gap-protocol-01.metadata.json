@@ -1,0 +1,18 @@
+{
+  "id": "gap-protocol-01",
+  "title": "Transaction Authorization Improvement Proposals repository",
+  "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+  "source_type": "repository",
+  "retrieved_at": null,
+  "provenance_note": "VERIFIED first-party public protocol repository; specification contents, implementation links, contribution model, commit count, and conflicting README/license display.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/gap-protocol-01.md",
+  "captured_artifact_sha256": "5ca07bd6a4d069a81a20b7aaa66f91f3f738c5465564907ac399859591e9e655",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

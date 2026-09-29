@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-openvasp-client",
+  "title": "openvasp-client",
+  "source_url": "https://registry.npmjs.org/openvasp-client",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "0.2.0",
+  "repository": "https://github.com/Notabene-id/openvasp-node-client",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/openvasp-client.json",
+  "captured_artifact_sha256": "63094ed39a11c3a139aff6dd93b88c6fcdfb0af5a5ee01d1e8b61e8e62e43a35",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

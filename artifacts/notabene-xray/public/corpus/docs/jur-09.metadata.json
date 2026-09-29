@@ -1,0 +1,18 @@
+{
+  "id": "JUR-09",
+  "title": "Notabene SG-0 presentation definition",
+  "source_url": "https://pd.notabene.id/ivms101/v2/SG-0.json",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Singapore baseline definition.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-09-notabene-sg-0-pd.md",
+  "captured_artifact_sha256": "ac72c7fa931885255e7798a0d5451067308f5f45ecd3310e890016bf45c3bbbe",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

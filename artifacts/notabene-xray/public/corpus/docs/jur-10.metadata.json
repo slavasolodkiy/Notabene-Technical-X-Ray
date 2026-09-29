@@ -1,0 +1,18 @@
+{
+  "id": "JUR-10",
+  "title": "Notabene SG-1500 presentation definition",
+  "source_url": "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary raw vendor JSON. Confirms baseline all plus one-of and an empty legal-person path for date-and-place-of-birth.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-10-notabene-sg-1500-pd.md",
+  "captured_artifact_sha256": "f54fb722fadd37c77f194b308b6d76d128fd4b60186fff314042e1321da155ea",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

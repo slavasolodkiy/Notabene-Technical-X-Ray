@@ -1,0 +1,18 @@
+{
+  "id": "ARCH-SRC-09",
+  "title": "Per-package npm registry metadata",
+  "source_url": "https://registry.npmjs.org/@notabene%2fjavascript-sdk",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": "Metadata only; no downloaded package was executed. Attribution does not prove support.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "latest metadata snapshots",
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/javascript-sdk.json",
+  "captured_artifact_sha256": "ba114decb954e39f6ebd52791c9fdb573c3210c6f05786d1319c9f1562d027a5",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

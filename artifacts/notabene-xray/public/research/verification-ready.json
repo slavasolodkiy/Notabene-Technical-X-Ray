@@ -1,0 +1,11 @@
+{
+  "appStarted": true,
+  "previewChecked": true,
+  "typecheck": "passed",
+  "evidenceVerification": "research/verification.json",
+  "limits": [
+    "No authenticated production or transaction API calls.",
+    "Seven Mermaid blocks parsed automatically; twelve received conservative syntax inspection due to a Node DOMPurify incompatibility. Product diagram rendered in preview.",
+    "Public link probing: 18 HTTP 200 responses, one HTTP 202 and one anti-bot redirect marked inconclusive."
+  ]
+}

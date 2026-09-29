@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-taip18-rfq-e1a351b1",
+  "title": "Renamed TAIP-18 Exchange message type to RFQ.",
+  "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "TransactionAuthorizationProtocol/TAIPs",
+  "commit": "e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json",
+  "captured_artifact_sha256": "0a18e7bd2afff92bb749fa2904e320a0eeddc2f2c2476cbccd8be8ba8f6ba2d9",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

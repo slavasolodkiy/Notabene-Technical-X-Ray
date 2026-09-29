@@ -1,0 +1,18 @@
+{
+  "id": "flow-S07",
+  "title": "Fireblocks Integration Overview",
+  "source_url": "https://devx.notabene.id/docs/using-notabene-and-fireblocks.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Explicitly says the Fireblocks integration is currently V1 and allocates implementation duties.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-07-fireblocks-overview.md",
+  "captured_artifact_sha256": "3014506cefc46f02f4e5c5842db089fceea357a19b83a95c81673bd806651ba4",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-go-didcomm-xchacha-b08fac2a",
+  "title": "Added XChaCha20 support.",
+  "source_url": "https://github.com/Notabene-id/go-didcomm/commit/b08fac2ad0124995aebb44a74b9f2db4e069270e",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "Notabene-id/go-didcomm",
+  "commit": "b08fac2ad0124995aebb44a74b9f2db4e069270e",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json",
+  "captured_artifact_sha256": "ca2a8c47450ab218159a59ea2c96860b3120195d8051bede57adc9966a657063",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

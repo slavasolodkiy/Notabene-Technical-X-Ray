@@ -1,0 +1,18 @@
+{
+  "id": "v2-XX_old-0",
+  "title": "XX_old-0",
+  "source_url": "https://pd.notabene.id/ivms101/v2/XX_old-0.json",
+  "source_type": "vendor-policy-artifact",
+  "retrieved_at": "2026-09-24T11:37:13.674Z",
+  "provenance_note": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/v2-XX_old-0.json",
+  "captured_artifact_sha256": "1d0b4b126f7ca253b0e05b7763d1b6013b47c4aa50f1e6af461b558d8012e333",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

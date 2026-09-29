@@ -1,0 +1,212 @@
+[
+  {
+    "id": "identity-00",
+    "title": "Identity research search log",
+    "url": "multiple public search result URLs recorded in archive",
+    "publishedDate": null,
+    "tier": 3,
+    "evidencePath": "research/sources/identity-00-search-log.md",
+    "status": "VERIFIED",
+    "notes": "Search-only discovery snippets, searched 2026-09-24; not used alone for major claims."
+  },
+  {
+    "id": "identity-01",
+    "title": "DIDdocs explained",
+    "url": "https://devx.notabene.id/docs/diddocs-explained.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-01-diddocs.md",
+    "status": "VERIFIED",
+    "notes": "Official docs; Web DID generation, hosting, key purposes, DIDComm routing."
+  },
+  {
+    "id": "identity-02",
+    "title": "Key Management in DIDdocs",
+    "url": "https://devx.notabene.id/docs/key-management-in-diddocs.md",
+    "publishedDate": "2026-03-31",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-02-diddoc-keys.md",
+    "status": "VERIFIED",
+    "notes": "Official docs; customer-managed PII keys, #pii convention, five-minute DIDdoc cache."
+  },
+  {
+    "id": "identity-03",
+    "title": "Authentication",
+    "url": "https://devx.notabene.id/reference/authentication-2.md",
+    "publishedDate": "2025-11-12",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-03-authentication-reference.md",
+    "status": "VERIFIED",
+    "notes": "Official reference; OAuth client credentials and 86,400-second access token."
+  },
+  {
+    "id": "identity-04",
+    "title": "Generate customerToken",
+    "url": "https://devx.notabene.id/docs/customertoken.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-04-customer-token.md",
+    "status": "VERIFIED",
+    "notes": "Official V1-generation guide; customer scope, frontend use, five-minute lifetime."
+  },
+  {
+    "id": "identity-05",
+    "title": "Webhook events details",
+    "url": "https://devx.notabene.id/docs/webhook-details.md",
+    "publishedDate": "2026-04-03",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-05-webhook-details.md",
+    "status": "VERIFIED",
+    "notes": "Official event catalogue and payload examples."
+  },
+  {
+    "id": "identity-06",
+    "title": "PII SDK",
+    "url": "https://devx.notabene.id/docs/pii-only-sdk.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-06-pii-sdk.md",
+    "status": "VERIFIED",
+    "notes": "Official guide with hosted/E2E/hybrid modes; contains V1 endpoint examples."
+  },
+  {
+    "id": "identity-07",
+    "title": "Encryption managed by the Customer",
+    "url": "https://devx.notabene.id/docs/self-encryption.md",
+    "publishedDate": "2026-01-14",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-07-self-encryption.md",
+    "status": "VERIFIED",
+    "notes": "Official V2 customer-managed forwarding and storage-boundary claim."
+  },
+  {
+    "id": "identity-08",
+    "title": "Transfer payload structure",
+    "url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+    "publishedDate": "2025-12-22",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-08-agent-model.md",
+    "status": "VERIFIED",
+    "notes": "Official current agent/for/role chain guide and payloads."
+  },
+  {
+    "id": "identity-09",
+    "title": "Transaction Authorization Protocol overview",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/tap-overview.md",
+    "publishedDate": "2025-04-22",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-09-tap-overview.md",
+    "status": "VERIFIED",
+    "notes": "Official protocol repository; file viewed at repository HEAD c8dd72c109f1bfdd31a22e19fcc4d11ad5b6654d."
+  },
+  {
+    "id": "identity-10",
+    "title": "TAP messages",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/messages.md",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/identity-10-tap-messages.md",
+    "status": "VERIFIED",
+    "notes": "Official protocol message documentation; archived fetch includes repository UI metadata."
+  },
+  {
+    "id": "identity-11",
+    "title": "TAP Agents",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/agents.md",
+    "publishedDate": "2025-08-03",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-11-tap-agents.md",
+    "status": "VERIFIED",
+    "notes": "Official protocol agent identity, delegation and DIDComm endpoint documentation."
+  },
+  {
+    "id": "identity-12",
+    "title": "TAP Authorization Flow",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/authorization.md",
+    "publishedDate": "2025-06-23",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-12-tap-authorization.md",
+    "status": "VERIFIED",
+    "notes": "Official protocol authorization versus settlement boundary."
+  },
+  {
+    "id": "identity-13",
+    "title": "tap-ts TypeScript TAP types",
+    "url": "https://github.com/TransactionAuthorizationProtocol/tap-ts/blob/main/src/tap.ts",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/identity-13-tap-typescript.md",
+    "status": "VERIFIED",
+    "notes": "Exact repository file; HEAD observed as 7b996c4c261ce65e5d0ecf3137638beeb08dc591 on 2026-09-24."
+  },
+  {
+    "id": "identity-14",
+    "title": "Webhooks",
+    "url": "https://devx.notabene.id/docs/webhook-enhancements.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-14-webhook-auth.md",
+    "status": "VERIFIED",
+    "notes": "Official Svix signing-secret, retry and endpoint guidance."
+  },
+  {
+    "id": "identity-15",
+    "title": "Create a delegate token",
+    "url": "https://devx.notabene.id/reference/createdelegatetoken.md",
+    "publishedDate": "2026-06-03",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-15-delegate-token.md",
+    "status": "VERIFIED",
+    "notes": "Official OpenAPI; entity/delegate binding and output. TTL absent."
+  },
+  {
+    "id": "identity-16",
+    "title": "Get a customer profile by DID",
+    "url": "https://devx.notabene.id/reference/getflowcustomer.md",
+    "publishedDate": "2026-05-15",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-16-flow-customer.md",
+    "status": "VERIFIED",
+    "notes": "Official OpenAPI; entity ownership, natural/legal type, encrypted/decrypted profile behavior."
+  },
+  {
+    "id": "identity-17",
+    "title": "Notabene go-didcomm",
+    "url": "https://github.com/Notabene-id/go-didcomm",
+    "publishedDate": "2026-07-28",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-17-go-didcomm.md",
+    "status": "VERIFIED",
+    "notes": "Official public library; repository latest commit shown as d6dbc6f2837d7a7b805b9a4277d41ae60a51d780 on fetch."
+  },
+  {
+    "id": "identity-18",
+    "title": "Key management",
+    "url": "https://devx.notabene.id/docs/key-management.md",
+    "publishedDate": "2026-01-21",
+    "tier": 1,
+    "evidencePath": "research/sources/identity-18-key-management.md",
+    "status": "VERIFIED",
+    "notes": "Official legacy did:key directory and escrow-key guidance."
+  },
+  {
+    "id": "identity-19",
+    "title": "PII SDK cryptography source inspection",
+    "url": "https://gitlab.com/notabene/open-source/pii-sdk/-/blob/2331a4231957549bddd9bb58703ebca274e707d3/src/cryptography/index.ts",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/identity-19-pii-sdk-source.md",
+    "status": "VERIFIED",
+    "notes": "Exact repo path/file/commit; authenticated JWE implementation."
+  },
+  {
+    "id": "identity-20",
+    "title": "TAIPs agent and policy schema inspection",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/tree/c8dd72c109f1bfdd31a22e19fcc4d11ad5b6654d/schemas",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/identity-20-tap-schemas.md",
+    "status": "VERIFIED",
+    "notes": "Exact repository commit and paths for agent, policy and message schemas."
+  }
+]

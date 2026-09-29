@@ -1,0 +1,18 @@
+{
+  "id": "flow-S05",
+  "title": "IP (Infrastructure Provider)",
+  "source_url": "https://devx.notabene.id/docs/infrastructure-provider-ip.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary custody/wallet/liquidity provider boundary.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-04-ip.md",
+  "captured_artifact_sha256": "1fef84f5ad6bdefecdd4113ae539b704adaf6cf416a246e4363b259a3fa8fb4a",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

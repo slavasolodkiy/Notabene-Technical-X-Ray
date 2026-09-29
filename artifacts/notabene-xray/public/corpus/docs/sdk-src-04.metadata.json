@@ -1,0 +1,18 @@
+{
+  "id": "SDK-SRC-04",
+  "title": "Self Hosted Wallet Proofs",
+  "source_url": "https://devx.notabene.id/docs/self-hosted-wallet-verification-1",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary proof-method documentation.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/sdk-08-self-hosted-wallet-proofs.md",
+  "captured_artifact_sha256": "23981ca72cea63d2c2870432a085504457892002afca99649c26c8b62c72befd",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

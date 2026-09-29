@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0007",
+  "title": "changelog / sdk-add-support-for-zcash-message-signature-verification",
+  "source_url": "https://devx.notabene.id/changelog/sdk-add-support-for-zcash-message-signature-verification.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:20:09.665Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/changelog--sdk-add-support-for-zcash-message-signature-verification.md",
+  "captured_artifact_sha256": "5aefc478d88700cb0f3062336bfb640a05afeb4238342cb3a30e7d0ef364447a",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

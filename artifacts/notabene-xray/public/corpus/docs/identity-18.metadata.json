@@ -1,0 +1,18 @@
+{
+  "id": "identity-18",
+  "title": "Key management",
+  "source_url": "https://devx.notabene.id/docs/key-management.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "VERIFIED first-party legacy key and escrow fallback documentation; explicitly calls escrow-key flow pseudo end-to-end.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-18-key-management.md",
+  "captured_artifact_sha256": "ae33f09ceacd8e85ddfe9e527614b12d1c1407c83eb9e7810ed23834d7c736b0",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "SDK-SRC-11",
+  "title": "Notabene GitHub organization public repository inventory",
+  "source_url": "https://api.github.com/orgs/notabene-id/repos?per_page=100&type=public",
+  "source_type": "repository",
+  "retrieved_at": null,
+  "provenance_note": "Ownership-qualified GitHub inventory snapshot retrieved 2026-09-24.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/sdk/github/notabene-id-repos.json",
+  "captured_artifact_sha256": "db0627c9912380829de0dc0823531dd8382bfab8f56e139c0d75d457b8dc609e",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

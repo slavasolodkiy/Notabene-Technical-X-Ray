@@ -1,0 +1,18 @@
+{
+  "id": "ARCH-SRC-08",
+  "title": "npm plain-text search for notabene",
+  "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+  "source_type": "NPM_SEARCH_API",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": "Eight attributable scoped packages, one scoped provenance oddity, two attributable unscoped legacy packages and one unrelated result.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "snapshot",
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/search-notabene.json",
+  "captured_artifact_sha256": "2a0b507ac4795b984d8993d335a157f0afc5e1c6398c7325dae4a39c7b7ecf31",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

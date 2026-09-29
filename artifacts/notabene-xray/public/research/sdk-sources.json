@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SDK-SRC-01",
+    "title": "Notabene JavaScript SDK GitLab repository and source",
+    "url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/repos/javascript-sdk",
+    "status": "VERIFIED",
+    "notes": "Cloned 2026-09-24. Inspected commit 9084ba787e1658da4b20946232347aaf51c38620 on dev; npm stable 2.22.0 points to tag commit de41d83da3b2d2dfcd498fb0be76cfeb69b151b5."
+  },
+  {
+    "id": "SDK-SRC-02",
+    "title": "Configuring the SafeConnect Components",
+    "url": "https://devx.notabene.id/docs/components-overview",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/sdk-02-components-configuration.md",
+    "status": "VERIFIED",
+    "notes": "Primary developer documentation archived 2026-09-24."
+  },
+  {
+    "id": "SDK-SRC-03",
+    "title": "SafeConnect Components",
+    "url": "https://devx.notabene.id/docs/safe-connect-components-v2",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/sdk-03-components-overview.md",
+    "status": "VERIFIED",
+    "notes": "Primary component inventory and use-case documentation."
+  },
+  {
+    "id": "SDK-SRC-04",
+    "title": "Self Hosted Wallet Proofs",
+    "url": "https://devx.notabene.id/docs/self-hosted-wallet-verification-1",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/sdk-08-self-hosted-wallet-proofs.md",
+    "status": "VERIFIED",
+    "notes": "Primary proof-method documentation."
+  },
+  {
+    "id": "SDK-SRC-05",
+    "title": "Embedded Components + V2 API",
+    "url": "https://devx.notabene.id/docs/embedded-components-v2-api",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/sdk-05-components-v2.md",
+    "status": "VERIFIED",
+    "notes": "Primary mapping of component results to Transact V2 requests."
+  },
+  {
+    "id": "SDK-SRC-06",
+    "title": "Component Events",
+    "url": "https://devx.notabene.id/docs/using-the-safeconnect-component-response",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/sdk-06-component-events.md",
+    "status": "VERIFIED",
+    "notes": "Primary event and completion behavior documentation."
+  },
+  {
+    "id": "SDK-SRC-07",
+    "title": "Notabene open-source GitLab project inventory",
+    "url": "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/gitlab/projects.json",
+    "status": "VERIFIED",
+    "notes": "Public GitLab API snapshot retrieved 2026-09-24."
+  },
+  {
+    "id": "SDK-SRC-08",
+    "title": "@notabene npm registry metadata and package tarballs",
+    "url": "https://registry.npmjs.org/@notabene%2fjavascript-sdk",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/npm",
+    "status": "VERIFIED",
+    "notes": "Registry JSON and exact latest tarballs for javascript-sdk, nodejs, pii-sdk, and cli archived with SHA-256 sums."
+  },
+  {
+    "id": "SDK-SRC-09",
+    "title": "Notabene NodeJS SDK repository",
+    "url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/repos/notabene-nodejs",
+    "status": "VERIFIED",
+    "notes": "Cloned at tag v1.19.2, commit 7d310d09c8d365cefe48eb066de4caf8c1246883."
+  },
+  {
+    "id": "SDK-SRC-10",
+    "title": "Notabene PII SDK repository",
+    "url": "https://gitlab.com/notabene/open-source/pii-sdk",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/repos/pii-sdk",
+    "status": "VERIFIED",
+    "notes": "Cloned at commit 2331a4231957549bddd9bb58703ebca274e707d3; latest stable tag v1.17.2 is 57cc203e4ad1fab634b2a4044ef6271dbb82f330."
+  },
+  {
+    "id": "SDK-SRC-11",
+    "title": "Notabene GitHub organization public repository inventory",
+    "url": "https://api.github.com/orgs/notabene-id/repos?per_page=100&type=public",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/corpus/sdk/github/notabene-id-repos.json",
+    "status": "VERIFIED",
+    "notes": "Ownership-qualified GitHub inventory snapshot retrieved 2026-09-24."
+  },
+  {
+    "id": "SDK-SRC-12",
+    "title": "Notabene Developer Hub llms.txt",
+    "url": "https://devx.notabene.id/llms.txt",
+    "publishedDate": null,
+    "tier": 1,
+    "evidencePath": "research/sources/devx-llms.md",
+    "status": "VERIFIED",
+    "notes": "Primary developer-documentation index fetched 2026-09-24."
+  }
+]

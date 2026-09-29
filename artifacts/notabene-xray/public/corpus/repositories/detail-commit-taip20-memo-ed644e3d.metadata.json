@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-taip20-memo-ed644e3d",
+  "title": "Added concrete blockchain memo standard references to TAIP-20.",
+  "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/ed644e3d808f075145333d6349a5543072cb1506",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "TransactionAuthorizationProtocol/TAIPs",
+  "commit": "ed644e3d808f075145333d6349a5543072cb1506",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json",
+  "captured_artifact_sha256": "0d0ca58796564fe485e157cbded3d274a42bf7fe41d607199980e8c786d12a17",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

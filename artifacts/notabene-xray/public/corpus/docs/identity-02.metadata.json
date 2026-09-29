@@ -1,0 +1,18 @@
+{
+  "id": "identity-02",
+  "title": "Key Management in DIDdocs",
+  "source_url": "https://devx.notabene.id/docs/key-management-in-diddocs.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "VERIFIED first-party distinction between platform message-level encryption/signing and customer PII encryption using a dedicated key.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-02-diddoc-keys.md",
+  "captured_artifact_sha256": "f6f39e61f9b005e779af3a9a0946b0aeed15e273328d2093e1b24ff5c24f7b28",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

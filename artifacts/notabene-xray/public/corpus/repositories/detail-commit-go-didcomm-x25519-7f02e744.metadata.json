@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-go-didcomm-x25519-7f02e744",
+  "title": "Selected X25519 keyAgreement keys, encrypted to all, and tolerated other curves.",
+  "source_url": "https://github.com/Notabene-id/go-didcomm/commit/7f02e7448b7c49662448d169b35798c0514b75cd",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "Notabene-id/go-didcomm",
+  "commit": "7f02e7448b7c49662448d169b35798c0514b75cd",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json",
+  "captured_artifact_sha256": "f9e7e79e3f019a9faba16a86116476bc30d0d3dc693c03d1d1796a68a36b4e5e",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

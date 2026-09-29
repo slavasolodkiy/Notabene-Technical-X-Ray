@@ -1,0 +1,18 @@
+{
+  "id": "api-search-evidence",
+  "title": "API discovery search evidence",
+  "source_url": "https://devx.notabene.id/",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Search-only snippets from five distinct research angles; used for discovery, not as sole claim support.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/api-00-search-evidence.md",
+  "captured_artifact_sha256": "7b4aeb5826e389626a999a5386a1517d88d416714532567a2ce58cc7965d4493",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

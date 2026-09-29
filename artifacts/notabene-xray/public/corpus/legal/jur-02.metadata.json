@@ -1,0 +1,18 @@
+{
+  "id": "JUR-02",
+  "title": "Regulation (EU) 2023/1113",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+  "source_type": "official",
+  "retrieved_at": null,
+  "provenance_note": "Primary EU law. Article 14 supplies the compound identity logic; the self-hosted ownership/control threshold is strictly exceeding EUR 1,000.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+  "captured_artifact_sha256": "e50b0bd0a03233e20159b72bf9228ff3e9b581796e4e9ca4727445b225dc6f07",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

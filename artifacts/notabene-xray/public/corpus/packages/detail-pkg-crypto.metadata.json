@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-crypto",
+  "title": "@notabene/crypto",
+  "source_url": "https://registry.npmjs.org/@notabene%2fcrypto",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "1.1.0",
+  "repository": "https://github.com/Notabene-id/notabene-crypto",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/crypto.json",
+  "captured_artifact_sha256": "e460fd20c37679c6969acd35df10afb53c7884e735e7be84d943dac35ba98d4f",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

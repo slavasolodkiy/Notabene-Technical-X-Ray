@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-did-auth-express",
+  "title": "did-auth-express",
+  "source_url": "https://registry.npmjs.org/did-auth-express",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "0.1.3",
+  "repository": "https://github.com/Notabene-id/did-auth-express",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/did-auth-express.json",
+  "captured_artifact_sha256": "ef525e57d076d369bd5b7696c08d0a0aa75befcdaa4fc6f89e76705fc47b9804",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

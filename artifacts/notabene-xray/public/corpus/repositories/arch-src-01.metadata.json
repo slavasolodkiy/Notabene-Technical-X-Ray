@@ -1,0 +1,18 @@
+{
+  "id": "ARCH-SRC-01",
+  "title": "JavaScript SDK commit metadata and diffs",
+  "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+  "source_type": "PUBLIC_GITLAB_COMMIT_API",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": "Covers V1-to-V2 helper removal, accountNumber, IVMS model, proof types and Counterparty Assist. No code was executed.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "918a87ffea1b39aa867ae755c6622c80ac937f27; 5b0a15ddc8006bb6a9f67a02df008d966f9068a4; 2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2; eed7a64202a8cc6a88baa531e5335625b08848ae; e32555ea9ffe42274db4d8badf8696fc38b38413; f448d8794b30dea1f0515e241f82d64d7429ee38; b573f473db84a88e42c496d4aec92d9a72f7e0e1; 1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+  "repository": "notabene/open-source/javascript-sdk",
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/gitlab-javascript-sdk-5b0a15d.json",
+  "captured_artifact_sha256": "c855ffbd03503d97bbd03464281d584d8abd287391a2abafe3614d1a533141e0",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

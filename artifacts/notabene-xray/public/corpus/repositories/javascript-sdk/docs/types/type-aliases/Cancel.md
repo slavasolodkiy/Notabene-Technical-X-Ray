@@ -1,0 +1,23 @@
+[**@notabene/javascript-sdk**](../../README.md)
+
+***
+
+[@notabene/javascript-sdk](../../modules.md) / [types](../README.md) / Cancel
+
+# Type Alias: Cancel
+
+> **Cancel**: `object`
+
+**`Internal`**
+
+Represents a cancel component message
+
+## Type declaration
+
+### type
+
+> **type**: [`CANCEL`](../enumerations/CMType.md#cancel)
+
+## Defined in
+
+[types.ts:944](https://gitlab.com/notabene/open-source/javascript-sdk/-/blob/52abba74a4a6b14d6ca0d23191964d38919d32ea/src/types.ts#L944)

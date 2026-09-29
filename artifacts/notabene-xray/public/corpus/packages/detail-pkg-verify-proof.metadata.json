@@ -1,0 +1,18 @@
+{
+  "id": "detail-pkg-verify-proof",
+  "title": "@notabene/verify-proof",
+  "source_url": "https://registry.npmjs.org/@notabene%2fverify-proof",
+  "source_type": "NPM_REGISTRY",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "1.11.0",
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/v2-archaeology/npm/verify-proof.json",
+  "captured_artifact_sha256": "3b50b18690cb205bf7ed15f492e4992a7740337847fa4c790f2219c507483ea5",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

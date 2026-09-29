@@ -1,0 +1,18 @@
+{
+  "id": "flow-S12",
+  "title": "Notabene Flow activates hundreds of customers",
+  "source_url": "https://www.prnewswire.com/apac/news-releases/notabene-flow-activates-hundreds-of-customers-enabling-stablecoin-b2b-payments-across-the-globe-302791736.html",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Syndicated company press release. Treat reach and volume figures as company claims, not independently verified metrics.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/flow-14-news-june-2026.md",
+  "captured_artifact_sha256": "5ee011c84bc6ccbcdf860c81f17d7a4cbe2b7ba5a64c1ef208306beefec8ce42",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

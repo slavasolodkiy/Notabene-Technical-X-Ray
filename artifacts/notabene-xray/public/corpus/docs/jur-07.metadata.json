@@ -1,0 +1,18 @@
+{
+  "id": "JUR-07",
+  "title": "Notabene FR-0 presentation definition",
+  "source_url": "https://pd.notabene.id/ivms101/v2/FR-0.json",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Primary raw vendor JSON used to identify the four-way vendor OR that differs from Article 14(1)(d).",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-07-notabene-fr-0-pd.md",
+  "captured_artifact_sha256": "b57a9c725667d1238a528e028f8752a256c2c3025db3536244ad0a7cb11137d3",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

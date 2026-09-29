@@ -1,0 +1,18 @@
+{
+  "id": "identity-08",
+  "title": "Transfer payload structure",
+  "source_url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Official current agent/for/role chain guide and payloads.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/identity-08-agent-model.md",
+  "captured_artifact_sha256": "082996532947e4b69fb9fca411238a08c4574b20751c98181ec544d98d53a60d",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

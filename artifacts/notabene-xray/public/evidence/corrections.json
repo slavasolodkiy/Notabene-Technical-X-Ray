@@ -1,0 +1,3437 @@
+[
+  {
+    "id": "K01",
+    "audit_reference": "Kimi §2 register row 1",
+    "claim_ids": [
+      "claim-K01"
+    ],
+    "old_claim": "\"157 API operations\" \\= 105 V2 \\+ 52 scoped V1",
+    "new_claim": "Full captured specifications contain 105 V2 operations / 85 paths and 126 V1 / 90 paths, total 231. Original 157 was a partial inventory; preserve historical scope rather than asserting no imaginable 52-operation subset exists. All 74 missing V1 rows now included.",
+    "old": "\"157 API operations\" \\= 105 V2 \\+ 52 scoped V1",
+    "new": "Full captured specifications contain 105 V2 operations / 85 paths and 126 V1 / 90 paths, total 231. Original 157 was a partial inventory; preserve historical scope rather than asserting no imaginable 52-operation subset exists. All 74 missing V1 rows now included.",
+    "disposition": "REFUTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/endpoints.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "API Explorer",
+      "headline stats"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://doc.notabene.id/"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/api-10-v1-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 1",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K02",
+    "audit_reference": "Kimi §2 register row 2",
+    "claim_ids": [
+      "claim-K02"
+    ],
+    "old_claim": "\"all 105 operations in the captured V2 specification\"",
+    "new_claim": "Exactly 105 path×method operations on 85 paths; all 105 operationIds unique",
+    "old": "\"all 105 operations in the captured V2 specification\"",
+    "new": "Exactly 105 path×method operations on 85 paths; all 105 operationIds unique",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/endpoints.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 2",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K03",
+    "audit_reference": "Kimi §2 register row 3",
+    "claim_ids": [
+      "claim-K03"
+    ],
+    "old_claim": "\"3,905 field-path records\"",
+    "new_claim": "Preserved data/fields.json contains 3,905 field-path records. Count is verified locally; field coverage remains a scoped extraction, not all fields of the newly completed endpoint inventory.",
+    "old": "\"3,905 field-path records\"",
+    "new": "Preserved data/fields.json contains 3,905 field-path records. Count is verified locally; field coverage remains a scoped extraction, not all fields of the newly completed endpoint inventory.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/fields.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "data/fields.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "data/fields.json",
+    "reference": "research/audit-kimi.md §2 row 3",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K04",
+    "audit_reference": "Kimi §2 register row 4",
+    "claim_ids": [
+      "claim-K04"
+    ],
+    "old_claim": "\"12 webhook events\"",
+    "new_claim": "12 distinct event types in webhook-details.md (11 in summary tables \\+ `tap.requirePresentationPartiallySatisfied` in body); `flow.*` events in pay-in quickstarts sit outside the 12",
+    "old": "\"12 webhook events\"",
+    "new": "12 distinct event types in webhook-details.md (11 in summary tables \\+ `tap.requirePresentationPartiallySatisfied` in body); `flow.*` events in pay-in quickstarts sit outside the 12",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/webhooks.json",
+      "architecture/transact-state-machine.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/webhook-details.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-03-v2-webhook-details.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-03-v2-webhook-details.md",
+    "reference": "research/audit-kimi.md §2 row 4",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K05",
+    "audit_reference": "Kimi §2 register row 5",
+    "claim_ids": [
+      "claim-K05"
+    ],
+    "old_claim": "\"four public npm packages\"",
+    "new_claim": "Eight officially attributable scoped packages, one scoped provenance anomaly (@notabene/appkit) and two attributable unscoped legacy packages are enumerated in captured registry records. No deprecated message in checked scoped versions is not a support guarantee. Discovered/attributed/code-inspected are different counts.",
+    "old": "\"four public npm packages\"",
+    "new": "Eight officially attributable scoped packages, one scoped provenance anomaly (@notabene/appkit) and two attributable unscoped legacy packages are enumerated in captured registry records. No deprecated message in checked scoped versions is not a support guarantee. Discovered/attributed/code-inspected are different counts.",
+    "disposition": "REFUTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/sdk-inventory.json",
+      "evidence/packages.json",
+      "research/packages.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "research/audit-kimi.md §2 row 5",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K06",
+    "audit_reference": "Kimi §2 register row 6",
+    "claim_ids": [
+      "claim-K06"
+    ],
+    "old_claim": "\"six publicly exposed GitLab repositories\"",
+    "new_claim": "Current group roster has six projects: javascript-sdk, ndar, notabene-encryption-examples, notabene-nodejs, pii-sdk, trusthub-client. cli/react-native-sdk/ops repository URLs are not publicly accessible; private versus deleted is UNKNOWN.",
+    "old": "\"six publicly exposed GitLab repositories\"",
+    "new": "Current group roster has six projects: javascript-sdk, ndar, notabene-encryption-examples, notabene-nodejs, pii-sdk, trusthub-client. cli/react-native-sdk/ops repository URLs are not publicly accessible; private versus deleted is UNKNOWN.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "evidence/repositories.json",
+      "research/repositories.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100"
+    ],
+    "source_url": "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/repositories.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "research/audit-kimi.md §2 row 6",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K07",
+    "audit_reference": "Kimi §2 register row 7",
+    "claim_ids": [
+      "claim-K07"
+    ],
+    "old_claim": "\"V1 uses … base-unit integer amounts\"",
+    "new_claim": "V1 `amount` is a base-unit **string** (\"satoshi, wei, etc\"), example `\"10000000000000000\"`; V2 is a decimal string with pattern `^\\d+(\\.\\d+)?$`",
+    "old": "\"V1 uses … base-unit integer amounts\"",
+    "new": "V1 `amount` is a base-unit **string** (\"satoshi, wei, etc\"), example `\"10000000000000000\"`; V2 is a decimal string with pattern `^\\d+(\\.\\d+)?$`",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md",
+      "data/fields.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://doc.notabene.id/",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://doc.notabene.id/",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-10-v1-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-10-v1-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 7",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K08",
+    "audit_reference": "Kimi §2 register row 8",
+    "claim_ids": [
+      "claim-K08"
+    ],
+    "old_claim": "V1/V2 IVMS101 person-array field names differ",
+    "new_claim": "`originatorPersons`→`originatorPerson` (plural→singular); additionally `nameIdentifierType`→`naturalPersonNameIdentifierType`",
+    "old": "V1/V2 IVMS101 person-array field names differ",
+    "new": "`originatorPersons`→`originatorPerson` (plural→singular); additionally `nameIdentifierType`→`naturalPersonNameIdentifierType`",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/data-model.md",
+      "data/fields.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/embedded-components-v2-api.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/embedded-components-v2-api.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/sdk-05-components-v2.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-05-components-v2.md",
+    "reference": "research/audit-kimi.md §2 row 8",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K09",
+    "audit_reference": "Kimi §2 register row 9",
+    "claim_ids": [
+      "claim-K09"
+    ],
+    "old_claim": "PII presentation retains a `/transfers` path",
+    "new_claim": "Sole PII-tagged op is `POST /entities/{entityDID}/transfers/{transferId}/policies/{policyId}/presentation`; no `/tx` equivalent exists",
+    "old": "PII presentation retains a `/transfers` path",
+    "new": "Sole PII-tagged op is `POST /entities/{entityDID}/transfers/{transferId}/policies/{policyId}/presentation`; no `/tx` equivalent exists",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "data/endpoints.json",
+      "architecture/data-model.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 9",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K10",
+    "audit_reference": "Kimi §2 register row 10",
+    "claim_ids": [
+      "claim-K10"
+    ],
+    "old_claim": "Payout create requires \"reference, currency, decimal-string amount, customer, merchant\"",
+    "new_claim": "Required field is named `ref`, not \"reference\"; payout `amount` is `type: string` with **no** decimal pattern; duplicate `ref` returns 409 with `existingRef`",
+    "old": "Payout create requires \"reference, currency, decimal-string amount, customer, merchant\"",
+    "new": "Required field is named `ref`, not \"reference\"; payout `amount` is `type: string` with **no** decimal pattern; duplicate `ref` returns 409 with `existingRef`",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/flow.md",
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 10",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K11",
+    "audit_reference": "Kimi §2 register row 11",
+    "claim_ids": [
+      "claim-K11"
+    ],
+    "old_claim": "PRA quickstart vs OpenAPI conflict on pay-in `settlement_address`",
+    "new_claim": "Quickstart: \"Send only the asset field. Do not include a settlementAddress\"; spec: `required: [\"settlementAddress\"]`, `asset` optional",
+    "old": "PRA quickstart vs OpenAPI conflict on pay-in `settlement_address`",
+    "new": "Quickstart: \"Send only the asset field. Do not include a settlementAddress\"; spec: `required: [\"settlementAddress\"]`, `asset` optional",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/flow.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/flow-03-pra.md",
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/flow-03-pra.md",
+    "reference": "research/audit-kimi.md §2 row 11",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K12",
+    "audit_reference": "Kimi §2 register row 12",
+    "claim_ids": [
+      "claim-K12"
+    ],
+    "old_claim": "Token chain: 24 h institution token; 5-min customerToken; delegate JWT TTL not public",
+    "new_claim": "`expires_in: 86400` client\\_credentials grant; customerToken \"valid for 5 minutes\", scope `customer`; delegate token documented as JWT \\+ `delegateDid` with no TTL/claims/permission matrix",
+    "old": "Token chain: 24 h institution token; 5-min customerToken; delegate JWT TTL not public",
+    "new": "`expires_in: 86400` client\\_credentials grant; customerToken \"valid for 5 minutes\", scope `customer`; delegate token documented as JWT \\+ `delegateDid` with no TTL/claims/permission matrix",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/authentication.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/reference/authentication-2.md",
+      "https://devx.notabene.id/docs/customertoken.md",
+      "https://devx.notabene.id/reference/createdelegatetoken.md"
+    ],
+    "source_url": "https://devx.notabene.id/reference/authentication-2.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/identity-03-authentication-reference.md",
+      "research/sources/identity-04-customer-token.md",
+      "research/sources/identity-15-delegate-token.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-03-authentication-reference.md",
+    "reference": "research/audit-kimi.md §2 row 12",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K13",
+    "audit_reference": "Kimi §2 register row 13",
+    "claim_ids": [
+      "claim-K13"
+    ],
+    "old_claim": "Managed vs customer-managed PII encryption; \"cannot decrypt\" scoped to E2E opt-in",
+    "new_claim": "Managed mode: platform encrypts with entity keys, stores, re-encrypts for counterparties; E2E: \"won't be stored on your entity or the Notabene platform\"; escrow mode is explicitly \"pseudo end-to-end\" with a UI decrypt button",
+    "old": "Managed vs customer-managed PII encryption; \"cannot decrypt\" scoped to E2E opt-in",
+    "new": "Managed mode: platform encrypts with entity keys, stores, re-encrypts for counterparties; E2E: \"won't be stored on your entity or the Notabene platform\"; escrow mode is explicitly \"pseudo end-to-end\" with a UI decrypt button",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/trust-model.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/encryption-by-notabene.md",
+      "https://devx.notabene.id/docs/self-encryption.md",
+      "https://devx.notabene.id/docs/key-management.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/encryption-by-notabene.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/identity-07-self-encryption.md",
+      "research/sources/flow-21-encryption-managed.md",
+      "research/sources/identity-18-key-management.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-07-self-encryption.md",
+    "reference": "research/audit-kimi.md §2 row 13",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K14",
+    "audit_reference": "Kimi §2 register row 14",
+    "claim_ids": [
+      "claim-K14"
+    ],
+    "old_claim": "DIDComm profiles: authcrypt sender authentication is not a separate non-repudiable signature",
+    "new_claim": "go-didcomm exposes 5 profiles; authcrypt (ECDH-1PU) is \"Repudiable… no inner signature\"; `ProfileSignedAnoncrypt` (sign-then-encrypt) is the non-repudiable default",
+    "old": "DIDComm profiles: authcrypt sender authentication is not a separate non-repudiable signature",
+    "new": "go-didcomm exposes 5 profiles; authcrypt (ECDH-1PU) is \"Repudiable… no inner signature\"; `ProfileSignedAnoncrypt` (sign-then-encrypt) is the non-repudiable default",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/trust-model.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/identity-17-go-didcomm.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-17-go-didcomm.md",
+    "reference": "research/audit-kimi.md §2 row 14",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K15",
+    "audit_reference": "Kimi §2 register row 15",
+    "claim_ids": [
+      "claim-K15"
+    ],
+    "old_claim": "did:web identity with Ed25519/X25519/P-256 key split",
+    "new_claim": "Two fetched DIDDocs expose Ed25519/X25519 keys and the Norway document a P-256 JsonWebKey2020 #notabene-pii key. Both advertise QA hosts; the root URL identifies did:web:vasps.id:at. Documentation spelling differs; production profile and standards-valid root resolution are not established.",
+    "old": "did:web identity with Ed25519/X25519/P-256 key split",
+    "new": "Two fetched DIDDocs expose Ed25519/X25519 keys and the Norway document a P-256 JsonWebKey2020 #notabene-pii key. Both advertise QA hosts; the root URL identifies did:web:vasps.id:at. Documentation spelling differs; production profile and standards-valid root resolution are not established.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "architecture/system-map.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/diddocs-explained.md",
+      "https://vasps.id/no/did.json"
+    ],
+    "source_url": "https://devx.notabene.id/docs/diddocs-explained.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-did-root.json",
+      "research/sources/v2-did-no.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-root.json",
+    "reference": "research/audit-kimi.md §2 row 15",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K16",
+    "audit_reference": "Kimi §2 register row 16",
+    "claim_ids": [
+      "claim-K16"
+    ],
+    "old_claim": "Entity DID ≠ end customer; no per-customer resolvable DIDDoc",
+    "new_claim": "Flow customer records are entity-owned natural_person/legal_person records. No per-customer resolvable DIDDoc was evidenced; this is scoped absence, not proof customers can never use DIDs.",
+    "old": "Entity DID ≠ end customer; no per-customer resolvable DIDDoc",
+    "new": "Flow customer records are entity-owned natural_person/legal_person records. No per-customer resolvable DIDDoc was evidenced; this is scoped absence, not proof customers can never use DIDs.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/actor-map.md",
+      "data/entities.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/reference/getflowcustomer.md"
+    ],
+    "source_url": "https://devx.notabene.id/reference/getflowcustomer.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/identity-16-flow-customer.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-16-flow-customer.md",
+    "reference": "research/audit-kimi.md §2 row 16",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K17",
+    "audit_reference": "Kimi §2 register row 17",
+    "claim_ids": [
+      "claim-K17"
+    ],
+    "old_claim": "SafeConnect JS SDK is a wrapper around connect.notabene.id",
+    "new_claim": "Package contains only wrapper/transport/transformer/types; iframe/modal/popup/redirect/link modes; zero screen-UI source",
+    "old": "SafeConnect JS SDK is a wrapper around connect.notabene.id",
+    "new": "Package contains only wrapper/transport/transformer/types; iframe/modal/popup/redirect/link modes; zero screen-UI source",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/onboarding.md",
+      "data/sdk-inventory.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/sdk-01-gitlab-javascript-sdk.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-01-gitlab-javascript-sdk.md",
+    "reference": "research/audit-kimi.md §2 row 17",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K18",
+    "audit_reference": "Kimi §2 register row 18",
+    "claim_ids": [
+      "claim-K18"
+    ],
+    "old_claim": "Maintained Node SDK remains V1-shaped",
+    "new_claim": "Node SDK public calls remain V1-shaped; maintenance-only/LEGACY is an inferred activity classification, not official EOL. V1 helper removal in JS SDK does not retire V1 API.",
+    "old": "Maintained Node SDK remains V1-shaped",
+    "new": "Node SDK public calls remain V1-shaped; maintenance-only/LEGACY is an inferred activity classification, not official EOL. V1 helper removal in JS SDK does not retire V1 API.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "research/repositories.md",
+      "architecture/integrations.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/notabene-nodejs"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/sdk-10-gitlab-nodejs.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-10-gitlab-nodejs.md",
+    "reference": "research/audit-kimi.md §2 row 18",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K19",
+    "audit_reference": "Kimi §2 register row 19",
+    "claim_ids": [
+      "claim-K19"
+    ],
+    "old_claim": "TAP license conflict: repo CC0-1.0 vs README CC BY-SA 4.0",
+    "new_claim": "GitHub API license field and LICENSE file \\= CC0 1.0; README badge block \\= CC BY-SA 4.0; tap-ts is CC0 in both (no conflict)",
+    "old": "TAP license conflict: repo CC0-1.0 vs README CC BY-SA 4.0",
+    "new": "GitHub API license field and LICENSE file \\= CC0 1.0; README badge block \\= CC BY-SA 4.0; tap-ts is CC0 in both (no conflict)",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/tap.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/gap-protocol-01.md",
+      "research/sources/gap-protocol-03-repository-metadata.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-protocol-01.md",
+    "reference": "research/audit-kimi.md §2 row 19",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K20",
+    "audit_reference": "Kimi §2 register row 20",
+    "claim_ids": [
+      "claim-K20"
+    ],
+    "old_claim": "\"micro-transfers require the institution to verify them\"",
+    "new_claim": "Documented micro-transfer proof remains status pending. On-chain confirmation owner is UNKNOWN; only screenshot review is explicitly assigned to a compliance officer.",
+    "old": "\"micro-transfers require the institution to verify them\"",
+    "new": "Documented micro-transfer proof remains status pending. On-chain confirmation owner is UNKNOWN; only screenshot review is explicitly assigned to a compliance officer.",
+    "disposition": "UNKNOWN",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "evidence_scope": "Duty unassigned in captured documentation",
+    "affected_paths": [
+      "architecture/onboarding.md",
+      "data/sdk-inventory.json",
+      "QUESTIONS_FOR_NOTABENE.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/self-hosted-wallet-verification-1.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/self-hosted-wallet-verification-1.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-proofs.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-proofs.md",
+    "reference": "research/audit-kimi.md §2 row 20",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K21",
+    "audit_reference": "Kimi §2 register row 21",
+    "claim_ids": [
+      "claim-K21"
+    ],
+    "old_claim": "Q4 premise: a historical \"TAP Parser\" may equal today's tap-ts validator",
+    "new_claim": "No distinct TAP Parser found in enumerated public organizations and registry searches. This is scoped negative evidence, not proof no private/historical parser exists. Ask which of tap-ts, tap-rs, tap-go or TAIPs schemas/test-vectors is normative.",
+    "old": "Q4 premise: a historical \"TAP Parser\" may equal today's tap-ts validator",
+    "new": "No distinct TAP Parser found in enumerated public organizations and registry searches. This is scoped negative evidence, not proof no private/historical parser exists. Ask which of tap-ts, tap-rs, tap-go or TAIPs schemas/test-vectors is normative.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/tap.md",
+      "research/repositories.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/repositories.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/repositories.md",
+    "reference": "research/audit-kimi.md §2 row 21",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K22",
+    "audit_reference": "Kimi §2 register row 22",
+    "claim_ids": [
+      "claim-K22"
+    ],
+    "old_claim": "J1: vendor GB index stale (EUR 1,000 vs current GBP 800\\)",
+    "new_claim": "Reg 64C(4) \"equal to or exceeds … £800\" incl. linked transfers, substituted 30.6.2026 by SI 2026/621; vendor matches the superseded \"1,000 euros\" text",
+    "old": "J1: vendor GB index stale (EUR 1,000 vs current GBP 800\\)",
+    "new": "Reg 64C(4) \"equal to or exceeds … £800\" incl. linked transfers, substituted 30.6.2026 by SI 2026/621; vendor matches the superseded \"1,000 euros\" text",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/gap-jurisdiction-01.md",
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-jurisdiction-01.md",
+    "reference": "research/audit-kimi.md §2 row 22",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K23",
+    "audit_reference": "Kimi §2 register row 23",
+    "claim_ids": [
+      "claim-K23"
+    ],
+    "old_claim": "J2: all-UK execution follows a beneficiary-business request",
+    "new_claim": "64C(2)+(3): para (6) information provided on beneficiary request within three working days; 64C(4) applies only \"Where paragraph (3) does not apply\"",
+    "old": "J2: all-UK execution follows a beneficiary-business request",
+    "new": "64C(2)+(3): para (6) information provided on beneficiary request within three working days; 64C(4) applies only \"Where paragraph (3) does not apply\"",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C"
+    ],
+    "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/gap-jurisdiction-01.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/gap-jurisdiction-01.md",
+    "reference": "research/audit-kimi.md §2 row 23",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K24",
+    "audit_reference": "Kimi §2 register row 24",
+    "claim_ids": [
+      "claim-K24"
+    ],
+    "old_claim": "J3/J4: no general EU EUR 1,000 exemption; FR-0 four-way pick broader than Art 14(1)(d)",
+    "new_claim": "Recital (30): \"same requirements regardless of their amount\"; Art 14(1)(d) is compound (address AND document number AND customer ID) OR (date AND place of birth); FR-0 accepts exactly one of four",
+    "old": "J3/J4: no general EU EUR 1,000 exemption; FR-0 four-way pick broader than Art 14(1)(d)",
+    "new": "Recital (30): \"same requirements regardless of their amount\"; Art 14(1)(d) is compound (address AND document number AND customer ID) OR (date AND place of birth); FR-0 accepts exactly one of four",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json"
+    ],
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/JUR-02-eu-regulation-2023-1113.md",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "reference": "research/audit-kimi.md §2 row 24",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K25",
+    "audit_reference": "Kimi §2 register row 25",
+    "claim_ids": [
+      "claim-K25"
+    ],
+    "old_claim": "J5: US Travel Rule at USD 3,000; US-3000 PII subset is not the complete record",
+    "new_claim": "31 CFR 1010.410(f) \"in the amount of $3,000 or more\"; US-3000 omits amount, execution date, and both FI identifiers",
+    "old": "J5: US Travel Rule at USD 3,000; US-3000 PII subset is not the complete record",
+    "new": "31 CFR 1010.410(f) \"in the amount of $3,000 or more\"; US-3000 omits amount, execution date, and both FI identifiers",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+      "https://pd.notabene.id/ivms101/v2/US-3000.json"
+    ],
+    "source_url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/JUR-15-us-ecfr-1010-410.md",
+      "research/sources/JUR-08-notabene-us-3000-pd.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-15-us-ecfr-1010-410.md",
+    "reference": "research/audit-kimi.md §2 row 25",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K26",
+    "audit_reference": "Kimi §2 register row 26",
+    "claim_ids": [
+      "claim-K26"
+    ],
+    "old_claim": "J6: SG comparator mismatch; no legal-person path in birth alternative",
+    "new_claim": "PSN02 ¶13.4 \"below or equal to S$1,500\"vs¶13.6\"exceedsS$1,500\"; SG-1500's `originatorDateAndPlaceOfBirth` descriptor has `\"legal\": []`",
+    "old": "J6: SG comparator mismatch; no legal-person path in birth alternative",
+    "new": "PSN02 ¶13.4 \"below or equal to S$1,500\"vs¶13.6\"exceedsS$1,500\"; SG-1500's `originatorDateAndPlaceOfBirth` descriptor has `\"legal\": []`",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+      "https://pd.notabene.id/ivms101/v2/SG-1500.json"
+    ],
+    "source_url": "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/JUR-16-mas-psn02.md",
+      "research/sources/JUR-10-notabene-sg-1500-pd.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-16-mas-psn02.md",
+    "reference": "research/audit-kimi.md §2 row 26",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K27",
+    "audit_reference": "Kimi §2 register row 27",
+    "claim_ids": [
+      "claim-K27"
+    ],
+    "old_claim": "J7: definitions use JSONPath constraints, all-conjunction, pick/count:1 alternatives",
+    "new_claim": "Mechanics verified across 13 fetched definition files; `\"limit_disclosure\": \"required\"` on every descriptor",
+    "old": "J7: definitions use JSONPath constraints, all-conjunction, pick/count:1 alternatives",
+    "new": "Mechanics verified across 13 fetched definition files; `\"limit_disclosure\": \"required\"` on every descriptor",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/jurisdictions.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-FA-1000.json",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-FA-1000.json",
+    "reference": "research/audit-kimi.md §2 row 27",
+    "rationale": "Existing source-backed claim retained; corroboration does not prove deployed behavior.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K28",
+    "audit_reference": "Kimi §2 register row 28",
+    "claim_ids": [
+      "claim-K28"
+    ],
+    "old_claim": "Japan jurisdiction scope left UNKNOWN",
+    "new_claim": "JP-0 threshold zero and address OR customer-ID alternative are VERIFIED published artifacts. Vendor narrative and audit secondary corroboration support alignment as INFERRED; definitive current legal scope remains UNKNOWN because primary Japanese law was not fetched.",
+    "old": "Japan jurisdiction scope left UNKNOWN",
+    "new": "JP-0 threshold zero and address OR customer-ID alternative are VERIFIED published artifacts. Vendor narrative and audit secondary corroboration support alignment as INFERRED; definitive current legal scope remains UNKNOWN because primary Japanese law was not fetched.",
+    "disposition": "CORRECTED",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "evidence_scope": "Artifact VERIFIED; broader legal/runtime conclusion UNKNOWN",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/JP-0.json",
+      "https://notabene.id/world/japan"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-JP-0.json",
+      "research/sources/v2-japan-vendor.html"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-JP-0.json",
+    "reference": "research/audit-kimi.md §2 row 28",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K29",
+    "audit_reference": "Kimi §2 register row 29",
+    "claim_ids": [
+      "claim-K29"
+    ],
+    "old_claim": "FATF fallback for unlisted jurisdictions left UNKNOWN",
+    "new_claim": "FA pseudo-jurisdiction at USD 1,000 and FA-1000 baseline plus four-way pick:1 are VERIFIED artifacts. Vendor fallback statement is documented. Universal deployed fallback, comparator, precedence and legal absence-of-local-law determination remain UNKNOWN.",
+    "old": "FATF fallback for unlisted jurisdictions left UNKNOWN",
+    "new": "FA pseudo-jurisdiction at USD 1,000 and FA-1000 baseline plus four-way pick:1 are VERIFIED artifacts. Vendor fallback statement is documented. Universal deployed fallback, comparator, precedence and legal absence-of-local-law determination remain UNKNOWN.",
+    "disposition": "CORRECTED",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "evidence_scope": "Artifact VERIFIED; broader legal/runtime conclusion UNKNOWN",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+      "https://devx.notabene.id/docs/pii-requirements.md"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-FA-1000.json",
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-FA-1000.json",
+    "reference": "research/audit-kimi.md §2 row 29",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K30",
+    "audit_reference": "Kimi §2 register row 30",
+    "claim_ids": [
+      "claim-K30"
+    ],
+    "old_claim": "AWAITING-YOURS / AWAITING-COUNTERPARTY in enum but undocumented",
+    "new_claim": "16 transfer and seven agent statuses are in the spec. Four status meanings/transitions remain unresolved in captured prose, with images not OCR-verified. Agent policy RequireAuthorization example violates REQUIRE_AUTHORIZATION enum; no inferred terminal states or production behavior.",
+    "old": "AWAITING-YOURS / AWAITING-COUNTERPARTY in enum but undocumented",
+    "new": "16 transfer and seven agent statuses are in the spec. Four status meanings/transitions remain unresolved in captured prose, with images not OCR-verified. Agent policy RequireAuthorization example violates REQUIRE_AUTHORIZATION enum; no inferred terminal states or production behavior.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "architecture/data-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "research/audit-kimi.md §2 row 30",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "K31",
+    "audit_reference": "Kimi §2 register row 31",
+    "claim_ids": [
+      "claim-K31"
+    ],
+    "old_claim": "\"223 archived pages\" evidence corpus",
+    "new_claim": "Original archive claim failed as delivered according to audit. v2 manifest must distinguish raw portable files from metadata-only records, preserve URLs/checksums/licensing decisions and never imply every raw page is redistributed. Final served-artifact verification belongs to integration checks.",
+    "old": "\"223 archived pages\" evidence corpus",
+    "new": "Original archive claim failed as delivered according to audit. v2 manifest must distinguish raw portable files from metadata-only records, preserve URLs/checksums/licensing decisions and never imply every raw page is redistributed. Final served-artifact verification belongs to integration checks.",
+    "disposition": "REFUTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "evidence/source-manifest.json",
+      "corpus/",
+      "research/verification.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "REPORT_AUDIT",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "evidence/source-manifest.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "research/audit-kimi.md §2 row 31",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "CONTENT_FIXED_FINAL_DELIVERY_CHECK_REQUIRED"
+  },
+  {
+    "id": "K32",
+    "audit_reference": "Kimi §2 register row 32",
+    "claim_ids": [
+      "claim-K32"
+    ],
+    "old_claim": "16-section X-Ray app coverage",
+    "new_claim": "Distinct system runtime/trust-boundary and actor authority maps now authored. Existing product/ER documents retained. Route mapping, source archive, verification download and UI acceptance must be checked against final built assets.",
+    "old": "16-section X-Ray app coverage",
+    "new": "Distinct system runtime/trust-boundary and actor authority maps now authored. Existing product/ER documents retained. Route mapping, source archive, verification download and UI acceptance must be checked against final built assets.",
+    "disposition": "CONFIRMED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "architecture/system-map.md",
+      "architecture/actor-map.md",
+      "research/verification.md"
+    ],
+    "affected_ui": [
+      "System Map",
+      "Actor Map"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "REPORT_AUDIT",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "architecture/system-map.md",
+      "architecture/actor-map.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "research/audit-kimi.md §2 row 32",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "CONTENT_FIXED_FINAL_DELIVERY_CHECK_REQUIRED"
+  },
+  {
+    "id": "K33",
+    "audit_reference": "Kimi §2 register row 33",
+    "claim_ids": [
+      "claim-K33"
+    ],
+    "old_claim": "Method note: \"this draft deliberately omits operation and field-path totals\"",
+    "new_claim": "Method now reports exact captured operation counts and scoped field count consistently; removed obsolete omissions language. Historical/audit descriptions remain explicitly historical.",
+    "old": "Method note: \"this draft deliberately omits operation and field-path totals\"",
+    "new": "Method now reports exact captured operation counts and scoped field count consistently; removed obsolete omissions language. Historical/audit descriptions remain explicitly historical.",
+    "disposition": "REFUTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Published artifact / documented contract, not authenticated production observation",
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked sections and downloads"
+    ],
+    "source_urls": [
+      "https://replit.com/@identityglobal/Notabene-Technical-X-Ray"
+    ],
+    "source_url": "https://replit.com/@identityglobal/Notabene-Technical-X-Ray",
+    "source_type": "REPORT_AUDIT",
+    "source_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/TECHNICAL_REPORT.draft.md",
+    "reference": "research/audit-kimi.md §2 row 33",
+    "rationale": "Reconciled audit against preserved captures; scoped evidence and unknowns retained.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "D1",
+    "audit_reference": "Kimi §1.2.4 D1",
+    "claim_ids": [
+      "claim-D1"
+    ],
+    "old_claim": "Method omitted totals despite advertising totals",
+    "new_claim": "Method consistently states 231 full operations and scoped 3,905 fields. Historical omissions language removed.",
+    "old": "Method omitted totals despite advertising totals",
+    "new": "Method consistently states 231 full operations and scoped 3,905 fields. Historical omissions language removed.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "D1",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "D2",
+    "audit_reference": "Kimi §1.2.4 D2",
+    "claim_ids": [
+      "claim-D2"
+    ],
+    "old_claim": "Duplicated [3] [3] citation in generated v1 report",
+    "new_claim": "Draft uses source IDs; adjacent identical citations removed/avoided. Generated final report must be checked after merge.",
+    "old": "Duplicated [3] [3] citation in generated v1 report",
+    "new": "Draft uses source IDs; adjacent identical citations removed/avoided. Generated final report must be checked after merge.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/TECHNICAL_REPORT.draft.md",
+    "reference": "D2",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "D3",
+    "audit_reference": "Kimi §1.2.4 D3",
+    "claim_ids": [
+      "claim-D3"
+    ],
+    "old_claim": "GitLab/npm listings labeled Tier 1 under law-only taxonomy",
+    "new_claim": "Registry and source artifacts are primary for code/publication facts, not primary law. Source_type plus claim-specific evidence scope separates these roles; numeric tier alone must not imply legal authority.",
+    "old": "GitLab/npm listings labeled Tier 1 under law-only taxonomy",
+    "new": "Registry and source artifacts are primary for code/publication facts, not primary law. Source_type plus claim-specific evidence scope separates these roles; numeric tier alone must not imply legal authority.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/TECHNICAL_REPORT.draft.md",
+      "evidence/source-manifest.json"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "D3",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "D4",
+    "audit_reference": "Kimi §1.2.4 D4",
+    "claim_ids": [
+      "claim-D4"
+    ],
+    "old_claim": "Partial link/diagram checks easy to read as full validation",
+    "new_claim": "Historical check: 18/20 HTTP 200, one 202, one anti-bot; seven parsed diagrams and twelve inspected after DOMPurify limitation. These do not validate v2; final build/browser evidence must record fresh results separately.",
+    "old": "Partial link/diagram checks easy to read as full validation",
+    "new": "Historical check: 18/20 HTTP 200, one 202, one anti-bot; seven parsed diagrams and twelve inspected after DOMPurify limitation. These do not validate v2; final build/browser evidence must record fresh results separately.",
+    "disposition": "CONFIRMED",
+    "status": "UNKNOWN",
+    "evidence_label": "UNKNOWN",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/unresolved.md",
+      "research/verification.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/verification.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/verification.md",
+    "reference": "D4",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A01",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A01"
+    ],
+    "old_claim": "Only half the transfer-state documentation gap highlighted",
+    "new_claim": "REPLACED and UNREACHABLE are enumerated but transition-undocumented in captured status prose. Do not infer terminality.",
+    "old": "Only half the transfer-state documentation gap highlighted",
+    "new": "REPLACED and UNREACHABLE are enumerated but transition-undocumented in captured status prose. Do not infer terminality.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A01",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A02",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A02"
+    ],
+    "old_claim": "Agent example treated as valid schema example",
+    "new_claim": "RequireAuthorization example conflicts with REQUIRE_AUTHORIZATION enum; deployed acceptance unknown.",
+    "old": "Agent example treated as valid schema example",
+    "new": "RequireAuthorization example conflicts with REQUIRE_AUTHORIZATION enum; deployed acceptance unknown.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/data-model.md",
+      "architecture/transact-state-machine.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A02",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A03",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A03"
+    ],
+    "old_claim": "Only GB index staleness enumerated",
+    "new_claim": "76 entries / 72 keys; XX_old remains inForce at EUR 1,000 and points to Hong Kong, alongside 27 zero-threshold EU member entries.",
+    "old": "Only GB index staleness enumerated",
+    "new": "76 entries / 72 keys; XX_old remains inForce at EUR 1,000 and points to Hong Kong, alongside 27 zero-threshold EU member entries.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A03",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A04",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A04"
+    ],
+    "old_claim": "Index treated as unique jurisdiction inventory",
+    "new_claim": "BR ×3, LI_old ×2, IS_old ×2; count entries separately from distinct keys.",
+    "old": "Index treated as unique jurisdiction inventory",
+    "new": "BR ×3, LI_old ×2, IS_old ×2; count entries separately from distinct keys.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A04",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A05",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A05"
+    ],
+    "old_claim": "US-3000 treated as sole US variant",
+    "new_claim": "US1-3000, US2-0, US0-0 are published with different field sets; authoritative product variant and below-threshold selector unknown.",
+    "old": "US-3000 treated as sole US variant",
+    "new": "US1-3000, US2-0, US0-0 are published with different field sets; authoritative product variant and below-threshold selector unknown.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-matrix.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://pd.notabene.id/ivms101/v2/US1-3000.json"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json",
+      "research/sources/v2-US1-3000.json",
+      "research/sources/v2-US2-0.json",
+      "research/sources/v2-US0-0.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A05",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A06",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A06"
+    ],
+    "old_claim": "Near-threshold strings imply known comparator semantics",
+    "new_claim": "ID/GI near-1,000 strings and absent comparator fields are verified. Workaround intent is inference; do not round or derive comparator from filename.",
+    "old": "Near-threshold strings imply known comparator semantics",
+    "new": "ID/GI near-1,000 strings and absent comparator fields are verified. Workaround intent is inference; do not round or derive comparator from filename.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "data/jurisdiction-index-audit.json"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A06",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A07",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A07"
+    ],
+    "old_claim": "Documented PII key spelling generalized to live documents",
+    "new_claim": "Live P-256 JsonWebKey2020 #notabene-pii differs from EcdsaSecp256r1VerificationKey2019 #pii docs. Selection and migration contract unknown.",
+    "old": "Documented PII key spelling generalized to live documents",
+    "new": "Live P-256 JsonWebKey2020 #notabene-pii differs from EcdsaSecp256r1VerificationKey2019 #pii docs. Selection and migration contract unknown.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "architecture/actor-map.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://vasps.id/no/did.json",
+      "https://devx.notabene.id/docs/key-management-in-diddocs.md"
+    ],
+    "source_url": "https://vasps.id/no/did.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-did-no.json",
+      "research/sources/identity-02-diddoc-keys.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-no.json",
+    "reference": "A07",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A08",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A08"
+    ],
+    "old_claim": "Two live DIDDocs establish production topology",
+    "new_claim": "Both captured service hosts are QA. Root URL returns did:web:vasps.id:at, not proof of root-DID resolution validity. No DIDComm service calls made.",
+    "old": "Two live DIDDocs establish production topology",
+    "new": "Both captured service hosts are QA. Root URL returns did:web:vasps.id:at, not proof of root-DID resolution validity. No DIDComm service calls made.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/system-map.md",
+      "architecture/trust-model.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://vasps.id/.well-known/did.json",
+      "https://vasps.id/no/did.json"
+    ],
+    "source_url": "https://vasps.id/.well-known/did.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-did-root.json",
+      "research/sources/v2-did-no.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-did-root.json",
+    "reference": "A08",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A09",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A09"
+    ],
+    "old_claim": "12 webhooks read as exhaustive Flow catalog",
+    "new_claim": "12 main-guide events plus six quickstart-only Flow names; no top-level OpenAPI webhook schemas and no production delivery verified.",
+    "old": "12 webhooks read as exhaustive Flow catalog",
+    "new": "12 main-guide events plus six quickstart-only Flow names; no top-level OpenAPI webhook schemas and no production delivery verified.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/webhooks.json",
+      "architecture/flow.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/webhook-details.md",
+      "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/webhook-details.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-03-v2-webhook-details.md",
+      "research/sources/flow-02-pia.md",
+      "research/sources/flow-03-pra.md",
+      "research/sources/flow-04-ip.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-03-v2-webhook-details.md",
+    "reference": "A09",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A10",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A10"
+    ],
+    "old_claim": "Callback examples assumed to match path templates",
+    "new_claim": "Singular/plural callback examples conflict; API uses plural except baseline-security. Treat received callbacks as opaque and validate destination, not reconstructed path templates.",
+    "old": "Callback examples assumed to match path templates",
+    "new": "Singular/plural callback examples conflict; API uses plural except baseline-security. Treat received callbacks as opaque and validate destination, not reconstructed path templates.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/transact-state-machine.md",
+      "architecture/data-model.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/webhook-details.md"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/api-03-v2-webhook-details.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A10",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A11",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A11"
+    ],
+    "old_claim": "Payout and pay-in required sets implicitly symmetric",
+    "new_claim": "Pay-in additionally requires supportedAssets/fallbackSettlementAddresses. Payout authorization requires authorizationUrl with optional expires documented default one hour.",
+    "old": "Payout and pay-in required sets implicitly symmetric",
+    "new": "Pay-in additionally requires supportedAssets/fallbackSettlementAddresses. Payout authorization requires authorizationUrl with optional expires documented default one hour.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/flow.md",
+      "architecture/data-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A11",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A12",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A12"
+    ],
+    "old_claim": "V1 migration surface incomplete",
+    "new_claim": "126 full V1 operations include 56 integration paths; address-book/rules/integrations/webhook-registration lack like-for-like public V2 contracts. Related Relationships/discover are not proven substitutes.",
+    "old": "V1 migration surface incomplete",
+    "new": "126 full V1 operations include 56 integration paths; address-book/rules/integrations/webhook-registration lack like-for-like public V2 contracts. Related Relationships/discover are not proven substitutes.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/endpoints.json",
+      "architecture/integrations.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://doc.notabene.id/",
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://doc.notabene.id/",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-10-v1-openapi.json",
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-10-v1-openapi.json",
+    "reference": "A12",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A13",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A13"
+    ],
+    "old_claim": "V2 other operation groups not enumerated",
+    "new_claim": "Inventory covers Relationships 8, Members 7, Flow Internal 5, Network 4, Transfer Checks 2, delegateToken, public-keys, discovery, audit-log and transfer helpers. Tags double-count PII; total remains 105.",
+    "old": "V2 other operation groups not enumerated",
+    "new": "Inventory covers Relationships 8, Members 7, Flow Internal 5, Network 4, Transfer Checks 2, delegateToken, public-keys, discovery, audit-log and transfer helpers. Tags double-count PII; total remains 105.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/endpoints.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A13",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A14",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A14"
+    ],
+    "old_claim": "Bank A / Alice / Exchange B / Bob absent from report narrative",
+    "new_claim": "Actor Map supplies worked role/authority walk and report links it; customer reference, DID, representation and custody authority separated.",
+    "old": "Bank A / Alice / Exchange B / Bob absent from report narrative",
+    "new": "Actor Map supplies worked role/authority walk and report links it; customer reference, DID, representation and custody authority separated.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/actor-map.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://devx.notabene.id/docs/transfer-payload-structure.md"
+    ],
+    "source_url": "https://devx.notabene.id/docs/transfer-payload-structure.md",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-05-v2-payload.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-05-v2-payload.md",
+    "reference": "A14",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A15",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A15"
+    ],
+    "old_claim": "Status enums and diagram prose conflated",
+    "new_claim": "TAP policy COMPLETED and check COMPLETE concern distinct status domains. Guide images were not OCR-verified; absence finding is scoped to captured prose.",
+    "old": "Status enums and diagram prose conflated",
+    "new": "TAP policy COMPLETED and check COMPLETE concern distinct status domains. Guide images were not OCR-verified; absence finding is scoped to captured prose.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/transact-state-machine.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://devx.notabene.id/docs/statuses-explained.md"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "research/sources/v2-statuses.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A15",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A16",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A16"
+    ],
+    "old_claim": "All token placement answered by SDK parameter",
+    "new_claim": "V2 transformer delegateToken parameter narrows code path only; TTL, claims, audience, scopes, CORS, revocation and safe placement unknown.",
+    "old": "All token placement answered by SDK parameter",
+    "new": "V2 transformer delegateToken parameter narrows code path only; TTL, claims, audience, scopes, CORS, revocation and safe placement unknown.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/authentication.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/sdk-01-gitlab-javascript-sdk.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/sdk-01-gitlab-javascript-sdk.md",
+    "reference": "A16",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A17",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A17"
+    ],
+    "old_claim": "E2E label treated as a universal encryption mode",
+    "new_claim": "Managed, customer E2E, escrow/HYBRID and legacy did:key-to-Web-DID generations are distinct. Library default and source capability do not establish deployed profiles.",
+    "old": "E2E label treated as a universal encryption mode",
+    "new": "Managed, customer E2E, escrow/HYBRID and legacy did:key-to-Web-DID generations are distinct. Library default and source capability do not establish deployed profiles.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/trust-model.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm",
+      "https://devx.notabene.id/docs/key-management.md"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/identity-17-go-didcomm.md",
+      "research/sources/identity-18-key-management.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/identity-17-go-didcomm.md",
+    "reference": "A17",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A18",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A18"
+    ],
+    "old_claim": "GitHub peripheral or mirror-only",
+    "new_claim": "Notabene-id has nine public repos, six archived; go-didcomm is a GitHub primary. Unrelated notabene account and unverifiable organizations are not attribution evidence.",
+    "old": "GitHub peripheral or mirror-only",
+    "new": "Notabene-id has nine public repos, six archived; go-didcomm is a GitHub primary. Unrelated notabene account and unverifiable organizations are not attribution evidence.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/repositories.md",
+      "evidence/repositories.json"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://api.github.com/orgs/Notabene-id/repos?per_page=100"
+    ],
+    "source_url": "https://api.github.com/orgs/Notabene-id/repos?per_page=100",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/repositories.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "A18",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A19",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A19"
+    ],
+    "old_claim": "Unavailable repo URLs imply deleted official source",
+    "new_claim": "cli/reactnative/ops URLs unavailable publicly; private vs deleted unresolved. verify-proof lacks repo metadata. appkit scope/publisher and Reown content conflict is a provenance question, not misconduct.",
+    "old": "Unavailable repo URLs imply deleted official source",
+    "new": "cli/reactnative/ops URLs unavailable publicly; private vs deleted unresolved. verify-proof lacks repo metadata. appkit scope/publisher and Reown content conflict is a provenance question, not misconduct.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/packages.md",
+      "data/sdk-inventory.json",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://registry.npmjs.org/-/v1/search?text=notabene&size=50"
+    ],
+    "source_url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/packages.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/packages.json",
+    "reference": "A19",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A20",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A20"
+    ],
+    "old_claim": "Public activity and non-deprecation imply active support",
+    "new_claim": "Registry flags, commit activity, default-branch change and deployment/support are distinct. Node LEGACY is inferred maintenance classification; no official API EOL date established.",
+    "old": "Public activity and non-deprecation imply active support",
+    "new": "Registry flags, commit activity, default-branch change and deployment/support are distinct. Node LEGACY is inferred maintenance classification; no official API EOL date established.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/repositories.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/notabene-nodejs"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/repositories.json",
+      "evidence/commits.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/repositories.json",
+    "reference": "A20",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A21",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A21"
+    ],
+    "old_claim": "UI filters imply uncertainty assessment on every schema field",
+    "new_claim": "Schema VERIFIED means present in public specification, not operationally verified. Fields remain documented extraction with conditional semantics; unknowns live in claims and contract gaps, not fabricated invalid endpoint rows.",
+    "old": "UI filters imply uncertainty assessment on every schema field",
+    "new": "Schema VERIFIED means present in public specification, not operationally verified. Fields remain documented extraction with conditional semantics; unknowns live in claims and contract gaps, not fabricated invalid endpoint rows.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/fields.json",
+      "evidence/claims.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A21",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A22",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A22"
+    ],
+    "old_claim": "Delivery minors omitted from correction tracking",
+    "new_claim": "Final acceptance must check structured downloads, archive/verification URLs, state/data source lists, six proof selections, per-section badges, readable inline code, non-placeholder meta description and static/subpath behavior. Distinct maps and source lists authored; final UI validation owned by integration.",
+    "old": "Delivery minors omitted from correction tracking",
+    "new": "Final acceptance must check structured downloads, archive/verification URLs, state/data source lists, six proof selections, per-section badges, readable inline code, non-placeholder meta description and static/subpath behavior. Distinct maps and source lists authored; final UI validation owned by integration.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/unresolved.md",
+      "architecture/data-model.md",
+      "architecture/transact-state-machine.md",
+      "architecture/system-map.md",
+      "architecture/actor-map.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [],
+    "source_url": null,
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/audit-kimi.md",
+      "research/verification.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/audit-kimi.md",
+    "reference": "A22",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A23",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A23"
+    ],
+    "old_claim": "Audit Japan fully current / FATF executable selector conclusions accepted verbatim",
+    "new_claim": "Japan legal completeness remains UNKNOWN without primary text; FA artifact existence does not prove universal selector. Vendor configuration must not substitute for legal watch.",
+    "old": "Audit Japan fully current / FATF executable selector conclusions accepted verbatim",
+    "new": "Japan legal completeness remains UNKNOWN without primary text; FA artifact existence does not prove universal selector. Vendor configuration must not substitute for legal watch.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/jurisdiction-matrix.json",
+      "research/unresolved.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://notabene.id/world/japan",
+      "https://pd.notabene.id/ivms101/v2/FA-1000.json"
+    ],
+    "source_url": "https://notabene.id/world/japan",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-JP-0.json",
+      "research/sources/v2-FA-1000.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-JP-0.json",
+    "reference": "A23",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A24",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A24"
+    ],
+    "old_claim": "Audit xpub and TAIP-19 dates / TAIP-20 creation treated as authoritative",
+    "new_claim": "Captured committed date for xpub removal and initial TAIP-19 is 2025-11-28; TAIP-20 cited diff establishes memo evolution, not initial creation. Full hashes supersede audit abbreviations.",
+    "old": "Audit xpub and TAIP-19 dates / TAIP-20 creation treated as authoritative",
+    "new": "Captured committed date for xpub removal and initial TAIP-19 is 2025-11-28; TAIP-20 cited diff establishes memo evolution, not initial creation. Full hashes supersede audit abbreviations.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/chronology.md",
+      "research/code-archaeology.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d",
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/commits.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/commits.json",
+    "reference": "A24",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A25",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A25"
+    ],
+    "old_claim": "Commit message 14x boost or source change proves production behavior",
+    "new_claim": "Public crypto changes are verified; 14x performance remains unbenchmarked UNKNOWN, recovery intent INFERRED, production deployment UNKNOWN.",
+    "old": "Commit message 14x boost or source change proves production behavior",
+    "new": "Public crypto changes are verified; 14x performance remains unbenchmarked UNKNOWN, recovery intent INFERRED, production deployment UNKNOWN.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "evidence/commits.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "evidence/commits.json",
+    "reference": "A25",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A26",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A26"
+    ],
+    "old_claim": "No public TAP Parser / missing historical repos proves nonexistence",
+    "new_claim": "Negative findings scoped to current public searches. Normative conformance artifact, private history and TAP governance/license remain questions; do not rely on organization verification flag alone as cryptographic ownership proof.",
+    "old": "No public TAP Parser / missing historical repos proves nonexistence",
+    "new": "Negative findings scoped to current public searches. Normative conformance artifact, private history and TAP governance/license remain questions; do not rely on organization verification flag alone as cryptographic ownership proof.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/tap.md",
+      "research/repositories.md",
+      "QUESTIONS_FOR_NOTABENE.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/repositories.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/repositories.md",
+    "reference": "A26",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A27",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A27"
+    ],
+    "old_claim": "EU presentation success equated to legal compliance",
+    "new_claim": "Vendor accepts a broader set of payloads: legally sufficient payloads may satisfy vendor structure, but vendor-pass does not imply legal compliance. Audit sentence calling vendor-pass a proper subset of legally compliant reverses this relation and is not adopted.",
+    "old": "EU presentation success equated to legal compliance",
+    "new": "Vendor accepts a broader set of payloads: legally sufficient payloads may satisfy vendor structure, but vendor-pass does not imply legal compliance. Audit sentence calling vendor-pass a proper subset of legally compliant reverses this relation and is not adopted.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/jurisdictions.md",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+      "https://pd.notabene.id/ivms101/v2/FR-0.json"
+    ],
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/JUR-02-eu-regulation-2023-1113.md",
+      "research/sources/JUR-07-notabene-fr-0-pd.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "reference": "A27",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "A28",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A28"
+    ],
+    "old_claim": "Audit illustrative GBP850 exchange rate proves selector breach",
+    "new_claim": "No current market rate or actual selector call was made. GB legal/vendor trigger mismatch is evidenced; any monetary worked example must use explicit synthetic valuation, not assert plausible 2026 FX as fact.",
+    "old": "Audit illustrative GBP850 exchange rate proves selector breach",
+    "new": "No current market rate or actual selector call was made. GB legal/vendor trigger mismatch is evidenced; any monetary worked example must use explicit synthetic valuation, not assert plausible 2026 FX as fact.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "data/jurisdiction-matrix.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+      "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C"
+    ],
+    "source_url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/v2-jurisdiction-index.json",
+      "research/sources/gap-jurisdiction-01.md"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/v2-jurisdiction-index.json",
+    "reference": "A28",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  },
+  {
+    "id": "CODE-commit-js-secure-channel-918a87ff",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-secure-channel-918a87ff"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README. INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README. INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/918a87ffea1b39aa867ae755c6622c80ac937f27"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "918a87ffea1b39aa867ae755c6622c80ac937f27",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json",
+    "reference": "src/notabene.ts; src/types.ts; README.md; public/index.html",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-918a87ff-diff.json",
+    "event_date": "2024-07-17",
+    "verified_fact": "The public four-file diff changes the iframe/message-channel handshake and associated types, demo and README.",
+    "architectural_interpretation": "INFERRED: channel initiation moved toward the hosted frame, changing the host/iframe transport boundary; this does not prove cryptographic confidentiality of application payloads.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-v1-removal-5b0a15d",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-v1-removal-5b0a15d"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions. INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions. INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-5b0a15d-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-5b0a15d-diff.json",
+    "reference": "src/responseTransformer/",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-5b0a15d-diff.json",
+    "event_date": "2026-06-30",
+    "verified_fact": "The public commit diff deletes the V1 transformer export, implementation, mapper helpers, V1 types, tests/references, and README instructions.",
+    "architectural_interpretation": "INFERRED: the active browser SDK is narrowing around V2 request transformation; this is not an API-wide V1 deprecation notice.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-account-number-2ceb201",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-account-number-2ceb201"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs. INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs. INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-2ceb201-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "2ceb2018a8c28e71f5ad1e8622582d3f2969ccf2",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-2ceb201-diff.json",
+    "reference": "src/responseTransformer/mappers.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-2ceb201-diff.json",
+    "event_date": "2026-06-30",
+    "verified_fact": "The diff maps withdrawal beneficiary accountNumber from transaction.destination and deposit originator accountNumber from transaction.source, replacing config IDs that could fall back to generated URNs.",
+    "architectural_interpretation": "INFERRED: the fix closes leakage between internal component identifiers and the regulatory account/address field; historical pre-fix transformed payloads may require review.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-ivms-eed7a64",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-ivms-eed7a64"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation. INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation. INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/eed7a64202a8cc6a88baa531e5335625b08848ae"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-eed7a64-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "eed7a64202a8cc6a88baa531e5335625b08848ae",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-eed7a64-diff.json",
+    "reference": "src/ivms/v2Types.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-eed7a64-diff.json",
+    "event_date": "2026-04-13",
+    "verified_fact": "The three-line type diff removes customerIdentification from PersonV2 and adds it to NaturalPersonV2; the commit title states this aligns with IVMS validation.",
+    "architectural_interpretation": "INFERRED: V2 client types were corrected to track person-kind validation rather than a generic person container.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-proof-xpub-e32555e",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-proof-xpub-e32555e"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public diff removes the xpub property from src/types.ts. INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public diff removes the xpub property from src/types.ts. INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "e32555ea9ffe42274db4d8badf8696fc38b38413",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json",
+    "reference": "src/types.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-e32555e-diff.json",
+    "event_date": "2025-11-28",
+    "verified_fact": "The public diff removes the xpub property from src/types.ts.",
+    "architectural_interpretation": "INFERRED: the public proof model narrowed away from extended-public-key evidence; the diff alone does not establish server rejection or migration policy.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-counterparty-webhook-f448d87",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-counterparty-webhook-f448d87"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public diff adds webhookUrl typing and passes it into connection metadata. INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public diff adds webhookUrl typing and passes it into connection metadata. INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/f448d8794b30dea1f0515e241f82d64d7429ee38"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "f448d8794b30dea1f0515e241f82d64d7429ee38",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json",
+    "reference": "src/types.ts; src/utils/connections.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-f448d87-diff.json",
+    "event_date": "2026-07-09",
+    "verified_fact": "The public diff adds webhookUrl typing and passes it into connection metadata.",
+    "architectural_interpretation": "INFERRED: assisted handoffs gained asynchronous callback correlation; no delivery or security guarantee follows from this type addition.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-counterparty-decrypt-b573f47",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-counterparty-decrypt-b573f47"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public diff exports the helper and adds tests/API documentation. INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public diff exports the helper and adds tests/API documentation. INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/b573f473db84a88e42c496d4aec92d9a72f7e0e1"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-b573f47-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "b573f473db84a88e42c496d4aec92d9a72f7e0e1",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-b573f47-diff.json",
+    "reference": "src/utils/connections.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-b573f47-diff.json",
+    "event_date": "2026-07-09",
+    "verified_fact": "The public diff exports the helper and adds tests/API documentation.",
+    "architectural_interpretation": "INFERRED: decryption of returned assisted-handoff payloads became an explicit integrator responsibility.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-js-counterparty-correlation-1603b8c",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-js-counterparty-correlation-1603b8c"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public diff adds connectionId to RefreshSource and generated API documentation. INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public diff adds connectionId to RefreshSource and generated API documentation. INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/1603b8c4a26f795d17e21c53cef8ace9b3adab83"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "repository": "notabene/open-source/javascript-sdk",
+    "commit": "1603b8c4a26f795d17e21c53cef8ace9b3adab83",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json",
+    "reference": "src/types.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-javascript-sdk-1603b8c-diff.json",
+    "event_date": "2026-07-10",
+    "verified_fact": "The public diff adds connectionId to RefreshSource and generated API documentation.",
+    "architectural_interpretation": "INFERRED: webhook results can be joined to a stored connection record; operational retry semantics remain UNKNOWN.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-pii-ecdh1pu-42a4efc",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-pii-ecdh1pu-42a4efc"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost. INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost. INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "repository": "notabene/open-source/pii-sdk",
+    "commit": "42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json",
+    "reference": "src/cryptography/providers/sodium-provider.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-42a4efc-diff.json",
+    "event_date": "2025-10-15",
+    "verified_fact": "The nine-file public diff adds provider selection, a sodium provider, ECDH-1PU encryption/decryption paths, and tests. The commit message claims a 14x performance boost.",
+    "architectural_interpretation": "INFERRED: provider abstraction supports cryptographic migration. The 14x number is an author claim in commit metadata, not an independently reproduced benchmark.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-pii-hybrid-3ea4e3a",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-pii-hybrid-3ea4e3a"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients. INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients. INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/3ea4e3a30efe11331744665dad7cd11c8c435192"
+    ],
+    "source_url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-3ea4e3a-diff.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "repository": "notabene/open-source/pii-sdk",
+    "commit": "3ea4e3a30efe11331744665dad7cd11c8c435192",
+    "path": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-3ea4e3a-diff.json",
+    "reference": "src/index.ts",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/diffs/gitlab-pii-sdk-3ea4e3a-diff.json",
+    "event_date": "2025-11-20",
+    "verified_fact": "The public diff changes src/index.ts, built output, and adds a hybrid-mode integration test exercising two escrow recipients.",
+    "architectural_interpretation": "INFERRED: HYBRID is an escrow interoperability/recovery path. The diff does not establish production key custody, retention, or plaintext-access policy.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-taip17-lock-f8207e3e",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-taip17-lock-f8207e3e"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change. INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change. INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/f8207e3e4004d7ab8780120e9cfc4ed6b18325c4"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json",
+    "reference": "TAIP-17.md and schemas",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json",
+    "event_date": "2026-05-01",
+    "verified_fact": "GitHub's public commit object and file patches show the Escrow-to-Lock vocabulary change.",
+    "architectural_interpretation": "INFERRED: Lock is a more general protocol primitive than the use-case-specific Escrow name.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-taip18-rfq-e1a351b1",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-taip18-rfq-e1a351b1"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change. INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change. INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/e1a351b1be4b0289eedcad5857b787d9ab1efbdf"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "e1a351b1be4b0289eedcad5857b787d9ab1efbdf",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json",
+    "reference": "TAIP-18.md and schemas",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-e1a351b1.json",
+    "event_date": "2026-05-01",
+    "verified_fact": "GitHub's public commit object and patches show the Exchange-to-RFQ vocabulary change.",
+    "architectural_interpretation": "INFERRED: RFQ separates the request primitive from a particular exchange execution model.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-taip19-iso20022-65b1cf2d",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-taip19-iso20022-65b1cf2d"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25. INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25. INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d391dca911bfd5dfde872b08ffbc14ef9"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-65b1cf2d.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "65b1cf2d391dca911bfd5dfde872b08ffbc14ef9",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-65b1cf2d.json",
+    "reference": "TAIP-19.md",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-65b1cf2d.json",
+    "event_date": "2025-11-28",
+    "verified_fact": "The public GitHub commit adds TAIP-19 material; its committed date is 2025-11-28, not the audit table's 2025-11-25.",
+    "architectural_interpretation": "INFERRED: TAP is being mapped toward conventional payment-message interoperability; this does not prove deployed ISO 20022 integration.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-taip20-memo-ed644e3d",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-taip20-memo-ed644e3d"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20. INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20. INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/ed644e3d808f075145333d6349a5543072cb1506"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/ed644e3d808f075145333d6349a5543072cb1506",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "ed644e3d808f075145333d6349a5543072cb1506",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "ed644e3d808f075145333d6349a5543072cb1506",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json",
+    "reference": "TAIP-20.md",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-ed644e3d.json",
+    "event_date": "2026-03-17",
+    "verified_fact": "The public GitHub commit modifies TAIP-20's blockchain-memo references. It is evidence of TAIP-20 evolution, not evidence that this commit initially created TAIP-20.",
+    "architectural_interpretation": "INFERRED: TAIP-20 was being hardened against chain-specific memo/reference conventions.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-tap-ts-extraction-d9ef6185",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-tap-ts-extraction-d9ef6185"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository. INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository. INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/d9ef61850f999c058a47b311245bec3436cb103f"
+    ],
+    "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/d9ef61850f999c058a47b311245bec3436cb103f",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "d9ef61850f999c058a47b311245bec3436cb103f",
+    "repository": "TransactionAuthorizationProtocol/TAIPs",
+    "commit": "d9ef61850f999c058a47b311245bec3436cb103f",
+    "path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json",
+    "reference": "typescript package and repository links",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json",
+    "event_date": "2026-05-01",
+    "verified_fact": "The public GitHub commit removes TypeScript package content from TAIPs and points readers to the separate tap-ts repository.",
+    "architectural_interpretation": "INFERRED: normative prose/schemas and language bindings acquired separate release lifecycles, increasing the need to pin both.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-go-didcomm-ecdh1pu-383a8172",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-go-didcomm-ecdh1pu-383a8172"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU. INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU. INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/383a8172a40a5c895d3ac34cc92b8ee667f0f2b1"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json",
+    "reference": "Go source and tests",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json",
+    "event_date": "2026-07-08",
+    "verified_fact": "The public GitHub commit includes ECDH-1PU code and tests; the title misspells it EDCH-1PU.",
+    "architectural_interpretation": "INFERRED: the Go messaging stack was brought toward authenticated-encryption parity; production profile selection remains UNKNOWN.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-go-didcomm-xchacha-b08fac2a",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-go-didcomm-xchacha-b08fac2a"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit adds XChaCha20 encryption support and tests. INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit adds XChaCha20 encryption support and tests. INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/b08fac2ad0124995aebb44a74b9f2db4e069270e"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "b08fac2ad0124995aebb44a74b9f2db4e069270e",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json",
+    "reference": "Go source and tests",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-b08fac2a.json",
+    "event_date": "2026-07-14",
+    "verified_fact": "The public GitHub commit adds XChaCha20 encryption support and tests.",
+    "architectural_interpretation": "INFERRED: the library broadened content-encryption options; no deployed cipher-suite policy is public.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-go-didcomm-x25519-7f02e744",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-go-didcomm-x25519-7f02e744"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit changes recipient key selection and multi-recipient handling. INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit changes recipient key selection and multi-recipient handling. INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/7f02e7448b7c49662448d169b35798c0514b75cd"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/7f02e7448b7c49662448d169b35798c0514b75cd",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "7f02e7448b7c49662448d169b35798c0514b75cd",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "7f02e7448b7c49662448d169b35798c0514b75cd",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json",
+    "reference": "Go DID/key resolution source",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-7f02e744.json",
+    "event_date": "2026-07-16",
+    "verified_fact": "The public GitHub commit changes recipient key selection and multi-recipient handling.",
+    "architectural_interpretation": "INFERRED: DIDDoc interoperability was hardened against mixed key sets.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "CODE-commit-go-didcomm-canonical-diddoc-d6dbc6f2",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-CODE-commit-go-didcomm-canonical-diddoc-d6dbc6f2"
+    ],
+    "old_claim": "Commit-level evidence absent/thin in v1 report",
+    "new_claim": "The public GitHub commit changes DIDDoc emission and tests. INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "old": "Commit-level evidence absent/thin in v1 report",
+    "new": "The public GitHub commit changes DIDDoc emission and tests. INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "research/code-archaeology.md",
+      "research/chronology.md",
+      "evidence/commits.json",
+      "research/TECHNICAL_REPORT.draft.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://github.com/Notabene-id/go-didcomm/commit/d6dbc6f2837d7a7b805b9a4277d41ae60a51d780"
+    ],
+    "source_url": "https://github.com/Notabene-id/go-didcomm/commit/d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": "d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "repository": "Notabene-id/go-didcomm",
+    "commit": "d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+    "path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json",
+    "reference": "Go DIDDoc source and tests",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED",
+    "source_reference": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json",
+    "event_date": "2026-07-28",
+    "verified_fact": "The public GitHub commit changes DIDDoc emission and tests.",
+    "architectural_interpretation": "INFERRED: deterministic DIDDoc serialization reduces cross-implementation drift; the commit does not resolve documented-versus-live Notabene PII key naming drift.",
+    "interpretation_status": "INFERRED"
+  },
+  {
+    "id": "A29",
+    "audit_reference": "Kimi additional finding; v2 reconciliation",
+    "claim_ids": [
+      "claim-A29"
+    ],
+    "old_claim": "Audit relationship proof-type shorthand and SDK xpub removal imply uniform contract",
+    "new_claim": "Relationships schema contains twelve cryptographic signature types plus screenshot, self-declaration and microtransfer branches (15 type values in total); all four branches still include optional xpub. SDK xpub removal is source-specific, not proof the API rejects xpub.",
+    "old": "Audit relationship proof-type shorthand and SDK xpub removal imply uniform contract",
+    "new": "Relationships schema contains twelve cryptographic signature types plus screenshot, self-declaration and microtransfer branches (15 type values in total); all four branches still include optional xpub. SDK xpub removal is source-specific, not proof the API rejects xpub.",
+    "disposition": "CORRECTED",
+    "status": "VERIFIED",
+    "evidence_label": "VERIFIED",
+    "evidence_scope": "Public artifact; runtime unknown unless separately evidenced",
+    "affected_paths": [
+      "architecture/data-model.md",
+      "research/TECHNICAL_REPORT.draft.md",
+      "research/v1-v2-delta.md"
+    ],
+    "affected_ui": [
+      "source-linked research and downloads"
+    ],
+    "source_urls": [
+      "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+      "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/e32555ea9ffe42274db4d8badf8696fc38b38413"
+    ],
+    "source_url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "source_type": "PUBLIC_ARTIFACT",
+    "source_paths": [
+      "research/sources/api-09-v2-openapi.json",
+      "evidence/commits.json"
+    ],
+    "retrieved_at": "2026-09-24",
+    "artifact_version": null,
+    "repository": null,
+    "commit": null,
+    "path": "research/sources/api-09-v2-openapi.json",
+    "reference": "A29",
+    "rationale": "Targeted recheck separates observed artifact from inference and deployment unknowns.",
+    "implementation_status": "RESEARCH_RECONCILED"
+  }
+]

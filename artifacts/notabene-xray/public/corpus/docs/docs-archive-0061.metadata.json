@@ -1,0 +1,18 @@
+{
+  "id": "docs-archive-0061",
+  "title": "docs / incoming-decisions",
+  "source_url": "https://devx.notabene.id/docs/incoming-decisions.md",
+  "source_type": "documentation",
+  "retrieved_at": "2026-09-24T08:19:57.070Z",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/docs--incoming-decisions.md",
+  "captured_artifact_sha256": "e79741be89152d39666954d2acd6ac04d0b04b551b7df284fd7b3d4045b633c6",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

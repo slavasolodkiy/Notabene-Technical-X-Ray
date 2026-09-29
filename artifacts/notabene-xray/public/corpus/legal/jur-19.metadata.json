@@ -1,0 +1,18 @@
+{
+  "id": "JUR-19",
+  "title": "UK Money Laundering Regulations 2017, regulation 64C",
+  "source_url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C/2023-09-01/data.xml",
+  "source_type": "official",
+  "retrieved_at": "2026-09-29T15:54:01Z",
+  "provenance_note": "Primary point-in-time operative text, paragraphs 1-9. Replacement retrieval on 2026-09-29 from the same public XML URL: the original research/sources/JUR-19-uk-regulation-64c.md capture was missing. Original bytes, capture date and checksum are unknown; this XML is not represented as the original capture.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/sources/JUR-19-uk-regulation-64c-retrieved-2026-09-29.xml",
+  "captured_artifact_sha256": "d4f88670e4296d04b70a704e50030e83bfe03d4836def1c8573a001ce76ebd25",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

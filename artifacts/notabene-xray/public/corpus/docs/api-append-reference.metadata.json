@@ -1,0 +1,18 @@
+{
+  "id": "api-append-reference",
+  "title": "Append PII data to a transfer",
+  "source_url": "https://devx.notabene.id/reference/appendtransfer",
+  "source_type": "documentation",
+  "retrieved_at": null,
+  "provenance_note": "Individual OpenAPI block corroborating append request requirements and encryption-before-storage.",
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": null,
+  "repository": null,
+  "commit": null,
+  "captured_workspace_path": "research/corpus/docs/reference--appendtransfer.md",
+  "captured_artifact_sha256": "e68f6bcc38a1a7681e7f539809f8415cf2bba9fc5e4fedc682b7f1e508e6f295",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

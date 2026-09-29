@@ -1,0 +1,19 @@
+# Notabene Technical X-Ray v2
+
+Offline, public-evidence technical research into Notabene Transact, Flow, SafeConnect, TAP/DIDComm, jurisdiction artifacts, APIs and SDKs.
+
+## Canonical indexes
+
+- `evidence/source-manifest.json` — source URLs, artifact type, retrieval/version/repository/commit/reference, availability, license decision and SHA-256.
+- `evidence/endpoints.json` — normalized captured endpoints by API generation.
+- `evidence/fields.json` — normalized schema fields and PII/encryption context.
+- `evidence/entities.json`, `evidence/webhooks.json`, `evidence/jurisdictions.json`.
+- `ai/ontology.json`, `ai/architecture.json`, `ai/trust-boundaries.json`, `ai/product-boundaries.json`, `ai/open-questions.json`.
+- `ai/research-jobs.md` — twelve independent, citation-required investigations.
+- `research/TECHNICAL_REPORT.md` and `research/QUESTIONS_FOR_NOTABENE.md`.
+
+## Interpretation rules
+
+Use VERIFIED / INFERRED / UNKNOWN for factual confidence. Keep audit dispositions separate. Type contradictions as DOCS != OPENAPI, OPENAPI != LIVE ARTIFACT, VENDOR RULE != CURRENT LAW, or V1 != V2. A metadata record is not raw preserved content. Notabene orchestrates documented compliance/payment workflows; public evidence does not establish that it executes blockchain or fiat settlement.
+
+The portable raw corpus intentionally contains one known-permissive artifact: `corpus/repositories/javascript-sdk/` under its included MIT license. Other third-party sources are metadata-only unless the manifest says `available: true`.

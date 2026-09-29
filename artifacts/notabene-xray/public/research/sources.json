@@ -1,0 +1,2932 @@
+[
+  {
+    "id": "api-v2-openapi",
+    "aliases": [
+      "flow-S24"
+    ],
+    "title": "Notabene API OpenAPI 3.1 specification",
+    "url": "https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-09-v2-openapi.json",
+    "tier": 2,
+    "notes": "Public raw specification discovered in the V2 reference page HTML and retrieved 2026-09-24. OpenAPI info.version is 1.0.0; 85 path items, 105 HTTP operations, and 52 component schemas at retrieval. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "api-v1-openapi",
+    "aliases": [],
+    "title": "Notabene SafeTransact V1 OpenAPI",
+    "url": "https://doc.notabene.id/",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-10-v1-openapi.json",
+    "tier": 2,
+    "notes": "Mechanically extracted from the unauthenticated public Redoc __redoc_state.spec.data on 2026-09-24; no API calls or credentials used. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "api-getting-started",
+    "aliases": [
+      "DOC-REFERENCE-GETTING-STARTED-WITH-YOUR-API"
+    ],
+    "title": "Getting Started — API reference and OpenAPI specification",
+    "url": "https://devx.notabene.id/reference/getting-started-with-your-api",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-01-getting-started.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24. Links V2 Postman examples and directs V1 users to doc.notabene.id. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-statuses",
+    "aliases": [
+      "v2-statuses",
+      "DOC-DOCS-STATUSES-EXPLAINED"
+    ],
+    "title": "Statuses explained",
+    "url": "https://devx.notabene.id/docs/statuses-explained",
+    "publishedDate": "2026-01-27T10:54:19.000Z",
+    "evidencePath": "research/corpus/docs/docs--statuses-explained.md",
+    "tier": 3,
+    "notes": "Primary status table and relationship/policy status definitions. Does not explain two status values present in OpenAPI. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-webhook-details",
+    "aliases": [
+      "identity-05",
+      "DOC-DOCS-WEBHOOK-DETAILS"
+    ],
+    "title": "Webhook events details",
+    "url": "https://devx.notabene.id/docs/webhook-details",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-03-v2-webhook-details.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24. Contains event names, payload examples, and demonstrated transitions. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-webhook-flow",
+    "aliases": [
+      "DOC-DOCS-WEBHOOK-FLOW"
+    ],
+    "title": "Webhooks",
+    "url": "https://devx.notabene.id/docs/webhook-flow",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-04-v2-webhook-flow.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24. Documents Svix signatures, headers, subscription, and retries. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-transfer-payload",
+    "aliases": [
+      "flow-S16",
+      "identity-08",
+      "DOC-DOCS-TRANSFER-PAYLOAD-STRUCTURE"
+    ],
+    "title": "Transfer payload structure",
+    "url": "https://devx.notabene.id/docs/transfer-payload-structure",
+    "publishedDate": "2025-12-22T09:22:54.000Z",
+    "evidencePath": "research/sources/api-05-v2-payload.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24. Primary guide for agent chains, roles, identifiers, and partial-information examples. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-pii-requirements",
+    "aliases": [
+      "JUR-01",
+      "DOC-DOCS-PII-REQUIREMENTS"
+    ],
+    "title": "PII requirements",
+    "url": "https://devx.notabene.id/docs/pii-requirements",
+    "publishedDate": null,
+    "evidencePath": "research/sources/api-06-pii-requirements.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24. Establishes public presentation definitions, thresholds, alternatives, and validation output. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-pii-encryption",
+    "aliases": [
+      "flow-S17",
+      "gap-protocol-02",
+      "DOC-DOCS-ENCRYPTION-BY-NOTABENE"
+    ],
+    "title": "Encryption managed by Notabene",
+    "url": "https://devx.notabene.id/docs/encryption-by-notabene",
+    "publishedDate": "2026-01-14T18:30:05.000Z",
+    "evidencePath": "research/corpus/docs/docs--encryption-by-notabene.md",
+    "tier": 3,
+    "notes": "Describes managed encryption, local storage, re-encryption, reuse, validation, and blocking conditions. Its singular path example conflicts with current OpenAPI. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-self-encryption",
+    "aliases": [
+      "flow-S18",
+      "identity-07",
+      "DOC-DOCS-SELF-ENCRYPTION"
+    ],
+    "title": "Encryption managed by the Customer",
+    "url": "https://devx.notabene.id/docs/self-encryption",
+    "publishedDate": "2026-01-14T18:29:40.000Z",
+    "evidencePath": "research/corpus/docs/docs--self-encryption.md",
+    "tier": 3,
+    "notes": "Describes end-to-end encrypted forwarding and says this data is not stored on the entity or Notabene platform. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-append-reference",
+    "aliases": [
+      "DOC-REFERENCE-APPENDTRANSFER"
+    ],
+    "title": "Append PII data to a transfer",
+    "url": "https://devx.notabene.id/reference/appendtransfer",
+    "publishedDate": "2026-05-21T07:56:17.000Z",
+    "evidencePath": "research/corpus/docs/reference--appendtransfer.md",
+    "tier": 3,
+    "notes": "Individual OpenAPI block corroborating append request requirements and encryption-before-storage. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-present-reference",
+    "aliases": [
+      "DOC-REFERENCE-PRESENTTRANSFERPII"
+    ],
+    "title": "Present PII data to counterparties",
+    "url": "https://devx.notabene.id/reference/presenttransferpii",
+    "publishedDate": "2026-05-15T13:17:00.000Z",
+    "evidencePath": "research/corpus/docs/reference--presenttransferpii.md",
+    "tier": 3,
+    "notes": "Individual OpenAPI block for the current policy-scoped PII presentation operation. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "api-search-evidence",
+    "aliases": [
+      "identity-00"
+    ],
+    "title": "API discovery search evidence",
+    "url": "https://devx.notabene.id/",
+    "publishedDate": "2026-09-24",
+    "evidencePath": "research/sources/api-00-search-evidence.md",
+    "tier": 3,
+    "notes": "Search-only snippets from five distinct research angles; used for discovery, not as sole claim support. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "ARCH-SRC-01",
+    "aliases": [],
+    "title": "JavaScript SDK commit metadata and diffs",
+    "url": "https://gitlab.com/notabene/open-source/javascript-sdk/-/commit/5b0a15ddc8006bb6a9f67a02df008d966f9068a4",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/commits/gitlab-javascript-sdk-5b0a15d.json",
+    "tier": 2,
+    "notes": "Covers V1-to-V2 helper removal, accountNumber, IVMS model, proof types and Counterparty Assist. No code was executed. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-02",
+    "aliases": [],
+    "title": "PII SDK commit metadata and diffs",
+    "url": "https://gitlab.com/notabene/open-source/pii-sdk/-/commit/42a4efc0cd9bd8d29873e3f4db2269e523321c18",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/commits/gitlab-pii-sdk-42a4efc.json",
+    "tier": 2,
+    "notes": "Covers ECDH-1PU/libsodium and HYBRID two-escrow-key behavior. The 14x performance phrase is commit metadata, not independently benchmarked. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-03",
+    "aliases": [],
+    "title": "TAIPs public commit objects and patches",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/f8207e3e4004d7ab8780120e9cfc4ed6b18325c4",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-f8207e3e.json",
+    "tier": 2,
+    "notes": "Covers TAIP-17/18 renames, TAIP-19 ISO 20022, TAIP-20 memo references and tap-ts extraction. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-04",
+    "aliases": [],
+    "title": "go-didcomm public commit objects and patches",
+    "url": "https://github.com/Notabene-id/go-didcomm/commit/383a8172a40a5c895d3ac34cc92b8ee667f0f2b1",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-383a8172.json",
+    "tier": 2,
+    "notes": "Covers ECDH-1PU, XChaCha20, X25519 key selection and canonical DIDDoc emission. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-05",
+    "aliases": [
+      "SDK-SRC-07"
+    ],
+    "title": "Current public GitLab group roster",
+    "url": "https://gitlab.com/api/v4/groups/notabene%2Fopen-source/projects?include_subgroups=true&per_page=100",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/gitlab/projects.json",
+    "tier": 2,
+    "notes": "Proves the public roster at retrieval time only. Private versus deleted remains indistinguishable for absent names. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-06",
+    "aliases": [],
+    "title": "Notabene-id GitHub public repository roster",
+    "url": "https://api.github.com/orgs/Notabene-id/repos?per_page=100&type=public",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/github/notabene-id-repositories.json",
+    "tier": 2,
+    "notes": "Six archived and three unarchived at snapshot. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-07",
+    "aliases": [],
+    "title": "TransactionAuthorizationProtocol GitHub public repository roster",
+    "url": "https://api.github.com/orgs/TransactionAuthorizationProtocol/repos?per_page=100&type=public",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/github/tap-repositories.json",
+    "tier": 2,
+    "notes": "Organization-to-Notabene ownership is INFERRED from repository statements and shared maintainers, not GitHub verification. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-08",
+    "aliases": [],
+    "title": "npm plain-text search for notabene",
+    "url": "https://registry.npmjs.org/-/v1/search?text=notabene&size=50",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/npm/search-notabene.json",
+    "tier": 2,
+    "notes": "Eight attributable scoped packages, one scoped provenance oddity, two attributable unscoped legacy packages and one unrelated result. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "ARCH-SRC-09",
+    "aliases": [
+      "SDK-SRC-08"
+    ],
+    "title": "Per-package npm registry metadata",
+    "url": "https://registry.npmjs.org/@notabene%2fjavascript-sdk",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/v2-archaeology/npm/javascript-sdk.json",
+    "tier": 2,
+    "notes": "Metadata only; no downloaded package was executed. Attribution does not prove support. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "flow-S01",
+    "aliases": [
+      "SDK-SRC-12"
+    ],
+    "title": "Notabene developer documentation index",
+    "url": "https://devx.notabene.id/llms.txt",
+    "publishedDate": null,
+    "evidencePath": "research/sources/devx-llms.md",
+    "tier": 3,
+    "notes": "Fetched 2026-09-24; primary index enumerating Flow, Transact V1/V2, SafeConnect, integrations and API references. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S02",
+    "aliases": [
+      "DOC-DOCS-INTRODUCTION"
+    ],
+    "title": "Notabene Flow — Developer Introduction",
+    "url": "https://devx.notabene.id/docs/introduction.md",
+    "publishedDate": "2026-03-30",
+    "evidencePath": "research/sources/flow-01-introduction.md",
+    "tier": 3,
+    "notes": "Primary architecture and responsibility statement; updatedAt recorded by source. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S03",
+    "aliases": [
+      "DOC-DOCS-QUICKSTART-PIA-CREATE-PAY-INS"
+    ],
+    "title": "PIA (Create Pay-ins)",
+    "url": "https://devx.notabene.id/docs/quickstart-pia-create-pay-ins.md",
+    "publishedDate": "2026-03-31",
+    "evidencePath": "research/sources/flow-02-pia.md",
+    "tier": 3,
+    "notes": "Primary PIA payload, endpoints and webhook lifecycle. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S04",
+    "aliases": [
+      "DOC-DOCS-QUICKSTART-PRA-RESPOND-TO-PAY-INS"
+    ],
+    "title": "PRA (Respond to Pay-ins)",
+    "url": "https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md",
+    "publishedDate": "2026-03-31",
+    "evidencePath": "research/sources/flow-03-pra.md",
+    "tier": 3,
+    "notes": "Primary PRA authorization, asset selection, settlement and reporting sequence. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S05",
+    "aliases": [
+      "DOC-DOCS-INFRASTRUCTURE-PROVIDER-IP"
+    ],
+    "title": "IP (Infrastructure Provider)",
+    "url": "https://devx.notabene.id/docs/infrastructure-provider-ip.md",
+    "publishedDate": "2026-03-31",
+    "evidencePath": "research/sources/flow-04-ip.md",
+    "tier": 3,
+    "notes": "Primary custody/wallet/liquidity provider boundary. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S06",
+    "aliases": [
+      "DOC-DOCS-END-TO-END-EXAMPLES"
+    ],
+    "title": "Flow end-to-end examples",
+    "url": "https://devx.notabene.id/docs/end-to-end-examples.md",
+    "publishedDate": "2026-04-29",
+    "evidencePath": "research/sources/flow-06-e2e.md",
+    "tier": 3,
+    "notes": "Primary narrative examples for pull, push and recurring payments; some broad scale statements are marketing assertions. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S07",
+    "aliases": [
+      "DOC-DOCS-USING-NOTABENE-AND-FIREBLOCKS"
+    ],
+    "title": "Fireblocks Integration Overview",
+    "url": "https://devx.notabene.id/docs/using-notabene-and-fireblocks.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/flow-07-fireblocks-overview.md",
+    "tier": 3,
+    "notes": "Explicitly says the Fireblocks integration is currently V1 and allocates implementation duties. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S08",
+    "aliases": [
+      "DOC-DOCS-INTEGRATING-NOTABENE-INTO-YOUR-FIREBLOCKS-DECISIONS"
+    ],
+    "title": "Integrating Notabene Into Your Fireblocks Policies",
+    "url": "https://devx.notabene.id/docs/integrating-notabene-into-your-fireblocks-decisions.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/flow-08-fireblocks-policies.md",
+    "tier": 3,
+    "notes": "Primary status-gating and pre/post-screening policy detail. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S09",
+    "aliases": [
+      "DOC-DOCS-FIREBLOCKS-AND-BLOCKCHAIN-ANALYTICS"
+    ],
+    "title": "Using Notabene, Fireblocks and Blockchain Analytics",
+    "url": "https://devx.notabene.id/docs/fireblocks-and-blockchain-analytics.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/flow-09-fireblocks-analytics.md",
+    "tier": 3,
+    "notes": "Primary provider routing boundary; provider availability is dated to source update. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S10",
+    "aliases": [
+      "DOC-DOCS-TRUSTHUB"
+    ],
+    "title": "TRUSThub connector (beta)",
+    "url": "https://devx.notabene.id/docs/trusthub.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/flow-10-trusthub.md",
+    "tier": 3,
+    "notes": "Primary description of an email-ingestion connector for V1 incomplete messages. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S11",
+    "aliases": [
+      "DOC-DOCS-WHAT-IS-FLOW-WHY-IT-MATTERS"
+    ],
+    "title": "What is Flow & Why it matters",
+    "url": "https://devx.notabene.id/docs/what-is-flow-why-it-matters.md",
+    "publishedDate": "2026-03-25",
+    "evidencePath": "research/sources/flow-11-what-is-flow.md",
+    "tier": 3,
+    "notes": "Primary statement that Flow is not a blockchain or wallet and sits above custody. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S12",
+    "aliases": [],
+    "title": "Notabene Flow activates hundreds of customers",
+    "url": "https://www.prnewswire.com/apac/news-releases/notabene-flow-activates-hundreds-of-customers-enabling-stablecoin-b2b-payments-across-the-globe-302791736.html",
+    "publishedDate": "2026-06-04",
+    "evidencePath": "research/sources/flow-14-news-june-2026.md",
+    "tier": 2,
+    "notes": "Syndicated company press release. Treat reach and volume figures as company claims, not independently verified metrics."
+  },
+  {
+    "id": "flow-S13",
+    "aliases": [],
+    "title": "Notabene Announces Strategic Investment from Ripple",
+    "url": "https://notabene.id/post/notabene-announces-strategic-investment-from-ripple",
+    "publishedDate": "2026-07-23",
+    "evidencePath": "research/sources/flow-15-news-ripple-2026.md",
+    "tier": 2,
+    "notes": "First-party press release; future collaboration language does not establish completed technical integration."
+  },
+  {
+    "id": "flow-S14",
+    "aliases": [
+      "DOC-DOCS-COMMON-USECASES"
+    ],
+    "title": "Common use cases",
+    "url": "https://devx.notabene.id/docs/common-usecases.md",
+    "publishedDate": "2026-01-22",
+    "evidencePath": "research/sources/flow-16-common-usecases.md",
+    "tier": 3,
+    "notes": "Names Fireblocks, DFNS and Ripple Custody but contains no DFNS/Ripple payload or responsibility detail. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S15",
+    "aliases": [
+      "SDK-SRC-03",
+      "DOC-DOCS-SAFE-CONNECT-COMPONENTS-V2"
+    ],
+    "title": "SafeConnect Components",
+    "url": "https://devx.notabene.id/docs/safe-connect-components-v2.md",
+    "publishedDate": "2025-12-04",
+    "evidencePath": "research/sources/flow-17-safeconnect.md",
+    "tier": 3,
+    "notes": "Primary embedded UX scope and V1/V2 compatibility statement. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S19",
+    "aliases": [
+      "SDK-SRC-05",
+      "DOC-DOCS-EMBEDDED-COMPONENTS-V2-API"
+    ],
+    "title": "Embedded Components + V2 API",
+    "url": "https://devx.notabene.id/docs/embedded-components-v2-api.md",
+    "publishedDate": "2026-09-10",
+    "evidencePath": "research/sources/flow-23-safeconnect-v2.md",
+    "tier": 3,
+    "notes": "Most recently updated technical source in this corpus; documents schema renames and component-to-V2 calls. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S20",
+    "aliases": [
+      "DOC-DOCS-CHOOSE-YOUR-INTEGRATION-PATH"
+    ],
+    "title": "Choose Your Integration Path",
+    "url": "https://devx.notabene.id/docs/choose-your-integration-path.md",
+    "publishedDate": "2026-05-13",
+    "evidencePath": "research/sources/flow-12-integration-path.md",
+    "tier": 3,
+    "notes": "Primary role-selection page naming typical PIA, PRA and IP implementers. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S21",
+    "aliases": [
+      "DOC-CHANGELOG-APP-TRANSACT-V2"
+    ],
+    "title": "App - Transact V2 changelog",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2.md",
+    "publishedDate": null,
+    "evidencePath": "research/sources/flow-13-transact-v2-changelog.md",
+    "tier": 3,
+    "notes": "Sparse changelog page linking Transact V2 application features; no release date was present. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S22",
+    "aliases": [
+      "DOC-DOCS-BLOCKCHAINANALYTICS"
+    ],
+    "title": "Common use cases: Blockchain Analytics",
+    "url": "https://devx.notabene.id/docs/blockchainanalytics.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/flow-18-analytics.md",
+    "tier": 3,
+    "notes": "Diagram-heavy provider page; retained as corroboration but textual responsibility detail is limited. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "flow-S23",
+    "aliases": [
+      "DOC-DOCS-WELCOME"
+    ],
+    "title": "What is Notabene Transact",
+    "url": "https://devx.notabene.id/docs/welcome.md",
+    "publishedDate": "2026-02-09",
+    "evidencePath": "research/sources/flow-19-platform-intro.md",
+    "tier": 3,
+    "notes": "Primary Transact and Travel Rule overview. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "GAP-JUR-01",
+    "aliases": [
+      "GAP-JUR-01"
+    ],
+    "title": "UK Money Laundering Regulations 2017, regulation 64C — latest revised text",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C",
+    "publishedDate": "2026-06-30",
+    "evidencePath": "research/sources/gap-jurisdiction-01.md",
+    "tier": 1,
+    "notes": "Primary current legislation. Latest text is up to date through 2026-09-23 and shows the 2026 substitution of £800 for EUR 1,000, with an equal-to-or-exceeds comparator."
+  },
+  {
+    "id": "GAP-JUR-02",
+    "aliases": [],
+    "title": "MAS Notice PSN02 — Prevention of Money Laundering and Countering the Financing of Terrorism, Digital Payment Token Service",
+    "url": "https://www.mas.gov.sg/-/media/amld-amendments---30-june-2025/mas-notice-psn02.pdf",
+    "publishedDate": "2025-06-30",
+    "evidencePath": "research/sources/gap-jurisdiction-02.md",
+    "tier": 1,
+    "notes": "Primary current MAS notice, last revised 2025-06-30. Paragraphs 13.4 and 13.6 establish <= S$1,500 and > S$1,500 branches and the enhanced one-of alternatives."
+  },
+  {
+    "id": "JUR-02",
+    "aliases": [
+      "JUR-02"
+    ],
+    "title": "Regulation (EU) 2023/1113",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113",
+    "publishedDate": "2023-05-31",
+    "evidencePath": "research/sources/JUR-02-eu-regulation-2023-1113.md",
+    "tier": 1,
+    "notes": "Primary EU law. Article 14 supplies the compound identity logic; the self-hosted ownership/control threshold is strictly exceeding EUR 1,000."
+  },
+  {
+    "id": "JUR-04",
+    "aliases": [
+      "JUR-04",
+      "v2-jurisdiction-index"
+    ],
+    "title": "Notabene IVMS101 v2 jurisdiction thresholds",
+    "url": "https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-04-notabene-jurisdiction-thresholds.md",
+    "tier": 3,
+    "notes": "Primary public vendor index. It identifies files and nominal thresholds but does not state comparator semantics. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-06",
+    "aliases": [
+      "JUR-06"
+    ],
+    "title": "Notabene GB-1000 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/GB-1000.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-06-notabene-gb-1000-pd.md",
+    "tier": 3,
+    "notes": "Primary raw vendor JSON used to verify all/pick/count logic and person-type paths. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-07",
+    "aliases": [
+      "JUR-07"
+    ],
+    "title": "Notabene FR-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/FR-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-07-notabene-fr-0-pd.md",
+    "tier": 3,
+    "notes": "Primary raw vendor JSON used to identify the four-way vendor OR that differs from Article 14(1)(d). Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-10",
+    "aliases": [
+      "JUR-10"
+    ],
+    "title": "Notabene SG-1500 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/SG-1500.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-10-notabene-sg-1500-pd.md",
+    "tier": 3,
+    "notes": "Primary raw vendor JSON. Confirms baseline all plus one-of and an empty legal-person path for date-and-place-of-birth. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-11",
+    "aliases": [
+      "JUR-11",
+      "v2-JP-0"
+    ],
+    "title": "Notabene JP-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/JP-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-11-notabene-jp-0-pd.md",
+    "tier": 3,
+    "notes": "Primary raw vendor JSON; evidence of vendor implementation only, not complete Japanese law. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-17",
+    "aliases": [
+      "JUR-17"
+    ],
+    "title": "FSA Weekly Review No. 540",
+    "url": "https://www.fsa.go.jp/en/newsletter/weekly2023/540.html",
+    "publishedDate": "2023-06-08",
+    "evidencePath": "research/sources/JUR-17-japan-fsa-2023.md",
+    "tier": 1,
+    "notes": "Primary Japanese regulator evidence for the 2023 effective date and broad scope; insufficient for a current exhaustive field mapping."
+  },
+  {
+    "id": "gap-protocol-01",
+    "aliases": [],
+    "title": "Transaction Authorization Improvement Proposals repository",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs",
+    "publishedDate": null,
+    "evidencePath": "research/sources/gap-protocol-01.md",
+    "tier": 2,
+    "notes": "VERIFIED first-party public protocol repository; specification contents, implementation links, contribution model, commit count, and conflicting README/license display. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "gap-protocol-03",
+    "aliases": [],
+    "title": "TAIPs and tap-ts public repository metadata and git history inspection",
+    "url": "https://api.github.com/repos/TransactionAuthorizationProtocol/TAIPs",
+    "publishedDate": null,
+    "evidencePath": "research/sources/gap-protocol-03-repository-metadata.json",
+    "tier": 2,
+    "notes": "VERIFIED unauthenticated GitHub metadata plus public git history; records organization ownership, dates, contributors, commits, and tap-ts extraction history. Repository code was not executed. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-01",
+    "aliases": [
+      "identity-01",
+      "DOC-DOCS-DIDDOCS-EXPLAINED"
+    ],
+    "title": "DIDdocs explained",
+    "url": "https://devx.notabene.id/docs/diddocs-explained.md",
+    "publishedDate": "2026-03-31",
+    "evidencePath": "research/sources/identity-01-diddocs.md",
+    "tier": 3,
+    "notes": "VERIFIED first-party Web-DID key-purpose and Node routing/decryption documentation. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-02",
+    "aliases": [
+      "identity-02",
+      "DOC-DOCS-KEY-MANAGEMENT-IN-DIDDOCS"
+    ],
+    "title": "Key Management in DIDdocs",
+    "url": "https://devx.notabene.id/docs/key-management-in-diddocs.md",
+    "publishedDate": "2026-03-31",
+    "evidencePath": "research/sources/identity-02-diddoc-keys.md",
+    "tier": 3,
+    "notes": "VERIFIED first-party distinction between platform message-level encryption/signing and customer PII encryption using a dedicated key. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-06",
+    "aliases": [
+      "identity-06",
+      "DOC-DOCS-PII-ONLY-SDK"
+    ],
+    "title": "PII SDK",
+    "url": "https://devx.notabene.id/docs/pii-only-sdk.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/identity-06-pii-sdk.md",
+    "tier": 3,
+    "notes": "VERIFIED first-party legacy hosted, end-to-end, and hybrid encryption mode values and client-side decryption flow. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-13",
+    "aliases": [
+      "identity-13"
+    ],
+    "title": "tap-ts TypeScript TAP types",
+    "url": "https://github.com/TransactionAuthorizationProtocol/tap-ts/blob/main/src/tap.ts",
+    "publishedDate": null,
+    "evidencePath": "research/sources/identity-13-tap-typescript.md",
+    "tier": 2,
+    "notes": "VERIFIED exact public repository file and commit for TAP types and validation surface. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-17",
+    "aliases": [
+      "identity-17"
+    ],
+    "title": "Notabene go-didcomm",
+    "url": "https://github.com/Notabene-id/go-didcomm",
+    "publishedDate": "2026-07-28",
+    "evidencePath": "research/sources/identity-17-go-didcomm.md",
+    "tier": 2,
+    "notes": "VERIFIED public implementation distinguishes signed, sign-then-encrypt, authcrypt, and anoncrypt profiles. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-18",
+    "aliases": [
+      "identity-18",
+      "DOC-DOCS-KEY-MANAGEMENT"
+    ],
+    "title": "Key management",
+    "url": "https://devx.notabene.id/docs/key-management.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/identity-18-key-management.md",
+    "tier": 3,
+    "notes": "VERIFIED first-party legacy key and escrow fallback documentation; explicitly calls escrow-key flow pseudo end-to-end. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-03",
+    "aliases": [
+      "DOC-REFERENCE-AUTHENTICATION-2"
+    ],
+    "title": "Authentication",
+    "url": "https://devx.notabene.id/reference/authentication-2.md",
+    "publishedDate": "2025-11-12",
+    "evidencePath": "research/sources/identity-03-authentication-reference.md",
+    "tier": 3,
+    "notes": "Official reference; OAuth client credentials and 86,400-second access token. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-04",
+    "aliases": [
+      "DOC-DOCS-CUSTOMERTOKEN"
+    ],
+    "title": "Generate customerToken",
+    "url": "https://devx.notabene.id/docs/customertoken.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/identity-04-customer-token.md",
+    "tier": 3,
+    "notes": "Official V1-generation guide; customer scope, frontend use, five-minute lifetime. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-09",
+    "aliases": [],
+    "title": "Transaction Authorization Protocol overview",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/tap-overview.md",
+    "publishedDate": "2025-04-22",
+    "evidencePath": "research/sources/identity-09-tap-overview.md",
+    "tier": 2,
+    "notes": "Official protocol repository; file viewed at repository HEAD c8dd72c109f1bfdd31a22e19fcc4d11ad5b6654d. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-10",
+    "aliases": [],
+    "title": "TAP messages",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/messages.md",
+    "publishedDate": null,
+    "evidencePath": "research/sources/identity-10-tap-messages.md",
+    "tier": 2,
+    "notes": "Official protocol message documentation; archived fetch includes repository UI metadata. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-11",
+    "aliases": [],
+    "title": "TAP Agents",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/agents.md",
+    "publishedDate": "2025-08-03",
+    "evidencePath": "research/sources/identity-11-tap-agents.md",
+    "tier": 2,
+    "notes": "Official protocol agent identity, delegation and DIDComm endpoint documentation. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-12",
+    "aliases": [],
+    "title": "TAP Authorization Flow",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/blob/main/authorization.md",
+    "publishedDate": "2025-06-23",
+    "evidencePath": "research/sources/identity-12-tap-authorization.md",
+    "tier": 2,
+    "notes": "Official protocol authorization versus settlement boundary. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-14",
+    "aliases": [
+      "DOC-DOCS-WEBHOOK-ENHANCEMENTS"
+    ],
+    "title": "Webhooks",
+    "url": "https://devx.notabene.id/docs/webhook-enhancements.md",
+    "publishedDate": "2026-01-21",
+    "evidencePath": "research/sources/identity-14-webhook-auth.md",
+    "tier": 3,
+    "notes": "Official Svix signing-secret, retry and endpoint guidance. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-15",
+    "aliases": [
+      "DOC-REFERENCE-CREATEDELEGATETOKEN"
+    ],
+    "title": "Create a delegate token",
+    "url": "https://devx.notabene.id/reference/createdelegatetoken.md",
+    "publishedDate": "2026-06-03",
+    "evidencePath": "research/sources/identity-15-delegate-token.md",
+    "tier": 3,
+    "notes": "Official OpenAPI; entity/delegate binding and output. TTL absent. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-16",
+    "aliases": [
+      "DOC-REFERENCE-GETFLOWCUSTOMER"
+    ],
+    "title": "Get a customer profile by DID",
+    "url": "https://devx.notabene.id/reference/getflowcustomer.md",
+    "publishedDate": "2026-05-15",
+    "evidencePath": "research/sources/identity-16-flow-customer.md",
+    "tier": 3,
+    "notes": "Official OpenAPI; entity ownership, natural/legal type, encrypted/decrypted profile behavior. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "identity-19",
+    "aliases": [],
+    "title": "PII SDK cryptography source inspection",
+    "url": "https://gitlab.com/notabene/open-source/pii-sdk/-/blob/2331a4231957549bddd9bb58703ebca274e707d3/src/cryptography/index.ts",
+    "publishedDate": null,
+    "evidencePath": "research/sources/identity-19-pii-sdk-source.md",
+    "tier": 2,
+    "notes": "Exact repo path/file/commit; authenticated JWE implementation. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "identity-20",
+    "aliases": [],
+    "title": "TAIPs agent and policy schema inspection",
+    "url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/tree/c8dd72c109f1bfdd31a22e19fcc4d11ad5b6654d/schemas",
+    "publishedDate": null,
+    "evidencePath": "research/sources/identity-20-tap-schemas.md",
+    "tier": 2,
+    "notes": "Exact repository commit and paths for agent, policy and message schemas. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "JUR-03",
+    "aliases": [],
+    "title": "Cryptoassets information",
+    "url": "https://www.fca.org.uk/firms/cryptoassets-information",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-03-fca-travel-rule.md",
+    "tier": 1,
+    "notes": "FCA landing page; scoped fetch did not itself contain detailed requirements."
+  },
+  {
+    "id": "JUR-05",
+    "aliases": [],
+    "title": "Notabene GB-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/GB-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-05-notabene-gb-0-pd.md",
+    "tier": 3,
+    "notes": "Public raw JSON archived in evidence file. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-08",
+    "aliases": [],
+    "title": "Notabene US-3000 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/US-3000.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-08-notabene-us-3000-pd.md",
+    "tier": 3,
+    "notes": "Public raw JSON; no public US-0 entry appeared in index. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-09",
+    "aliases": [],
+    "title": "Notabene SG-0 presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/SG-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-09-notabene-sg-0-pd.md",
+    "tier": 3,
+    "notes": "Singapore baseline definition. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-12",
+    "aliases": [
+      "v2-FA-1000"
+    ],
+    "title": "Notabene FA-1000 FATF fallback presentation definition",
+    "url": "https://pd.notabene.id/ivms101/v2/FA-1000.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-12-notabene-fatf-1000-pd.md",
+    "tier": 3,
+    "notes": "Vendor fallback artifact; FA is an implementation pseudo-code, not a jurisdiction. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "JUR-13",
+    "aliases": [],
+    "title": "UK Money Laundering Regulations 2017 point-in-time consolidated text",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/2023-09-01/data.xht",
+    "publishedDate": "2023-09-01",
+    "evidencePath": "research/sources/JUR-13-uk-mlr-crypto-transfer.md",
+    "tier": 1,
+    "notes": "Fetch truncated before Part 7A; retained as scope-limit evidence and superseded for claims by JUR-19."
+  },
+  {
+    "id": "JUR-14",
+    "aliases": [],
+    "title": "FCA sets out expectations for UK cryptoasset businesses complying with the Travel Rule",
+    "url": "https://www.fca.org.uk/news/statements/fca-sets-out-expectations-uk-cryptoasset-businesses-complying-travel-rule",
+    "publishedDate": "2023-08-17",
+    "evidencePath": "research/sources/JUR-14-fca-expectations.md",
+    "tier": 1,
+    "notes": "Primary regulator operational statement; compliance start 2023-09-01."
+  },
+  {
+    "id": "JUR-15",
+    "aliases": [],
+    "title": "31 CFR 1010.410 — Records to be made and retained by financial institutions",
+    "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410",
+    "publishedDate": null,
+    "evidencePath": "research/sources/JUR-15-us-ecfr-1010-410.md",
+    "tier": 1,
+    "notes": "Authoritative but unofficial continuously updated eCFR; displayed current through 2026-09-22."
+  },
+  {
+    "id": "JUR-16",
+    "aliases": [
+      "GAP-JUR-02"
+    ],
+    "title": "MAS Notice PSN02 — Prevention of Money Laundering and Countering the Financing of Terrorism, Digital Payment Token Service",
+    "url": "https://www.mas.gov.sg/-/media/annex-a8-mas-notice-psn02.pdf",
+    "publishedDate": "2024-04-02",
+    "evidencePath": "research/sources/JUR-16-mas-psn02.md",
+    "tier": 1,
+    "notes": "Primary regulator notice; archived text includes paragraph 13 and revision history."
+  },
+  {
+    "id": "JUR-18",
+    "aliases": [],
+    "title": "FATF targeted update on virtual assets and VASPs 2024",
+    "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/targeted-update-virtual-assets-vasps-2024.html",
+    "publishedDate": "2024-07-09",
+    "evidencePath": "research/sources/JUR-18-fatf-update.md",
+    "tier": 1,
+    "notes": "Primary FATF update, but scoped fetch did not establish exact threshold/field text; not used for those claims."
+  },
+  {
+    "id": "JUR-19",
+    "aliases": [],
+    "title": "UK Money Laundering Regulations 2017, regulation 64C",
+    "url": "https://www.legislation.gov.uk/uksi/2017/692/regulation/64C/2023-09-01/data.xml",
+    "publishedDate": "2023-09-01",
+    "evidencePath": "research/sources/JUR-19-uk-regulation-64c-retrieved-2026-09-29.xml",
+    "tier": 1,
+    "notes": "Primary point-in-time operative text, paragraphs 1-9. Replacement retrieval on 2026-09-29 from the same public XML URL: the original research/sources/JUR-19-uk-regulation-64c.md capture was missing. Original bytes, capture date and checksum are unknown; this XML is not represented as the original capture."
+  },
+  {
+    "id": "SDK-SRC-01",
+    "aliases": [],
+    "title": "Notabene JavaScript SDK GitLab repository and source",
+    "url": "https://gitlab.com/notabene/open-source/javascript-sdk",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/sdk/repos/javascript-sdk",
+    "tier": 2,
+    "notes": "Cloned 2026-09-24. Inspected commit 9084ba787e1658da4b20946232347aaf51c38620 on dev; npm stable 2.22.0 points to tag commit de41d83da3b2d2dfcd498fb0be76cfeb69b151b5. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "SDK-SRC-02",
+    "aliases": [
+      "DOC-DOCS-COMPONENTS-OVERVIEW"
+    ],
+    "title": "Configuring the SafeConnect Components",
+    "url": "https://devx.notabene.id/docs/components-overview",
+    "publishedDate": null,
+    "evidencePath": "research/sources/sdk-02-components-configuration.md",
+    "tier": 3,
+    "notes": "Primary developer documentation archived 2026-09-24. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "SDK-SRC-04",
+    "aliases": [
+      "v2-proofs",
+      "DOC-DOCS-SELF-HOSTED-WALLET-VERIFICATION-1"
+    ],
+    "title": "Self Hosted Wallet Proofs",
+    "url": "https://devx.notabene.id/docs/self-hosted-wallet-verification-1",
+    "publishedDate": null,
+    "evidencePath": "research/sources/sdk-08-self-hosted-wallet-proofs.md",
+    "tier": 3,
+    "notes": "Primary proof-method documentation. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "SDK-SRC-06",
+    "aliases": [
+      "DOC-DOCS-USING-THE-SAFECONNECT-COMPONENT-RESPONSE"
+    ],
+    "title": "Component Events",
+    "url": "https://devx.notabene.id/docs/using-the-safeconnect-component-response",
+    "publishedDate": null,
+    "evidencePath": "research/sources/sdk-06-component-events.md",
+    "tier": 3,
+    "notes": "Primary event and completion behavior documentation. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "SDK-SRC-09",
+    "aliases": [],
+    "title": "Notabene NodeJS SDK repository",
+    "url": "https://gitlab.com/notabene/open-source/notabene-nodejs",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/sdk/repos/notabene-nodejs",
+    "tier": 2,
+    "notes": "Cloned at tag v1.19.2, commit 7d310d09c8d365cefe48eb066de4caf8c1246883. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "SDK-SRC-10",
+    "aliases": [],
+    "title": "Notabene PII SDK repository",
+    "url": "https://gitlab.com/notabene/open-source/pii-sdk",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/sdk/repos/pii-sdk",
+    "tier": 2,
+    "notes": "Cloned at commit 2331a4231957549bddd9bb58703ebca274e707d3; latest stable tag v1.17.2 is 57cc203e4ad1fab634b2a4044ef6271dbb82f330. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "SDK-SRC-11",
+    "aliases": [],
+    "title": "Notabene GitHub organization public repository inventory",
+    "url": "https://api.github.com/orgs/notabene-id/repos?per_page=100&type=public",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/sdk/github/notabene-id-repos.json",
+    "tier": 2,
+    "notes": "Ownership-qualified GitHub inventory snapshot retrieved 2026-09-24. Primary technical artifact; not proof of deployed behavior."
+  },
+  {
+    "id": "v2-US1-3000",
+    "aliases": [],
+    "title": "US1-3000",
+    "url": "https://pd.notabene.id/ivms101/v2/US1-3000.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-US1-3000.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "v2-US2-0",
+    "aliases": [],
+    "title": "US2-0",
+    "url": "https://pd.notabene.id/ivms101/v2/US2-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-US2-0.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "v2-US0-0",
+    "aliases": [],
+    "title": "US0-0",
+    "url": "https://pd.notabene.id/ivms101/v2/US0-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-US0-0.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "v2-XX_old-1000",
+    "aliases": [],
+    "title": "XX_old-1000",
+    "url": "https://pd.notabene.id/ivms101/v2/XX_old-1000.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-XX_old-1000.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "v2-XX_old-0",
+    "aliases": [],
+    "title": "XX_old-0",
+    "url": "https://pd.notabene.id/ivms101/v2/XX_old-0.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-XX_old-0.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "v2-did-root",
+    "aliases": [],
+    "title": "did-root",
+    "url": "https://vasps.id/.well-known/did.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-did-root.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture."
+  },
+  {
+    "id": "v2-did-no",
+    "aliases": [],
+    "title": "did-no",
+    "url": "https://vasps.id/no/did.json",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-did-no.json",
+    "tier": 3,
+    "notes": "Point-in-time public capture; not observed deployed transaction behavior. Redistribution permission not established; review before bundling raw capture."
+  },
+  {
+    "id": "v2-japan-vendor",
+    "aliases": [],
+    "title": "Japan vendor jurisdiction narrative",
+    "url": "https://notabene.id/world/japan",
+    "publishedDate": null,
+    "evidencePath": "research/sources/v2-japan-vendor.html",
+    "tier": 3,
+    "notes": "Verifies vendor narrative only; primary Japanese law not fetched. Raw redistribution permission not established."
+  },
+  {
+    "id": "DOC-CHANGELOG-APP-TRANSACT-V2-1",
+    "aliases": [],
+    "title": "app transact v2 1",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--app-transact-v2-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-APP-TRANSACT-V2-2",
+    "aliases": [],
+    "title": "app transact v2 2",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2-2.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--app-transact-v2-2.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-APP-TRANSACT-V2-3",
+    "aliases": [],
+    "title": "app transact v2 3",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2-3.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--app-transact-v2-3.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-APP-TRANSACT-V2-4",
+    "aliases": [],
+    "title": "app transact v2 4",
+    "url": "https://devx.notabene.id/changelog/app-transact-v2-4.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--app-transact-v2-4.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-EMBEDDED-UI-ADD-JURISDICTIONAL-OPTIONS",
+    "aliases": [],
+    "title": "embedded ui add jurisdictional options",
+    "url": "https://devx.notabene.id/changelog/embedded-ui-add-jurisdictional-options.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--embedded-ui-add-jurisdictional-options.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-SDK-ADD-SUPPORT-FOR-ZCASH-MESSAGE-SIGNATURE-VERIFICATION",
+    "aliases": [],
+    "title": "sdk add support for zcash message signature verification",
+    "url": "https://devx.notabene.id/changelog/sdk-add-support-for-zcash-message-signature-verification.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--sdk-add-support-for-zcash-message-signature-verification.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-SDK-EMBEDDED-UI-SCHEDULED-RELEASE",
+    "aliases": [],
+    "title": "sdk embedded ui scheduled release",
+    "url": "https://devx.notabene.id/changelog/sdk-embedded-ui-scheduled-release.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--sdk-embedded-ui-scheduled-release.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-SONIC-BLOCKCHAIN-SUPPORT",
+    "aliases": [],
+    "title": "sonic blockchain support",
+    "url": "https://devx.notabene.id/changelog/sonic-blockchain-support.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--sonic-blockchain-support.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-CHANGELOG-TRANSACT",
+    "aliases": [],
+    "title": "transact",
+    "url": "https://devx.notabene.id/changelog/transact.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/changelog--transact.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ADDING-AGENTS-TO-A-TRANSFER",
+    "aliases": [],
+    "title": "adding agents to a transfer",
+    "url": "https://devx.notabene.id/docs/adding-agents-to-a-transfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--adding-agents-to-a-transfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ADDING-TRANSACTION-HASH",
+    "aliases": [],
+    "title": "adding transaction hash",
+    "url": "https://devx.notabene.id/docs/adding-transaction-hash.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--adding-transaction-hash.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-AFTER-INITIATION",
+    "aliases": [],
+    "title": "after initiation",
+    "url": "https://devx.notabene.id/docs/after-initiation.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--after-initiation.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-API-TESTING-SCRIPT-V2",
+    "aliases": [],
+    "title": "api testing script v2",
+    "url": "https://devx.notabene.id/docs/api-testing-script-v2.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--api-testing-script-v2.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ASSET-ADDRESSES-AND-CUSTOM-VALUE",
+    "aliases": [],
+    "title": "asset addresses and custom value",
+    "url": "https://devx.notabene.id/docs/asset-addresses-and-custom-value.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--asset-addresses-and-custom-value.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-AUTH0",
+    "aliases": [],
+    "title": "auth0",
+    "url": "https://devx.notabene.id/docs/auth0.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--auth0.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-AUTHENTICATION",
+    "aliases": [],
+    "title": "authentication",
+    "url": "https://devx.notabene.id/docs/authentication.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--authentication.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-AUTHORIZATION-REQUIREMENTS",
+    "aliases": [],
+    "title": "authorization requirements",
+    "url": "https://devx.notabene.id/docs/authorization-requirements.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--authorization-requirements.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-AUTOMATED-TESTING",
+    "aliases": [],
+    "title": "automated testing",
+    "url": "https://devx.notabene.id/docs/automated-testing.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--automated-testing.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-BENEFICIARY-INITIATED-REQUEST-FOR-INFORMATION",
+    "aliases": [],
+    "title": "beneficiary initiated request for information",
+    "url": "https://devx.notabene.id/docs/beneficiary-initiated-request-for-information.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--beneficiary-initiated-request-for-information.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-BITGO-1",
+    "aliases": [],
+    "title": "bitgo 1",
+    "url": "https://devx.notabene.id/docs/bitgo-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--bitgo-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CALLING-TXNOTIFY-FOR-EVERY-DEPOSIT",
+    "aliases": [],
+    "title": "calling txnotify for every deposit",
+    "url": "https://devx.notabene.id/docs/calling-txnotify-for-every-deposit.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--calling-txnotify-for-every-deposit.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-COINS-DECIMALS",
+    "aliases": [],
+    "title": "coins decimals",
+    "url": "https://devx.notabene.id/docs/coins-decimals.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--coins-decimals.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CONFIGURATION",
+    "aliases": [],
+    "title": "configuration",
+    "url": "https://devx.notabene.id/docs/configuration.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--configuration.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CONFIMATION-AUTOMATION",
+    "aliases": [],
+    "title": "confimation automation",
+    "url": "https://devx.notabene.id/docs/confimation-automation.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--confimation-automation.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CONFIRM-ADDRESS",
+    "aliases": [],
+    "title": "confirm address",
+    "url": "https://devx.notabene.id/docs/confirm-address.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--confirm-address.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-COUNTERPARTY-VASP-DISCOVERABILITY",
+    "aliases": [],
+    "title": "counterparty vasp discoverability",
+    "url": "https://devx.notabene.id/docs/counterparty-vasp-discoverability.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--counterparty-vasp-discoverability.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CREATE-OUTGOING-TRANSFERS",
+    "aliases": [],
+    "title": "create outgoing transfers",
+    "url": "https://devx.notabene.id/docs/create-outgoing-transfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--create-outgoing-transfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CREATE-TRANSACTIONS",
+    "aliases": [],
+    "title": "create transactions",
+    "url": "https://devx.notabene.id/docs/create-transactions.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--create-transactions.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CREATING-YOUR-ACCOUNT",
+    "aliases": [],
+    "title": "creating your account",
+    "url": "https://devx.notabene.id/docs/creating-your-account.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--creating-your-account.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-CUSTODIAN-FLOWS",
+    "aliases": [],
+    "title": "custodian flows",
+    "url": "https://devx.notabene.id/docs/custodian-flows.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--custodian-flows.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DATA-COLLECTION",
+    "aliases": [],
+    "title": "data collection",
+    "url": "https://devx.notabene.id/docs/data-collection.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--data-collection.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DEALING-WITH-DUPLICATE-HASHES",
+    "aliases": [],
+    "title": "dealing with duplicate hashes",
+    "url": "https://devx.notabene.id/docs/dealing-with-duplicate-hashes.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--dealing-with-duplicate-hashes.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DECRYPTION-WORKFLOW-1",
+    "aliases": [],
+    "title": "decryption workflow 1",
+    "url": "https://devx.notabene.id/docs/decryption-workflow-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--decryption-workflow-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DEMO",
+    "aliases": [],
+    "title": "demo",
+    "url": "https://devx.notabene.id/docs/demo.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--demo.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DIAGRAMS-2",
+    "aliases": [],
+    "title": "diagrams 2",
+    "url": "https://devx.notabene.id/docs/diagrams-2.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--diagrams-2.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-DIDDOC-SETUP",
+    "aliases": [],
+    "title": "diddoc setup",
+    "url": "https://devx.notabene.id/docs/diddoc-setup.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--diddoc-setup.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-EMBEDDED-COMPONENTS-V1-API",
+    "aliases": [],
+    "title": "embedded components v1 api",
+    "url": "https://devx.notabene.id/docs/embedded-components-v1-api.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--embedded-components-v1-api.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ENCRYPTION-FLOWS",
+    "aliases": [],
+    "title": "encryption flows",
+    "url": "https://devx.notabene.id/docs/encryption-flows.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--encryption-flows.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ENCRYPTION-WORKFLOW-1",
+    "aliases": [],
+    "title": "encryption workflow 1",
+    "url": "https://devx.notabene.id/docs/encryption-workflow-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--encryption-workflow-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ERRORS",
+    "aliases": [],
+    "title": "errors",
+    "url": "https://devx.notabene.id/docs/errors.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--errors.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-EXECUTING",
+    "aliases": [],
+    "title": "executing",
+    "url": "https://devx.notabene.id/docs/executing.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--executing.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-EXTERNAL-SCREENING",
+    "aliases": [],
+    "title": "external screening",
+    "url": "https://devx.notabene.id/docs/external-screening.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--external-screening.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-FAQ",
+    "aliases": [],
+    "title": "faq",
+    "url": "https://devx.notabene.id/docs/faq.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--faq.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-FIREBLOCKS-SENDING-AND-RECEIVING-TR-MESSAGES-FIREBLOCKS",
+    "aliases": [],
+    "title": "fireblocks sending and receiving tr messages fireblocks",
+    "url": "https://devx.notabene.id/docs/fireblocks-sending-and-receiving-tr-messages-fireblocks.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--fireblocks-sending-and-receiving-tr-messages-fireblocks.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-FIREBLOCKS-TESTING",
+    "aliases": [],
+    "title": "fireblocks testing",
+    "url": "https://devx.notabene.id/docs/fireblocks-testing.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--fireblocks-testing.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-FLOW-DIAGRAMS-V2",
+    "aliases": [],
+    "title": "flow diagrams v2",
+    "url": "https://devx.notabene.id/docs/flow-diagrams-v2.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--flow-diagrams-v2.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-HOW-DOES-OUR-APIS-INTERACT-WITH-YOUR-SYSTEM",
+    "aliases": [],
+    "title": "how does our apis interact with your system",
+    "url": "https://devx.notabene.id/docs/how-does-our-apis-interact-with-your-system.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--how-does-our-apis-interact-with-your-system.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ID-AND-SECRET-NEW",
+    "aliases": [],
+    "title": "id and secret new",
+    "url": "https://devx.notabene.id/docs/id-and-secret-new.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--id-and-secret-new.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-IMPORTANT",
+    "aliases": [],
+    "title": "important",
+    "url": "https://devx.notabene.id/docs/important.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--important.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-INCOMING-DECISIONS",
+    "aliases": [],
+    "title": "incoming decisions",
+    "url": "https://devx.notabene.id/docs/incoming-decisions.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--incoming-decisions.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-INCOMING-TRANSFERS",
+    "aliases": [],
+    "title": "incoming transfers",
+    "url": "https://devx.notabene.id/docs/incoming-transfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--incoming-transfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-INCOMPLETE-HOW-TO-COLLECT-DATA",
+    "aliases": [],
+    "title": "incomplete how to collect data",
+    "url": "https://devx.notabene.id/docs/incomplete-how-to-collect-data.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--incomplete-how-to-collect-data.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-MASTERCARD-CRYPTO-CREDENTIAL",
+    "aliases": [],
+    "title": "mastercard crypto credential",
+    "url": "https://devx.notabene.id/docs/mastercard-crypto-credential.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--mastercard-crypto-credential.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-NESTED-VASP-REDIRECT",
+    "aliases": [],
+    "title": "nested vasp redirect",
+    "url": "https://devx.notabene.id/docs/nested-vasp-redirect.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--nested-vasp-redirect.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-NOTABENE-IPS",
+    "aliases": [],
+    "title": "notabene ips",
+    "url": "https://devx.notabene.id/docs/notabene-ips.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--notabene-ips.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-PAYINS",
+    "aliases": [],
+    "title": "payins",
+    "url": "https://devx.notabene.id/docs/payins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--payins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-PII-ENCRYPTION-GUIDE",
+    "aliases": [],
+    "title": "pii encryption guide",
+    "url": "https://devx.notabene.id/docs/pii-encryption-guide.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--pii-encryption-guide.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-PROVIDE-PII",
+    "aliases": [],
+    "title": "provide pii",
+    "url": "https://devx.notabene.id/docs/provide-pii.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--provide-pii.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-RATE-LIMITING",
+    "aliases": [],
+    "title": "rate limiting",
+    "url": "https://devx.notabene.id/docs/rate-limiting.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--rate-limiting.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-RECEIVE-TRAVEL-RULE-PII-DATA-TRANSFERS",
+    "aliases": [],
+    "title": "receive travel rule pii data transfers",
+    "url": "https://devx.notabene.id/docs/receive-travel-rule-pii-data-transfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--receive-travel-rule-pii-data-transfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-RECIEVE-TRANSFER",
+    "aliases": [],
+    "title": "recieve transfer",
+    "url": "https://devx.notabene.id/docs/recieve-transfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--recieve-transfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-REDIRECT-TRANSFERS",
+    "aliases": [],
+    "title": "redirect transfers",
+    "url": "https://devx.notabene.id/docs/redirect-transfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--redirect-transfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-REJECT-AUTHORIZE-AND-SETTLE",
+    "aliases": [],
+    "title": "reject authorize and settle",
+    "url": "https://devx.notabene.id/docs/reject-authorize-and-settle.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--reject-authorize-and-settle.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-RELATIONSHIPS",
+    "aliases": [],
+    "title": "relationships",
+    "url": "https://devx.notabene.id/docs/relationships.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--relationships.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-ROBOTVASPS",
+    "aliases": [],
+    "title": "robotvasps",
+    "url": "https://devx.notabene.id/docs/robotvasps.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--robotvasps.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-SENDING",
+    "aliases": [],
+    "title": "sending",
+    "url": "https://devx.notabene.id/docs/sending.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--sending.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-SETTLEMENT",
+    "aliases": [],
+    "title": "settlement",
+    "url": "https://devx.notabene.id/docs/settlement.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--settlement.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-SUPPORTED-ASSETS",
+    "aliases": [],
+    "title": "supported assets",
+    "url": "https://devx.notabene.id/docs/supported-assets.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--supported-assets.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-SUPPORTED-COINS",
+    "aliases": [],
+    "title": "supported coins",
+    "url": "https://devx.notabene.id/docs/supported-coins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--supported-coins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-TR-STATUS-VNEXT",
+    "aliases": [],
+    "title": "tr status vnext",
+    "url": "https://devx.notabene.id/docs/tr-status_vnext.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--tr-status_vnext.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-TRANSFER",
+    "aliases": [],
+    "title": "transfer",
+    "url": "https://devx.notabene.id/docs/transfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--transfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-TRANSFERS",
+    "aliases": [],
+    "title": "transfers",
+    "url": "https://devx.notabene.id/docs/transfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--transfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-UNSUPPRTED-ASSETS",
+    "aliases": [],
+    "title": "unsupprted assets",
+    "url": "https://devx.notabene.id/docs/unsupprted-assets.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--unsupprted-assets.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-UPDATING-AN-INCOMPLETE-MESSAGE",
+    "aliases": [],
+    "title": "updating an incomplete message",
+    "url": "https://devx.notabene.id/docs/updating-an-incomplete-message.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--updating-an-incomplete-message.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-UPDATING",
+    "aliases": [],
+    "title": "updating",
+    "url": "https://devx.notabene.id/docs/updating.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--updating.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-UPLOAD-ADDRESSES",
+    "aliases": [],
+    "title": "upload addresses",
+    "url": "https://devx.notabene.id/docs/upload-addresses.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--upload-addresses.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-VALIDATE-1",
+    "aliases": [],
+    "title": "validate 1",
+    "url": "https://devx.notabene.id/docs/validate-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--validate-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-VALIDATION-API",
+    "aliases": [],
+    "title": "validation api",
+    "url": "https://devx.notabene.id/docs/validation-api.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--validation-api.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-VERIFY-BENEFICIARY-DETAILS",
+    "aliases": [],
+    "title": "verify beneficiary details",
+    "url": "https://devx.notabene.id/docs/verify-beneficiary-details.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--verify-beneficiary-details.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-VERIFY-BENEFICIARY-NAME-V2",
+    "aliases": [],
+    "title": "verify beneficiary name v2",
+    "url": "https://devx.notabene.id/docs/verify-beneficiary-name-v2.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--verify-beneficiary-name-v2.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-DOCS-VERIFY-USING-API",
+    "aliases": [],
+    "title": "verify using api",
+    "url": "https://devx.notabene.id/docs/verify-using-api.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/docs--verify-using-api.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-COMPONENT-V1-API-WITHDRAWAL-ASSIST-WITH-TXCREATE-APPENDPII-AND-CONFIRMRELATIONSHIP",
+    "aliases": [],
+    "title": "component v1 api withdrawal assist with txcreate appendpii and confirmrelationship",
+    "url": "https://devx.notabene.id/recipes/component-v1-api-withdrawal-assist-with-txcreate-appendpii-and-confirmrelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--component-v1-api-withdrawal-assist-with-txcreate-appendpii-and-confirmrelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-COMPONENT-V2-API-CONNECT-WALLET-WITH-CONFIRMRELATIONSHIP",
+    "aliases": [],
+    "title": "component v2 api connect wallet with confirmrelationship",
+    "url": "https://devx.notabene.id/recipes/component-v2-api-connect-wallet-with-confirmrelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--component-v2-api-connect-wallet-with-confirmrelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-COMPONENT-V2-API-DEPOSIT-ASSIST-WITH-TXCREATE-APPENDPII-AND-CONFIRMRELATIONSHIP",
+    "aliases": [],
+    "title": "component v2 api deposit assist with txcreate appendpii and confirmrelationship",
+    "url": "https://devx.notabene.id/recipes/component-v2-api-deposit-assist-with-txcreate-appendpii-and-confirmrelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--component-v2-api-deposit-assist-with-txcreate-appendpii-and-confirmrelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-CONNECT-WALLET-JS-SDK-BASIC-HTML",
+    "aliases": [],
+    "title": "connect wallet js sdk basic html",
+    "url": "https://devx.notabene.id/recipes/connect-wallet-js-sdk-basic-html.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--connect-wallet-js-sdk-basic-html.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-DECRYPTING-PII-WITH-THE-PII-SDK",
+    "aliases": [],
+    "title": "decrypting pii with the pii sdk",
+    "url": "https://devx.notabene.id/recipes/decrypting-pii-with-the-pii-sdk.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--decrypting-pii-with-the-pii-sdk.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-DEPOSIT-ASSIST-TXUPDATE-EXAMPLE",
+    "aliases": [],
+    "title": "deposit assist txupdate example",
+    "url": "https://devx.notabene.id/recipes/deposit-assist-txupdate-example.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--deposit-assist-txupdate-example.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-EXPORT-TR-MESSAGE-DATA-TO-CSV",
+    "aliases": [],
+    "title": "export tr message data to csv",
+    "url": "https://devx.notabene.id/recipes/export-tr-message-data-to-csv.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--export-tr-message-data-to-csv.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-FIREBLOCKS-GETTING-YOUR-COUNTERPARTYS-ENCRYPTION-KEY",
+    "aliases": [],
+    "title": "fireblocks getting your counterpartys encryption key",
+    "url": "https://devx.notabene.id/recipes/fireblocks-getting-your-counterpartys-encryption-key.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--fireblocks-getting-your-counterpartys-encryption-key.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-GENERATE-E2E-KEY-AND-UPDATE-DIDDOC",
+    "aliases": [],
+    "title": "generate e2e key and update diddoc",
+    "url": "https://devx.notabene.id/recipes/generate-e2e-key-and-update-diddoc.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--generate-e2e-key-and-update-diddoc.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-NOTABENE-API-GETTING-YOUR-COUNTERPARTYS-ENCRYPTION-KEY",
+    "aliases": [],
+    "title": "notabene api getting your counterpartys encryption key",
+    "url": "https://devx.notabene.id/recipes/notabene-api-getting-your-counterpartys-encryption-key.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--notabene-api-getting-your-counterpartys-encryption-key.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-SLACK-NOTIFICATIONS",
+    "aliases": [],
+    "title": "slack notifications",
+    "url": "https://devx.notabene.id/recipes/slack-notifications.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--slack-notifications.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-TXCREATE-RECIPE-W-1ST-PARTY",
+    "aliases": [],
+    "title": "txcreate recipe w 1st party",
+    "url": "https://devx.notabene.id/recipes/txcreate-recipe-w-1st-party.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--txcreate-recipe-w-1st-party.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-USE-NOTABENE-WITH-THE-FIREBLOCKS-SDK",
+    "aliases": [],
+    "title": "use notabene with the fireblocks sdk",
+    "url": "https://devx.notabene.id/recipes/use-notabene-with-the-fireblocks-sdk.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--use-notabene-with-the-fireblocks-sdk.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-USING-THE-PII-SDK-AND-FIREBLOCKS-API",
+    "aliases": [],
+    "title": "using the pii sdk and fireblocks api",
+    "url": "https://devx.notabene.id/recipes/using-the-pii-sdk-and-fireblocks-api.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--using-the-pii-sdk-and-fireblocks-api.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-USING-THE-PII-SDK-TO-ENCRYPT-AND-SEND-A-TR-MESSAGE",
+    "aliases": [],
+    "title": "using the pii sdk to encrypt and send a tr message",
+    "url": "https://devx.notabene.id/recipes/using-the-pii-sdk-to-encrypt-and-send-a-tr-message.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--using-the-pii-sdk-to-encrypt-and-send-a-tr-message.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-V2-CREATE-E2E-KEYS-AND-DIDDOC",
+    "aliases": [],
+    "title": "v2 create e2e keys and diddoc",
+    "url": "https://devx.notabene.id/recipes/v2-create-e2e-keys-and-diddoc.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--v2-create-e2e-keys-and-diddoc.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-V2-E2E-DECRYPT-PII",
+    "aliases": [],
+    "title": "v2 e2e decrypt pii",
+    "url": "https://devx.notabene.id/recipes/v2-e2e-decrypt-pii.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--v2-e2e-decrypt-pii.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-V2-E2E-ENCRYPT-PII-USING-SHARED-KEY",
+    "aliases": [],
+    "title": "v2 e2e encrypt pii using shared key",
+    "url": "https://devx.notabene.id/recipes/v2-e2e-encrypt-pii-using-shared-key.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--v2-e2e-encrypt-pii-using-shared-key.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-WITHDRAWAL-ASSIST-TXCREATE-EXAMPLE",
+    "aliases": [],
+    "title": "withdrawal assist txcreate example",
+    "url": "https://devx.notabene.id/recipes/withdrawal-assist-txcreate-example.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--withdrawal-assist-txcreate-example.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-WITHDRAWAL-ASSIST-WIDGET-BASIC-HTML-EXAMPLE",
+    "aliases": [],
+    "title": "withdrawal assist widget basic html example",
+    "url": "https://devx.notabene.id/recipes/withdrawal-assist-widget-basic-html-example.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--withdrawal-assist-widget-basic-html-example.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-RECIPES-WITHDRAWAL-ASSIST-WIDGET-TYPESCRIPT-EXAMPLE",
+    "aliases": [],
+    "title": "withdrawal assist widget typescript example",
+    "url": "https://devx.notabene.id/recipes/withdrawal-assist-widget-typescript-example.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/recipes--withdrawal-assist-widget-typescript-example.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDAGENT",
+    "aliases": [],
+    "title": "addagent",
+    "url": "https://devx.notabene.id/reference/addagent.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addagent.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDCOMMENT",
+    "aliases": [],
+    "title": "addcomment",
+    "url": "https://devx.notabene.id/reference/addcomment.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addcomment.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDRESSESDELETE",
+    "aliases": [],
+    "title": "addressesdelete",
+    "url": "https://devx.notabene.id/reference/addressesdelete.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addressesdelete.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDRESSESGET",
+    "aliases": [],
+    "title": "addressesget",
+    "url": "https://devx.notabene.id/reference/addressesget.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addressesget.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDRESSOWNERSHIPGET",
+    "aliases": [],
+    "title": "addressownershipget",
+    "url": "https://devx.notabene.id/reference/addressownershipget.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addressownershipget.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDRESSREGISTERCUSTOMER-1",
+    "aliases": [],
+    "title": "addressregistercustomer 1",
+    "url": "https://devx.notabene.id/reference/addressregistercustomer-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addressregistercustomer-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-ADDRESSUPLOADADDRESSLIST-1",
+    "aliases": [],
+    "title": "addressuploadaddresslist 1",
+    "url": "https://devx.notabene.id/reference/addressuploadaddresslist-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--addressuploadaddresslist-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHCUSTOMERTOKEN-1",
+    "aliases": [],
+    "title": "authcustomertoken 1",
+    "url": "https://devx.notabene.id/reference/authcustomertoken-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authcustomertoken-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHGETCUSTOMER-1",
+    "aliases": [],
+    "title": "authgetcustomer 1",
+    "url": "https://devx.notabene.id/reference/authgetcustomer-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authgetcustomer-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHNEWCUSTOMER-1",
+    "aliases": [],
+    "title": "authnewcustomer 1",
+    "url": "https://devx.notabene.id/reference/authnewcustomer-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authnewcustomer-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHORIZEFLOWPAYIN",
+    "aliases": [],
+    "title": "authorizeflowpayin",
+    "url": "https://devx.notabene.id/reference/authorizeflowpayin.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authorizeflowpayin.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHORIZEFLOWPAYOUT",
+    "aliases": [],
+    "title": "authorizeflowpayout",
+    "url": "https://devx.notabene.id/reference/authorizeflowpayout.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authorizeflowpayout.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-AUTHORIZETRANSFER",
+    "aliases": [],
+    "title": "authorizetransfer",
+    "url": "https://devx.notabene.id/reference/authorizetransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--authorizetransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CLEARTRANSFER",
+    "aliases": [],
+    "title": "cleartransfer",
+    "url": "https://devx.notabene.id/reference/cleartransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--cleartransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-COMPLETEBENEFICIARYNAMEMATCHING",
+    "aliases": [],
+    "title": "completebeneficiarynamematching",
+    "url": "https://devx.notabene.id/reference/completebeneficiarynamematching.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--completebeneficiarynamematching.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-COMPLETEINTERNALCHECKS",
+    "aliases": [],
+    "title": "completeinternalchecks",
+    "url": "https://devx.notabene.id/reference/completeinternalchecks.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--completeinternalchecks.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CONFIRMRELATIONSHIP",
+    "aliases": [],
+    "title": "confirmrelationship",
+    "url": "https://devx.notabene.id/reference/confirmrelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--confirmrelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATEFLOWCUSTOMER",
+    "aliases": [],
+    "title": "createflowcustomer",
+    "url": "https://devx.notabene.id/reference/createflowcustomer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createflowcustomer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATEFLOWCUSTOMERPAYIN",
+    "aliases": [],
+    "title": "createflowcustomerpayin",
+    "url": "https://devx.notabene.id/reference/createflowcustomerpayin.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createflowcustomerpayin.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATEFLOWCUSTOMERPAYOUT",
+    "aliases": [],
+    "title": "createflowcustomerpayout",
+    "url": "https://devx.notabene.id/reference/createflowcustomerpayout.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createflowcustomerpayout.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATEFLOWPAYIN",
+    "aliases": [],
+    "title": "createflowpayin",
+    "url": "https://devx.notabene.id/reference/createflowpayin.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createflowpayin.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATEFLOWPAYOUT",
+    "aliases": [],
+    "title": "createflowpayout",
+    "url": "https://devx.notabene.id/reference/createflowpayout.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createflowpayout.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATERELATIONSHIP",
+    "aliases": [],
+    "title": "createrelationship",
+    "url": "https://devx.notabene.id/reference/createrelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createrelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-CREATETRANSFER",
+    "aliases": [],
+    "title": "createtransfer",
+    "url": "https://devx.notabene.id/reference/createtransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--createtransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-DELETEFLOWCUSTOMER",
+    "aliases": [],
+    "title": "deleteflowcustomer",
+    "url": "https://devx.notabene.id/reference/deleteflowcustomer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--deleteflowcustomer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-DELETERELATIONSHIP",
+    "aliases": [],
+    "title": "deleterelationship",
+    "url": "https://devx.notabene.id/reference/deleterelationship.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--deleterelationship.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-DISCOVERADDRESSOWNERSHIP",
+    "aliases": [],
+    "title": "discoveraddressownership",
+    "url": "https://devx.notabene.id/reference/discoveraddressownership.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--discoveraddressownership.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETENTITYPUBLICKEYS",
+    "aliases": [],
+    "title": "getentitypublickeys",
+    "url": "https://devx.notabene.id/reference/getentitypublickeys.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getentitypublickeys.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETFLOWCUSTOMERPAYIN",
+    "aliases": [],
+    "title": "getflowcustomerpayin",
+    "url": "https://devx.notabene.id/reference/getflowcustomerpayin.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getflowcustomerpayin.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETFLOWCUSTOMERPAYOUT",
+    "aliases": [],
+    "title": "getflowcustomerpayout",
+    "url": "https://devx.notabene.id/reference/getflowcustomerpayout.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getflowcustomerpayout.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETFLOWPAYIN",
+    "aliases": [],
+    "title": "getflowpayin",
+    "url": "https://devx.notabene.id/reference/getflowpayin.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getflowpayin.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETFLOWPAYOUT",
+    "aliases": [],
+    "title": "getflowpayout",
+    "url": "https://devx.notabene.id/reference/getflowpayout.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getflowpayout.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETJURISDICTIONS-1",
+    "aliases": [],
+    "title": "getjurisdictions 1",
+    "url": "https://devx.notabene.id/reference/getjurisdictions-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getjurisdictions-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETSETTINGS",
+    "aliases": [],
+    "title": "getsettings",
+    "url": "https://devx.notabene.id/reference/getsettings.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getsettings.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETTRANSFER",
+    "aliases": [],
+    "title": "gettransfer",
+    "url": "https://devx.notabene.id/reference/gettransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--gettransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-GETVASP",
+    "aliases": [],
+    "title": "getvasp",
+    "url": "https://devx.notabene.id/reference/getvasp.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--getvasp.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTAUDITLOG",
+    "aliases": [],
+    "title": "listauditlog",
+    "url": "https://devx.notabene.id/reference/listauditlog.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listauditlog.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTENTITIES",
+    "aliases": [],
+    "title": "listentities",
+    "url": "https://devx.notabene.id/reference/listentities.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listentities.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWCUSTOMERPAYINS",
+    "aliases": [],
+    "title": "listflowcustomerpayins",
+    "url": "https://devx.notabene.id/reference/listflowcustomerpayins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowcustomerpayins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWCUSTOMERPAYOUTS",
+    "aliases": [],
+    "title": "listflowcustomerpayouts",
+    "url": "https://devx.notabene.id/reference/listflowcustomerpayouts.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowcustomerpayouts.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWCUSTOMERS",
+    "aliases": [],
+    "title": "listflowcustomers",
+    "url": "https://devx.notabene.id/reference/listflowcustomers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowcustomers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWINCOMINGPAYINS",
+    "aliases": [],
+    "title": "listflowincomingpayins",
+    "url": "https://devx.notabene.id/reference/listflowincomingpayins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowincomingpayins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWINCOMINGPAYOUTS",
+    "aliases": [],
+    "title": "listflowincomingpayouts",
+    "url": "https://devx.notabene.id/reference/listflowincomingpayouts.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowincomingpayouts.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWOUTGOINGPAYINS",
+    "aliases": [],
+    "title": "listflowoutgoingpayins",
+    "url": "https://devx.notabene.id/reference/listflowoutgoingpayins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowoutgoingpayins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWOUTGOINGPAYOUTS",
+    "aliases": [],
+    "title": "listflowoutgoingpayouts",
+    "url": "https://devx.notabene.id/reference/listflowoutgoingpayouts.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowoutgoingpayouts.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWPAYINS",
+    "aliases": [],
+    "title": "listflowpayins",
+    "url": "https://devx.notabene.id/reference/listflowpayins.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowpayins.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTFLOWPAYOUTS",
+    "aliases": [],
+    "title": "listflowpayouts",
+    "url": "https://devx.notabene.id/reference/listflowpayouts.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listflowpayouts.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTRELATIONSHIPS",
+    "aliases": [],
+    "title": "listrelationships",
+    "url": "https://devx.notabene.id/reference/listrelationships.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listrelationships.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-LISTTRANSFERS",
+    "aliases": [],
+    "title": "listtransfers",
+    "url": "https://devx.notabene.id/reference/listtransfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--listtransfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-MATCHTRANSFERS",
+    "aliases": [],
+    "title": "matchtransfers",
+    "url": "https://devx.notabene.id/reference/matchtransfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--matchtransfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-PAYINAUTHORIZATIONREQUIRED",
+    "aliases": [],
+    "title": "payinauthorizationrequired",
+    "url": "https://devx.notabene.id/reference/payinauthorizationrequired.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--payinauthorizationrequired.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-PAYOUTAUTHORIZATIONREQUIRED",
+    "aliases": [],
+    "title": "payoutauthorizationrequired",
+    "url": "https://devx.notabene.id/reference/payoutauthorizationrequired.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--payoutauthorizationrequired.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-REJECTTRANSFER",
+    "aliases": [],
+    "title": "rejecttransfer",
+    "url": "https://devx.notabene.id/reference/rejecttransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--rejecttransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-REMOVEAGENT",
+    "aliases": [],
+    "title": "removeagent",
+    "url": "https://devx.notabene.id/reference/removeagent.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--removeagent.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-REPLACEAGENT",
+    "aliases": [],
+    "title": "replaceagent",
+    "url": "https://devx.notabene.id/reference/replaceagent.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--replaceagent.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-RULES-1",
+    "aliases": [],
+    "title": "rules 1",
+    "url": "https://devx.notabene.id/reference/rules-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--rules-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-RULESDELETE",
+    "aliases": [],
+    "title": "rulesdelete",
+    "url": "https://devx.notabene.id/reference/rulesdelete.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--rulesdelete.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-RULESGET-1",
+    "aliases": [],
+    "title": "rulesget 1",
+    "url": "https://devx.notabene.id/reference/rulesget-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--rulesget-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-RULESSETWITHDIRECTION",
+    "aliases": [],
+    "title": "rulessetwithdirection",
+    "url": "https://devx.notabene.id/reference/rulessetwithdirection.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--rulessetwithdirection.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-SEARCHTRANSFERS",
+    "aliases": [],
+    "title": "searchtransfers",
+    "url": "https://devx.notabene.id/reference/searchtransfers.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--searchtransfers.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-SETFUNDINGADDRESS",
+    "aliases": [],
+    "title": "setfundingaddress",
+    "url": "https://devx.notabene.id/reference/setfundingaddress.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--setfundingaddress.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-SETTLETRANSFER",
+    "aliases": [],
+    "title": "settletransfer",
+    "url": "https://devx.notabene.id/reference/settletransfer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--settletransfer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TFSIMPLEGETVASP-1",
+    "aliases": [],
+    "title": "tfsimplegetvasp 1",
+    "url": "https://devx.notabene.id/reference/tfsimplegetvasp-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--tfsimplegetvasp-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TFSIMPLELISTVASPS-1",
+    "aliases": [],
+    "title": "tfsimplelistvasps 1",
+    "url": "https://devx.notabene.id/reference/tfsimplelistvasps-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--tfsimplelistvasps-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXACCEPT-1",
+    "aliases": [],
+    "title": "txaccept 1",
+    "url": "https://devx.notabene.id/reference/txaccept-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txaccept-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXAPPROVE-1",
+    "aliases": [],
+    "title": "txapprove 1",
+    "url": "https://devx.notabene.id/reference/txapprove-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txapprove-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXCANCEL-1",
+    "aliases": [],
+    "title": "txcancel 1",
+    "url": "https://devx.notabene.id/reference/txcancel-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txcancel-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXCONFIRM-1",
+    "aliases": [],
+    "title": "txconfirm 1",
+    "url": "https://devx.notabene.id/reference/txconfirm-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txconfirm-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXCREATE-1",
+    "aliases": [],
+    "title": "txcreate 1",
+    "url": "https://devx.notabene.id/reference/txcreate-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txcreate-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXDECLINE-1",
+    "aliases": [],
+    "title": "txdecline 1",
+    "url": "https://devx.notabene.id/reference/txdecline-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txdecline-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXINFO-1",
+    "aliases": [],
+    "title": "txinfo 1",
+    "url": "https://devx.notabene.id/reference/txinfo-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txinfo-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXLIST-1",
+    "aliases": [],
+    "title": "txlist 1",
+    "url": "https://devx.notabene.id/reference/txlist-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txlist-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXLISTBENEFICIARYORIGINATOR-1",
+    "aliases": [],
+    "title": "txlistbeneficiaryoriginator 1",
+    "url": "https://devx.notabene.id/reference/txlistbeneficiaryoriginator-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txlistbeneficiaryoriginator-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXNOTIFY-1",
+    "aliases": [],
+    "title": "txnotify 1",
+    "url": "https://devx.notabene.id/reference/txnotify-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txnotify-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXNOTREADY",
+    "aliases": [],
+    "title": "txnotready",
+    "url": "https://devx.notabene.id/reference/txnotready.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txnotready.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXQUERY-1",
+    "aliases": [],
+    "title": "txquery 1",
+    "url": "https://devx.notabene.id/reference/txquery-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txquery-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXREDIRECT-1",
+    "aliases": [],
+    "title": "txredirect 1",
+    "url": "https://devx.notabene.id/reference/txredirect-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txredirect-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXREJECT-1",
+    "aliases": [],
+    "title": "txreject 1",
+    "url": "https://devx.notabene.id/reference/txreject-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txreject-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXUPDATE-1",
+    "aliases": [],
+    "title": "txupdate 1",
+    "url": "https://devx.notabene.id/reference/txupdate-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txupdate-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-TXVALIDATEFULL-1",
+    "aliases": [],
+    "title": "txvalidatefull 1",
+    "url": "https://devx.notabene.id/reference/txvalidatefull-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--txvalidatefull-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-UPDATEFLOWCUSTOMER",
+    "aliases": [],
+    "title": "updateflowcustomer",
+    "url": "https://devx.notabene.id/reference/updateflowcustomer.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--updateflowcustomer.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  },
+  {
+    "id": "DOC-REFERENCE-UPDATESETTINGS-1",
+    "aliases": [],
+    "title": "updatesettings 1",
+    "url": "https://devx.notabene.id/reference/updatesettings-1.md",
+    "publishedDate": null,
+    "evidencePath": "research/corpus/docs/reference--updatesettings-1.md",
+    "tier": 3,
+    "notes": "Archived first-party primary documentation; not independently verified. Primary commercial documentation; product claims are not independently verified."
+  }
+]

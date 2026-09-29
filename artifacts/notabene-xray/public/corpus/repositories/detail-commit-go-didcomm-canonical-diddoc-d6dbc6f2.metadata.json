@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-go-didcomm-canonical-diddoc-d6dbc6f2",
+  "title": "Added canonical DID document emission.",
+  "source_url": "https://github.com/Notabene-id/go-didcomm/commit/d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "Notabene-id/go-didcomm",
+  "commit": "d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-Notabene-id-go-didcomm-d6dbc6f2.json",
+  "captured_artifact_sha256": "7f95166f2616718cc8d174062ce895a36365f1f7feb2b170dde839f9a97bd7db",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

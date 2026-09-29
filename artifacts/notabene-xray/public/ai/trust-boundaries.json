@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "boundaries": [
+    {
+      "id": "TB-01",
+      "name": "Browser/component to institution",
+      "secrets": [
+        "customer token where applicable"
+      ],
+      "unknowns": [
+        "component hosting isolation details"
+      ]
+    },
+    {
+      "id": "TB-02",
+      "name": "Institution to Notabene API",
+      "controls": [
+        "OAuth/client credentials",
+        "delegated token in documented flows"
+      ],
+      "unknowns": [
+        "production tenant network controls"
+      ]
+    },
+    {
+      "id": "TB-03",
+      "name": "Institution/Notabene to counterparty",
+      "controls": [
+        "DIDDoc keys",
+        "DIDComm/TAP semantics"
+      ],
+      "modes": [
+        "managed encryption",
+        "customer-managed encryption"
+      ],
+      "unknowns": [
+        "live key rotation behavior"
+      ]
+    },
+    {
+      "id": "TB-04",
+      "name": "Webhook delivery",
+      "controls": [
+        "Svix signature headers"
+      ],
+      "unknowns": [
+        "tenant-specific retry retention"
+      ]
+    },
+    {
+      "id": "TB-05",
+      "name": "Compliance orchestration to settlement",
+      "controls": [
+        "institution authorization"
+      ],
+      "out_of_scope": [
+        "private key custody",
+        "ledger consensus",
+        "fiat rail execution"
+      ]
+    }
+  ],
+  "sources": [
+    "corpus/docs/api-webhook-flow.metadata.json",
+    "corpus/docs/api-self-encryption.metadata.json",
+    "corpus/docs/identity-02.metadata.json"
+  ]
+}

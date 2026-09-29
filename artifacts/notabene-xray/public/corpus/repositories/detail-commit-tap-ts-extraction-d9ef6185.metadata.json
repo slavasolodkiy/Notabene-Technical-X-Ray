@@ -1,0 +1,18 @@
+{
+  "id": "detail-commit-tap-ts-extraction-d9ef6185",
+  "title": "Removed the in-repository TypeScript package and linked to tap-ts.",
+  "source_url": "https://github.com/TransactionAuthorizationProtocol/TAIPs/commit/d9ef61850f999c058a47b311245bec3436cb103f",
+  "source_type": "PUBLIC_COMMIT_DIFF",
+  "retrieved_at": "2026-09-24",
+  "provenance_note": null,
+  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "artifact_version": "commit",
+  "repository": "TransactionAuthorizationProtocol/TAIPs",
+  "commit": "d9ef61850f999c058a47b311245bec3436cb103f",
+  "captured_workspace_path": "research/corpus/v2-archaeology/commits/github-TransactionAuthorizationProtocol-TAIPs-d9ef6185.json",
+  "captured_artifact_sha256": "a045c3dbef5265bad1627aa527786d3997351ed6d59c89f8b1fd6351bdc8e456",
+  "raw_available": false,
+  "metadata_only": true,
+  "withheld_reason": "Raw redistribution withheld because the public availability of a page or specification does not establish a redistribution license.",
+  "status": "VERIFIED"
+}

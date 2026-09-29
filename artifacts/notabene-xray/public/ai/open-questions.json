@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-09-29T16:45:59.316Z",
+  "questions": [
+    {
+      "id": "OQ-01",
+      "question": "Which OpenAPI snapshot/version is contractually authoritative for each tenant and generation?",
+      "why": "Captured V1 and V2 specifications differ from prose and live behavior was not tested.",
+      "sources": [
+        "corpus/openapi/api-v1-openapi.metadata.json",
+        "corpus/openapi/api-v2-openapi.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-02",
+      "question": "How are live DIDDocs versioned, cached, rotated and audited?",
+      "why": "Public documented examples cannot establish current tenant behavior.",
+      "sources": [
+        "corpus/docs/identity-01.metadata.json",
+        "corpus/docs/identity-02.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-03",
+      "question": "Who initiates and verifies micro-transfers in every wallet-verification integration mode?",
+      "why": "Ownership varies by integration and is not fully resolved by public material.",
+      "sources": [
+        "corpus/packages/sdk-src-08.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-04",
+      "question": "How does production select jurisdiction definitions, including missing-country and index anomalies?",
+      "why": "Artifact existence does not prove selector logic or fallback behavior.",
+      "sources": [
+        "corpus/docs/jur-04.metadata.json",
+        "corpus/docs/jur-12.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-05",
+      "question": "What are the complete semantics of undocumented agent statuses present in schemas?",
+      "why": "Schema values without prose must not be assigned invented transitions.",
+      "sources": [
+        "corpus/openapi/api-v2-openapi.metadata.json",
+        "corpus/docs/api-statuses.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-06",
+      "question": "Which Flow quickstart events are stable API guarantees rather than tutorial examples?",
+      "why": "Examples do not necessarily define exhaustive production state machines.",
+      "sources": [
+        "corpus/docs/flow-s03.metadata.json",
+        "corpus/docs/flow-s04.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-07",
+      "question": "What primary Japanese-law text maps to the JP presentation definition and current effective requirements?",
+      "why": "The collected Japan evidence lacks fetched primary Japanese law.",
+      "sources": [
+        "corpus/legal/jur-17.metadata.json",
+        "corpus/docs/jur-11.metadata.json"
+      ]
+    },
+    {
+      "id": "OQ-08",
+      "question": "What is the supported V1-to-V2 address-book and relationship migration procedure?",
+      "why": "Public deltas do not establish tenant data migration guarantees.",
+      "sources": [
+        "corpus/openapi/api-v1-openapi.metadata.json",
+        "corpus/openapi/api-v2-openapi.metadata.json"
+      ]
+    }
+  ]
+}

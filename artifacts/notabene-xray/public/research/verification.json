@@ -1,0 +1,167 @@
+{
+  "verifiedAt": "2026-09-24",
+  "target": "research/TECHNICAL_REPORT.draft.md",
+  "method": {
+    "savedEvidence": true,
+    "archivedOpenApi": true,
+    "publicGetOnly": true,
+    "privateEndpointRequests": 0,
+    "e2eTestsRun": false,
+    "packagesExecuted": false
+  },
+  "summary": {
+    "majorChecks": 12,
+    "supported": 12,
+    "reportChangesRequired": 0,
+    "documentationErrorsCorrected": 1,
+    "mermaidBlocksInspected": 19,
+    "urlsProbed": 20,
+    "reachable": 19,
+    "inconclusive": 1
+  },
+  "corrections": [
+    {
+      "files": [
+        "architecture/flow.md",
+        "artifacts/notabene-xray/public/downloads/flow.md"
+      ],
+      "before": "POST /entity/:entityDID/flow/customers",
+      "after": "POST /entities/{entityDID}/flow/customers",
+      "basis": "research/sources/api-09-v2-openapi.json",
+      "additionalDiagramNormalization": [
+        "POST /entities/{entityDID}/flow/customers/{customerDID}/payins",
+        "POST /entities/{entityDID}/flow/payouts",
+        "POST /entities/{entityDID}/flow/payouts/{payoutId}/authorization_required",
+        "POST /entities/{entityDID}/flow/payouts/{payoutId}/settlement_asset"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "uk-gbp-800-conjunction",
+      "result": "VERIFIED",
+      "evidence": ["GAP-JUR-01", "JUR-04", "JUR-06"],
+      "finding": "Regulation 64C applies the all-UK request branch separately from the non-all-UK GBP 800-or-more branch; linked transfers are included."
+    },
+    {
+      "id": "vendor-uk-mismatch",
+      "result": "VERIFIED",
+      "evidence": ["GAP-JUR-01", "JUR-04", "JUR-06"],
+      "finding": "Current law is GBP 800 with >=; public vendor artifacts remain EUR/GB-1000 and omit selector/comparator behavior."
+    },
+    {
+      "id": "eu-article-14-conjunction",
+      "result": "VERIFIED",
+      "evidence": ["JUR-02", "JUR-07"],
+      "finding": "(address including country AND official document number AND customer ID) OR (date AND place of birth); EUR 1,000 concerns self-hosted ownership/control assessment."
+    },
+    {
+      "id": "amount-units",
+      "result": "VERIFIED",
+      "evidence": ["api-v1-openapi", "api-v2-openapi"],
+      "finding": "V1 transactionAmount is a base-unit positive integer string; V2 transfer amount is a decimal asset-unit string."
+    },
+    {
+      "id": "pii-key-generations",
+      "result": "VERIFIED",
+      "evidence": ["identity-02", "identity-18", "identity-19"],
+      "finding": "Current Web-DID P-256/X25519 material differs from legacy Ed25519 did:key to X25519 SDK behavior."
+    },
+    {
+      "id": "managed-pii-boundary",
+      "result": "VERIFIED_WITH_INFERENCE",
+      "evidence": ["api-pii-encryption", "gap-protocol-02"],
+      "finding": "Documented submission, encryption, storage, and re-encryption place Notabene in the managed-mode plaintext processing boundary."
+    },
+    {
+      "id": "customer-managed-pii-boundary",
+      "result": "VERIFIED_NARROWLY",
+      "evidence": ["identity-02", "identity-07"],
+      "finding": "Nested PII encrypted to a customer-controlled receiver key is documented as forwarded without platform/entity storage and not decryptable by Notabene on the customer's behalf."
+    },
+    {
+      "id": "hybrid-escrow",
+      "result": "VERIFIED",
+      "evidence": ["identity-18", "identity-19"],
+      "finding": "Escrow/UI decryption is pseudo end-to-end and not equivalent to customer-only E2E."
+    },
+    {
+      "id": "flow-payout-surface",
+      "result": "VERIFIED",
+      "evidence": ["flow-S24", "api-v2-openapi"],
+      "finding": "Entity/customer create, list/detail, incoming/outgoing, authorization_required, and settlement_asset operations exist with the reported methods and paths."
+    },
+    {
+      "id": "openapi-scope",
+      "result": "VERIFIED_WITH_SCOPE_CAVEAT",
+      "evidence": ["api-v2-openapi", "api-v1-openapi"],
+      "finding": "V2 has 85 path items/105 operations; V1 has 90 path items/126 operations. The 157-operation project inventory intentionally scopes V1 to 52 operations."
+    },
+    {
+      "id": "corpus-counts",
+      "result": "VERIFIED_WITH_DEFINITION_CAVEAT",
+      "evidence": ["SDK-SRC-07", "SDK-SRC-08", "SDK-SRC-11"],
+      "finding": "223 Markdown docs, six public GitLab projects/local clones, and four npm package archives. Nine GitHub repositories are separately inventoried as metadata."
+    },
+    {
+      "id": "settlement-boundary",
+      "result": "VERIFIED",
+      "evidence": ["flow-S02", "identity-09", "identity-12"],
+      "finding": "Notabene/TAP coordinates authorization and reports settlement evidence; external wallet/custody/rails execute value movement."
+    }
+  ],
+  "mermaid": {
+    "files": {
+      "architecture/authentication.md": 1,
+      "architecture/data-model.md": 1,
+      "architecture/entity-model.md": 1,
+      "architecture/flow.md": 3,
+      "architecture/integrations.md": 2,
+      "architecture/onboarding.md": 5,
+      "architecture/product-map.md": 1,
+      "architecture/tap.md": 1,
+      "architecture/transact-state-machine.md": 3,
+      "architecture/trust-model.md": 1
+    },
+    "balancedAndConservativelyInspected": 19,
+    "mermaid12ParseCompleted": 7,
+    "sanitizerRuntimeInconclusive": 12,
+    "sanitizerError": "Node-only DOMPurify.addHook incompatibility; not a diagram syntax error",
+    "browserRenderTestRun": false
+  },
+  "linkProbe": {
+    "method": "curl GET, follow redirects, connect timeout 7s, total timeout 15s",
+    "probes": [
+      {"url":"https://node-open-api-specs.s3.eu-central-1.amazonaws.com/openapi.json","status":200,"seconds":0.224601,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/llms.txt","status":200,"seconds":0.078369,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/pii-requirements.md","status":200,"seconds":0.374726,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/encryption-by-notabene.md","status":200,"seconds":0.314544,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/self-encryption.md","status":200,"seconds":0.282028,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/diddocs-explained.md","status":200,"seconds":0.297193,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/key-management-in-diddocs.md","status":200,"seconds":0.332975,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/statuses-explained.md","status":200,"seconds":0.341214,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/webhook-flow.md","status":200,"seconds":0.313991,"result":"REACHABLE"},
+      {"url":"https://devx.notabene.id/docs/quickstart-pra-respond-to-pay-ins.md","status":200,"seconds":0.318686,"result":"REACHABLE"},
+      {"url":"https://pd.notabene.id/ivms101/v2/jurisdiction-thresholds.json","status":200,"seconds":0.069370,"result":"REACHABLE"},
+      {"url":"https://pd.notabene.id/ivms101/v2/GB-1000.json","status":200,"seconds":0.091148,"result":"REACHABLE"},
+      {"url":"https://pd.notabene.id/ivms101/v2/FR-0.json","status":200,"seconds":0.094242,"result":"REACHABLE"},
+      {"url":"https://www.legislation.gov.uk/uksi/2017/692/regulation/64C","status":200,"seconds":0.462255,"result":"REACHABLE"},
+      {"url":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1113","status":202,"seconds":0.037000,"result":"REACHABLE_ACCEPTED","note":"Reachability only; response does not prove full document delivery."},
+      {"url":"https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1010/subpart-E/section-1010.410","status":200,"seconds":0.533521,"finalUrl":"https://unblock.federalregister.gov/","result":"INCONCLUSIVE_ANTIBOT_REDIRECT"},
+      {"url":"https://github.com/TransactionAuthorizationProtocol/TAIPs","status":200,"seconds":0.504213,"result":"REACHABLE"},
+      {"url":"https://github.com/Notabene-id/go-didcomm","status":200,"seconds":0.585439,"result":"REACHABLE"},
+      {"url":"https://gitlab.com/notabene/open-source/javascript-sdk","status":200,"seconds":0.444176,"result":"REACHABLE"},
+      {"url":"https://registry.npmjs.org/@notabene%2fjavascript-sdk/latest","status":200,"seconds":0.261680,"result":"REACHABLE"}
+    ],
+    "timeoutsAreValid": false
+  },
+  "unresolvedLimitations": [
+    "Link reachability does not establish content correctness, snapshot equivalence, or production behavior.",
+    "The eCFR live probe is inconclusive because of an anti-bot redirect.",
+    "SLA, production internals, key custody, operator access, retention, tenant isolation, and regional parity remain unverified.",
+    "Customer-managed PII opacity does not imply routing metadata or outer DIDComm envelope opacity.",
+    "Flow flowState, payout webhook completeness, token compatibility, and the pay-in settlement_address contract conflict remain unresolved.",
+    "Twelve Mermaid flowchart/state blocks could not complete sanitizer-dependent Node parsing; no browser render test was run.",
+    "Scope totals require explicit definitions and should not be compared without them."
+  ]
+}
