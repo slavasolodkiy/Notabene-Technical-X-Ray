@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useEvidence } from '../hooks/use-evidence';
 import { Download, ExternalLink, Search, FileText, Database, ShieldAlert, Archive, Code2, Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -6,6 +6,58 @@ import { cn } from '@/lib/utils';
 export default function Sources() {
   const { data: evidence, isLoading } = useEvidence();
   const [search, setSearch] = useState('');
+  const [selectedSource, setSelectedSource] = useState<typeof evidence extends undefined ? never : NonNullable<typeof evidence>['sources'][number] | null>(null);
+  const [metadata, setMetadata] = useState<Record<string, unknown> | null>(null);
+  const [metadataError, setMetadataError] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+
+  const isMetadataOnly = (source: NonNullable<typeof evidence>['sources'][number]) =>
+    Boolean(source.localPath?.endsWith('.metadata.json'));
+  const localUrl = (path: string) =>
+    `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
+  useEffect(() => {
+    if (!selectedSource?.localPath) return;
+    setMetadata(null);
+    setMetadataError(false);
+    fetch(localUrl(selectedSource.localPath))
+      .then(response => {
+        if (!response.ok) throw new Error(`Metadata request failed: ${response.status}`);
+        return response.json() as Promise<Record<string, unknown>>;
+      })
+      .then(setMetadata)
+      .catch(() => setMetadataError(true));
+  }, [selectedSource]);
+
+  useEffect(() => {
+    if (!selectedSource) return;
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const timer = window.setTimeout(() => {
+      dialogRef.current?.querySelector<HTMLElement>('[data-dialog-close]')?.focus();
+    }, 0);
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setSelectedSource(null);
+      }
+      if (event.key !== 'Tab' || !dialogRef.current) return;
+      const focusable = [...dialogRef.current.querySelectorAll<HTMLElement>('a[href], button:not(:disabled)')];
+      if (!focusable.length) return;
+      if (event.shiftKey && document.activeElement === focusable[0]) {
+        event.preventDefault();
+        focusable[focusable.length - 1].focus();
+      } else if (!event.shiftKey && document.activeElement === focusable[focusable.length - 1]) {
+        event.preventDefault();
+        focusable[0].focus();
+      }
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      window.clearTimeout(timer);
+      document.removeEventListener('keydown', onKeyDown);
+      previousFocus?.focus();
+    };
+  }, [selectedSource]);
 
   if (isLoading) {
     return <div className="p-8 text-center animate-pulse font-mono text-sm uppercase tracking-widest text-muted-foreground">[ LOADING_SOURCES ]</div>;
@@ -113,13 +165,14 @@ export default function Sources() {
                 <th className="px-4 py-3 font-bold border-r border-border/50">ID</th>
                 <th className="px-4 py-3 font-bold border-r border-border/50">Title & Ext_Link</th>
                 <th className="px-4 py-3 font-bold border-r border-border/50">Tier</th>
-                <th className="px-4 py-3 font-bold">Local Archive</th>
+                <th className="px-4 py-3 font-bold">Local Evidence</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
               {filteredSources.map((source) => {
                 const hasLocal = !!source.localPath;
-                const localHref = hasLocal ? `${import.meta.env.BASE_URL}${source.localPath}`.replace('//', '/') : undefined;
+                const metadataOnly = hasLocal && isMetadataOnly(source);
+                const localHref = hasLocal ? localUrl(source.localPath!) : undefined;
 
                 return (
                   <tr key={source.id} className="hover:bg-secondary/20 transition-colors group">
@@ -147,13 +200,17 @@ export default function Sources() {
                       </span>
                     </td>
                     <td className="px-4 py-3 align-top">
-                      {hasLocal ? (
+                      {metadataOnly ? (
+                        <button type="button" onClick={() => setSelectedSource(source)} className="text-[10px] font-bold text-foreground bg-background border border-foreground/30 px-2 py-1 flex items-center gap-1.5 w-fit hover:border-accent hover:text-accent transition-colors uppercase tracking-widest">
+                          <FileText className="w-3 h-3" /> View Metadata
+                        </button>
+                      ) : hasLocal ? (
                         <a href={localHref} target="_self" className="text-[10px] font-bold text-foreground bg-background border border-foreground/30 px-2 py-1 flex items-center gap-1.5 w-fit hover:border-accent hover:text-accent transition-colors uppercase tracking-widest">
                           <Archive className="w-3 h-3" /> View Local
                         </a>
                       ) : (
                         <span className="text-[10px] text-muted-foreground uppercase tracking-widest border border-dashed border-border/50 px-2 py-1 inline-block">
-                          Unavailable
+                          External Only
                         </span>
                       )}
                     </td>
@@ -171,6 +228,67 @@ export default function Sources() {
           </table>
         </div>
       </div>
+      {selectedSource && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 p-3 sm:p-6 flex items-center justify-center"
+          onMouseDown={event => {
+            if (event.target === event.currentTarget) setSelectedSource(null);
+          }}
+        >
+          <div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="source-metadata-title"
+            aria-describedby="source-metadata-description"
+            className="w-full max-w-2xl max-h-[90dvh] overflow-y-auto bg-background border border-accent/60 shadow-2xl font-mono"
+          >
+            <div className="sticky top-0 z-10 bg-background border-b border-border p-4 flex justify-between gap-4 items-start">
+              <div>
+                <div className="text-[10px] uppercase tracking-widest text-accent">Metadata-only evidence record</div>
+                <h2 id="source-metadata-title" className="text-lg font-bold mt-1">{selectedSource.title}</h2>
+              </div>
+              <button data-dialog-close type="button" onClick={() => setSelectedSource(null)} className="shrink-0 border border-border px-3 py-1 text-xs hover:border-accent" aria-label="Close metadata details">CLOSE</button>
+            </div>
+            <div id="source-metadata-description" className="p-4 sm:p-6 text-xs">
+              {!metadata && !metadataError && <p role="status">[ LOADING_METADATA ]</p>}
+              {metadataError && <p role="alert" className="text-destructive">Metadata record could not be loaded.</p>}
+              {metadata && (
+                <dl className="grid grid-cols-1 sm:grid-cols-[10rem_1fr] gap-x-4 gap-y-3">
+                  {([
+                    ['Source title', metadata.title ?? selectedSource.title],
+                    ['Original source URL', metadata.source_url ?? selectedSource.url],
+                    ['Evidence status', metadata.status],
+                    ['Source type', metadata.source_type],
+                    ['Retrieved at', metadata.retrieved_at],
+                    ['Provenance note', metadata.provenance_note],
+                    ['Raw available', metadata.raw_available],
+                    ['Metadata only', metadata.metadata_only],
+                    ['Withheld reason', metadata.withheld_reason],
+                    ['SHA-256 / checksum', metadata.captured_artifact_sha256 ?? metadata.checksum],
+                    ['Repository', metadata.repository],
+                    ['Commit', metadata.commit],
+                    ['Artifact version', metadata.artifact_version],
+                  ] as [string, unknown][]).map(([label, value]) => (
+                    <React.Fragment key={label}>
+                      <dt className="text-muted-foreground uppercase tracking-wider">{label}</dt>
+                      <dd className="break-words whitespace-pre-wrap">
+                        {value === undefined || value === null || value === '' ? 'Not recorded' : typeof value === 'object' ? JSON.stringify(value) : String(value)}
+                      </dd>
+                    </React.Fragment>
+                  ))}
+                </dl>
+              )}
+            </div>
+            <div className="border-t border-border p-4 flex flex-col sm:flex-row gap-3 sm:justify-end">
+              <a href={selectedSource.url} target="_blank" rel="noopener noreferrer" className="text-center border border-border px-4 py-2 text-[10px] font-bold tracking-widest hover:border-accent">OPEN ORIGINAL SOURCE ↗</a>
+              {selectedSource.localPath && (
+                <a href={localUrl(selectedSource.localPath)} target="_blank" rel="noopener noreferrer" className="text-center border border-accent/60 px-4 py-2 text-[10px] font-bold tracking-widest hover:bg-accent/10">VIEW RAW METADATA ↗</a>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

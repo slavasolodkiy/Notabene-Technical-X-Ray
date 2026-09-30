@@ -5,7 +5,7 @@
   "source_type": "PUBLIC_GITLAB_GROUP_API",
   "retrieved_at": "2026-09-24",
   "provenance_note": "Proves the public roster at retrieval time only. Private versus deleted remains indistinguishable for absent names.",
-  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "metadata_generated_at": "2026-09-30T14:34:24.218Z",
   "artifact_version": "snapshot",
   "repository": "notabene/open-source",
   "commit": null,

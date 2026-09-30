@@ -1,6 +1,6 @@
 # Source index
 
-Generated 2026-09-29T16:45:58.990Z. Canonical sources: 280.
+Generated 2026-09-30T14:34:22.336Z. Canonical sources: 280.
 
 | ID | Aliases | Tier | Title | Evidence |
 | --- | --- | ---: | --- | --- |

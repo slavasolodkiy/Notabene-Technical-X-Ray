@@ -5,7 +5,7 @@
   "source_type": "PUBLIC_GITLAB_COMMIT_API",
   "retrieved_at": "2026-09-24",
   "provenance_note": "Covers ECDH-1PU/libsodium and HYBRID two-escrow-key behavior. The 14x performance phrase is commit metadata, not independently benchmarked.",
-  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "metadata_generated_at": "2026-09-30T14:34:24.218Z",
   "artifact_version": "42a4efc0cd9bd8d29873e3f4db2269e523321c18; 3ea4e3a30efe11331744665dad7cd11c8c435192",
   "repository": "notabene/open-source/pii-sdk",
   "commit": null,

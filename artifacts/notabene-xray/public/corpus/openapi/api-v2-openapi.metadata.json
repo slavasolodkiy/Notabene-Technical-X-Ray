@@ -5,7 +5,7 @@
   "source_type": "openapi",
   "retrieved_at": null,
   "provenance_note": "Public raw specification discovered in the V2 reference page HTML and retrieved 2026-09-24. OpenAPI info.version is 1.0.0; 85 path items, 105 HTTP operations, and 52 component schemas at retrieval.",
-  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "metadata_generated_at": "2026-09-30T14:34:24.218Z",
   "artifact_version": null,
   "repository": null,
   "commit": null,

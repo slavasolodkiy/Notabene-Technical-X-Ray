@@ -5,7 +5,7 @@
   "source_type": "PUBLIC_GITHUB_COMMIT_API",
   "retrieved_at": "2026-09-24",
   "provenance_note": "Covers ECDH-1PU, XChaCha20, X25519 key selection and canonical DIDDoc emission.",
-  "metadata_generated_at": "2026-09-29T16:45:59.316Z",
+  "metadata_generated_at": "2026-09-30T14:34:24.218Z",
   "artifact_version": "383a8172a40a5c895d3ac34cc92b8ee667f0f2b1; b08fac2ad0124995aebb44a74b9f2db4e069270e; 7f02e7448b7c49662448d169b35798c0514b75cd; d6dbc6f2837d7a7b805b9a4277d41ae60a51d780",
   "repository": "Notabene-id/go-didcomm",
   "commit": null,
